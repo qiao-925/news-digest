@@ -516,7 +516,9 @@ def fetch_epoch_ai():
 
 def fetch_zhihu():
     """知乎热榜 (需 cookie)"""
-    cookie_path = r"C:\Users\nonep\Desktop\win11\bookmarks\.zhihu_cookie"
+    cookie_path = os.environ.get("ZHIHU_COOKIE_PATH",
+                                   os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                                "..", "bookmarks", ".zhihu_cookie"))
     parts = []
     for line in open(cookie_path, encoding="utf-8"):
         line = line.strip()
@@ -1834,7 +1836,7 @@ section {{ margin-bottom: 40px; }}
 
 # ── 保存 ─────────────────────────────────────────────
 
-ARCHIVE_DIR = r"C:\Users\nonep\Desktop\win11\news-digest\docs"
+ARCHIVE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
 
 
 def save_digest(md, html):
@@ -1879,7 +1881,7 @@ def self_check_academic_expansion(html_path):
             
             # 截图学术分类区域
             academic_section = page.locator("#学术-AI研究")
-            academic_section.screenshot(path="c:/Users/nonep/Desktop/win11/news-archive/academic_screenshot.png")
+            academic_section.screenshot(path=os.path.join(ARCHIVE_DIR, "academic_screenshot.png"))
             
             # 找到学术分类的展开按钮并点击
             button = page.locator("text=/展开.*条.*↓/").first
