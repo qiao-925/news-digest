@@ -1874,7 +1874,8 @@ def self_check_academic_expansion(html_path):
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
-            page.goto(f"file:///{html_path.replace('\\', '/')}")
+            file_url = "file:///" + html_path.replace('\\', '/')
+            page.goto(file_url)
             
             # 截图学术分类区域
             academic_section = page.locator("#学术-AI研究")
