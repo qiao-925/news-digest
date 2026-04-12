@@ -1,0 +1,42 @@
+name: Daily News Digest
+
+on:
+  schedule:
+    - cron: '0 23 * * *'  # UTC 23:00 = 北京时间 07:00
+  workflow_dispatch:       # 手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install PyTorch CPU + dependencies
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+
+      - name: Cache HuggingFace model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-model-minilm-v1
+
+      - name: Generate digest
+        run: python news_digest.py --force
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --cached --quiet || git commit -m "📰 Daily digest $(date -u +%Y-%m-%d)"
+          git push

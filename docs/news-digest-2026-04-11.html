@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Digest · 2026-04-11</title>
+<style>
+/* ═══════════════════════════════════════════════════
+   Notion-inspired Design System
+   Warm minimalism · Serif headings · Soft surfaces
+   ═══════════════════════════════════════════════════ */
+
+/* ── Tokens (Light — default, Notion is light-first) ── */
+:root, [data-theme="light"] {
+  --bg:         #ffffff;
+  --bg-hover:   #f7f6f3;
+  --bg-gray:    #f1f1ef;
+  --bg-nav:     rgba(255,255,255,0.92);
+  --border:     #e9e9e7;
+  --border-heavy:#ddddd9;
+  --text:       #37352f;
+  --text-sec:   #6b6b6b;
+  --text-light: #9b9a97;
+  --accent:     #2eaadc;
+  --shadow:     0 1px 3px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.03);
+  --shadow-lg:  0 4px 16px rgba(0,0,0,0.06);
+  color-scheme: light;
+}
+
+/* ── Tokens (Dark) ── */
+[data-theme="dark"] {
+  --bg:         #191919;
+  --bg-hover:   #212121;
+  --bg-gray:    #252525;
+  --bg-nav:     rgba(25,25,25,0.92);
+  --border:     #2f2f2f;
+  --border-heavy:#3a3a3a;
+  --text:       #e3e2df;
+  --text-sec:   #9b9a97;
+  --text-light: #6b6b6b;
+  --accent:     #529cca;
+  --shadow:     0 1px 3px rgba(0,0,0,0.15), 0 0 0 1px rgba(255,255,255,0.04);
+  --shadow-lg:  0 4px 16px rgba(0,0,0,0.2);
+  color-scheme: dark;
+}
+
+/* ── Shared tokens ── */
+:root {
+  --font-title: 'Georgia', 'Noto Serif SC', 'Source Han Serif CN',
+                'Songti SC', serif;
+  --font-body:  -apple-system, 'SF Pro Text', 'Segoe UI', 'PingFang SC',
+                'Microsoft YaHei', sans-serif;
+  --font-mono:  'SFMono-Regular', 'Cascadia Code', 'Consolas', monospace;
+  --radius:     4px;
+  --radius-lg:  8px;
+  --ease:       200ms ease;
+  --max-w:      780px;
+}
+
+/* ── Reset ── */
+*,*::before,*::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; -webkit-font-smoothing:antialiased; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+/* ── Page wrapper ── */
+.page {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 48px;
+}
+@media (max-width: 840px) {
+  .page { padding: 0 20px; }
+}
+
+/* ── Header ── */
+.hdr {
+  padding: 56px 0 24px;
+}
+.hdr h1 {
+  font-family: var(--font-title);
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--text);
+}
+.hdr .sub {
+  margin-top: 6px;
+  font-size: 0.88rem;
+  color: var(--text-light);
+}
+.hdr .sub span {
+  color: var(--text-sec);
+  font-weight: 500;
+}
+
+/* ── Divider ── */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0;
+}
+
+/* ── Stats row ── */
+.stats {
+  display: flex;
+  gap: 36px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+.stat { display: flex; flex-direction: column; gap: 1px; }
+.stat-val {
+  font-family: var(--font-mono);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.stat-lbl {
+  font-size: 0.72rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+/* ── Nav pills ── */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--bg-nav);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  margin: 0 -48px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+@media (max-width: 840px) {
+  .nav { margin: 0 -20px; padding-left: 20px; padding-right: 20px; }
+}
+.nav-scroll {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pill {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 4px 10px;
+  border-radius: var(--radius);
+  background: transparent;
+  border: none;
+  color: var(--text-sec);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all var(--ease);
+}
+.pill:hover {
+  background: var(--bg-gray);
+  color: var(--text);
+}
+.pill .cnt {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-light);
+  margin-left: 2px;
+}
+
+/* ── Content ── */
+.content { padding: 32px 0 64px; }
+
+section { margin-bottom: 40px; }
+.sec-head {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 4px;
+  padding: 6px 0;
+}
+.sec-icon {
+  width: 24px; height: 24px;
+  display: grid; place-items: center;
+  font-size: 0.95rem;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--ic, #787774) 12%, transparent);
+  flex-shrink: 0;
+}
+.sec-head h2 {
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  font-weight: 600;
+  flex: 1;
+  letter-spacing: -0.01em;
+}
+.sec-count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-light);
+}
+
+/* ── Rows ── */
+.rows { display: flex; flex-direction: column; }
+.row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 12px 8px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--ease);
+}
+.row:hover {
+  background: var(--bg-hover);
+}
+.row-main { flex: 1; min-width: 0; }
+.row-title {
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text);
+  transition: color var(--ease);
+}
+.row:hover .row-title { color: var(--accent); }
+.row-desc {
+  font-size: 0.82rem;
+  color: var(--text-sec);
+  line-height: 1.55;
+  margin-top: 3px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.row-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+.tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--tc, var(--text-light));
+  white-space: nowrap;
+}
+.heat {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--text-light);
+  background: var(--bg-gray);
+  padding: 1px 6px;
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+
+/* ── Related (clustered) rows ── */
+.related {
+  margin-left: 20px;
+  padding-left: 12px;
+  border-left: 2px solid var(--border);
+  margin-bottom: 4px;
+}
+.related-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 8px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--ease);
+}
+.related-row:hover {
+  background: var(--bg-hover);
+}
+.related-title {
+  font-size: 0.82rem;
+  color: var(--text-sec);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.related-row:hover .related-title {
+  color: var(--accent);
+}
+
+/* ── Footer ── */
+.ftr {
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.75rem;
+}
+
+/* ── Theme toggle ── */
+.theme-btn {
+  position: fixed;
+  bottom: 24px; right: 24px;
+  z-index: 100;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  display: grid; place-items: center;
+  font-size: 1rem;
+  transition: all var(--ease);
+  color: var(--text-sec);
+}
+.theme-btn:hover {
+  border-color: var(--accent);
+  transform: scale(1.06);
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hdr">
+    <h1>Daily Digest</h1>
+    <p class="sub"><span>97</span> stories &middot; 2026-04-11</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="stats">
+  <div class="stat"><div class="stat-val" style="color:#0f7b6c">10</div><div class="stat-lbl">少数派</div></div>
+<div class="stat"><div class="stat-val" style="color:#337ea9">12</div><div class="stat-lbl">36氪</div></div>
+<div class="stat"><div class="stat-val" style="color:#d44c47">12</div><div class="stat-lbl">钛媒体</div></div>
+<div class="stat"><div class="stat-val" style="color:#d9730d">9</div><div class="stat-lbl">新周刊</div></div>
+<div class="stat"><div class="stat-val" style="color:#448aff">20</div><div class="stat-lbl">知乎</div></div>
+<div class="stat"><div class="stat-val" style="color:#ff6600">12</div><div class="stat-lbl">Hacker News</div></div>
+<div class="stat"><div class="stat-val" style="color:#d44c47">12</div><div class="stat-lbl">IT之家</div></div>
+<div class="stat"><div class="stat-val" style="color:#0f7b6c">10</div><div class="stat-lbl">爱范儿</div></div>
+
+  </div>
+
+  <div class="divider"></div>
+
+  <nav class="nav"><div class="nav-scroll">
+  <a href="#AI-人工智能" class="pill" style="--c:#9065e0">🤖 AI / 人工智能<span class="cnt">24</span></a>
+<a href="#科技产品" class="pill" style="--c:#448aff">📱 科技产品<span class="cnt">23</span></a>
+<a href="#互联网-商业" class="pill" style="--c:#d9730d">🏢 互联网 / 商业<span class="cnt">22</span></a>
+<a href="#国际-地缘" class="pill" style="--c:#d44c47">🌍 国际 / 地缘<span class="cnt">14</span></a>
+<a href="#新能源-汽车" class="pill" style="--c:#0f7b6c">🔋 新能源 / 汽车<span class="cnt">8</span></a>
+<a href="#社会-文化" class="pill" style="--c:#cb3837">🎭 社会 / 文化<span class="cnt">8</span></a>
+<a href="#财经-宏观" class="pill" style="--c:#0f7b6c">📈 财经 / 宏观<span class="cnt">8</span></a>
+<a href="#体育" class="pill" style="--c:#337ea9">⚽ 体育<span class="cnt">4</span></a>
+<a href="#游戏-娱乐" class="pill" style="--c:#9065e0">🎮 游戏 / 娱乐<span class="cnt">4</span></a>
+<a href="#生活-健康" class="pill" style="--c:#448aff">💊 生活 / 健康<span class="cnt">3</span></a>
+<a href="#其他" class="pill" style="--c:#787774">📌 其他<span class="cnt">25</span></a>
+
+  </div></nav>
+
+  <div class="content">
+  <section id="AI-人工智能">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#9065e0">🤖</span>
+    <h2>AI / 人工智能</h2>
+    <span class="sec-count">24</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/post/107600" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">浅谈人工智能时代的用户体验：Agent Experience 导论</h3>
+    <p class="row-desc">AX 专门探讨如何设计产品形态，使 AI Agent 能够可靠地「理解」、自主操作并高效集成，而非仅服务于人类用户。查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://sspai.com/post/108453" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Claude Code+HA 自动化实战：给宠物龟请个「电子保姆」</h3>
+    <p class="row-desc">养龟是个慢节奏的事。但每天翻翻聊天软件的报告，看看谁又霸占了晒背台、谁偷偷换了个位置，比蹲在缸前看半天有意思多了。查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://sspai.com/post/108300" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">AI 时代，我关于教育的思考</h3>
+    <p class="row-desc">Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ...查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://sspai.com/post/108367" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">雷鸟 Air3 AR 眼镜：一年使用体验复盘</h3>
+    <p class="row-desc">本次分享为自费购入雷鸟 Air3 一年多的真实使用体验，所有感受均来自日常真实使用场景。查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3762088319484419?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">拿下豪华种子轮，一家明星AI公司宣布倒闭</h3>
+    <p class="row-desc">作者/吴琼
+  报道/投资界PEdaily
+  唏嘘一幕。
+  近日，知名AI创业公司Yupp宣布：将停止服务，于4月15日正式关闭。要知道，这距离Yupp产品上线才不到一年时间。
+  曾经，Yupp的故事颇具前景：瞄准AI模型评测赛道——通过免费模型服务吸引用户评测，再将测评数据卖给模型厂商。犹记得2024年，公司拿</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761883183530502?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">那个“爱马仕”，想拯救“智障”小龙虾</h3>
+    <p class="row-desc">文｜Lambda
+  编辑｜晓静
+  4月初，Hermes Agent 火了。这个名字直接让人联想到奢侈品牌爱马仕，所以也被戏称为“爱马仕Agent”。
+  它由 Nous Research 在 2 月发布，定位是「The agent that grows with you」。核心卖点是一个闭环学习系统：Agent 完</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761709375521288?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Claude新模型危险，鲍威尔召集华尔街紧急开会！全美安全股暴跌2万亿</h3>
+    <p class="row-desc">【导读】刚刚，华尔街巨头被紧急召往华盛顿！Mythos这个模型让美国财长和美联储主席都恐慌了，向全美金融业CEO发出警告。短短一年内，SaaS市场经历了一场浩劫，2万亿美元直接蒸发。
+  就在这周二，鲍威尔和贝森特紧急召见华尔街，向所有人发出警告——
+  Anthropic的最新模型Mythos，可能对金融业造成重大风</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761737030894342?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">36氪首发 | 深大教授AI芯片项目再融资近亿，主动式散热微系统服务传音</h3>
+    <p class="row-desc">作者丨欧雪
+  编辑丨袁斯来
+  硬氪获悉，深圳锐盟半导体有限公司（下称“锐盟半导体”）近日完成近亿元A轮融资，由松禾资本领投，中风投-华融盛资本、深圳天使母基金、四海新材及上市公司飞荣达跟投。本轮融资将主要用于核心产品压电主动式散热微系统核心技术迭代、量产示范线建设及头部客户导入等，加快消费电子、AI 终端、高性能计</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761718611624707?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">9点1氪｜7家涉火车票销售第三方平台被约谈；45秒500万，张雪直播间拍卖冠军复刻赛车“光速”成交；亚马逊辟谣5月将裁员1.4万</h3>
+    <p class="row-desc">今日热点导览
+  
+   香港最严控烟令来了，携带电子烟上街就罚3000港元，游客也不会豁免
+   小米食堂推出小米冰激凌
+   微信3月更新9项功能，微信、企微支持连接自己的龙虾
+   SpaceX去年因AI投入亏损近50亿美元
+   保时捷在华销量再降20%，较三年前缩水6成
+   《OpenClaw类智能体部署风</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/newsflashes/3762215677297158?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">工业和信息化部将发布一批“人工智能+”高价值场景</h3>
+    <p class="row-desc">日前在武汉举行的中国人工智能产业发展联盟第十七次全体会议上，工业和信息化部科技司副司长杜广达表示，工业和信息化部将以制造业为主战场、应用牵引为主线，发布一批“人工智能+”高价值场景，探索一批典型应用，建设一批特色智能体，提供一批新型智能终端，研制一批新标准，培育一批产业应用人才，打造一批优质企业，全面推动人工智能与制造</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949810.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">滴滴自动驾驶张博：深耕AI、硬件、场景三大能力，持续强化创新突破</h3>
+    <p class="row-desc">滴滴自动驾驶始终坚持负责任的科技创新。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949507.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">所谓Skill，不过是AI时代的工业垃圾</h3>
+    <p class="row-desc">所谓Skill，不过是AI时代的工业垃圾</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949710.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">奥特曼家差点被烧，AI争议滑向物理暴力</h3>
+    <p class="row-desc">“我懂你的难处，但你烧我家是否有点过分”</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949702.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">大模型厂商，是时候告别Token狂欢了</h3>
+    <p class="row-desc">更便宜的Token不是未来。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949632.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">星际之门三高管同时出走，奥特曼屋漏偏逢连夜雨</h3>
+    <p class="row-desc">奥特曼的AI基建牌桌还稳吗？</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949630.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">专治AI说谎，25岁天才少女公司估值过百亿</h3>
+    <p class="row-desc">硅谷新贵，窄路逆袭</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.zhihu.com/question/2025998956627322706" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">张维伊亲测「汉堡馒头减肥法」4 天减 2.6 斤，这种方法真的有效吗？有健康风险吗？</h3>
+    <p class="row-desc">早餐：黑咖啡搭配2个水煮蛋（无碳水）；午餐：2个汉堡（如麦当劳板烧鸡腿堡），要求酱料减半或去酱，额外增加蔬菜；晚餐：仅食用1-2个白馒头，无任何配菜；附加规则：全天进食压缩在8小时内，每日饮水2500ml以上，戒冷饮。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">207 万热度</span>
+  </div>
+</a><a href="https://cirruslabs.org/" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Cirrus Labs to join OpenAI</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">109 pts</span>
+  </div>
+</a><a href="https://playstarfling.com" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Starfling: A one-tap endless orbital slingshot game in a single HTML file</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">379 pts</span>
+  </div>
+</a><a href="https://www.ithome.com/0/938/187.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">滴滴自动驾驶 CEO 张博：十年积累，已实现 L4 级全栈核心技术的自主可控</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，智能电动汽车发展高层论坛（2026）于 4 月 11 日至 12 日在北京国家会议中心二期举行，主题为“推进新能源汽车智能化、绿色化、融合化、国际化发展”。滴滴联合创始人、滴滴自动驾驶公司 CEO 张博在此次论坛上发表演讲。他表示，滴滴自动驾驶经过十年发展和技术积累，在 AI 核心技术、</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/938/186.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">苹果部分配置 Mac mini / Mac Studio 在美国缺货，尚不明确是内存芯片短缺还是新品发布前兆</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，据科技媒体 MacRumors 今天报道，苹果部分配置的 Mac mini / Mac Studio 目前在美国官网完全缺货。据报道，目前 32GB/64GB 内存版本的 Mac mini，以及 128GB/256GB 的 Mac Studio 被标记为“目前不可用”（IT之家注：cur</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661838?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">早报｜「龙虾之父」Claude账号被封又解封/华为Pura 90定档4月20日/AI能力将成教师「必考项」</h3>
+    <p class="row-desc">· 「龙虾之父」Claude 账号被封又解封，官方：系统误判
+· 苹果 Mac 一季度出货量增长 9%，增速领跑全球 PC 市场
+· 追觅俞浩：要把宇树的一切全部抢过来#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661725?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替</h3>
+    <p class="row-desc">养龙虾-&gt;拿下你的爱马仕#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661367?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Anthropic的「奥本海默时刻」：最害怕 AI 的公司，正在造最危险的 AI</h3>
+    <p class="row-desc">发现问题，就会负责到底吗？#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a></div>
+</section>
+<section id="科技产品">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#448aff">📱</span>
+    <h2>科技产品</h2>
+    <span class="sec-count">23</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/post/108469" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">深入 OPPO Find N6：一场关于大屏和效率的舞蹈</h3>
+    <p class="row-desc">我们把 Find N6 带进生活，带进真实场景，看看它用起来到底怎么样。查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://sspai.com/post/108367" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">雷鸟 Air3 AR 眼镜：一年使用体验复盘</h3>
+    <p class="row-desc">本次分享为自费购入雷鸟 Air3 一年多的真实使用体验，所有感受均来自日常真实使用场景。查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://sspai.com/prime/story/a-look-at-the-galapagos-era-of-japanese-cellphones" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">回望日系手机的「加拉帕戈斯」时代</h3>
+    <p class="row-desc">时代车轮之下，精彩的戏剧即便落幕也会被记住。回望这场漫长而惨烈的旅程，那些最终失意的旧势力留下的不只是封闭与开放的反面教材。真正的失败是从未竭尽全力，而日本手机行业的「加拉帕戈斯时代」，即便偏离了世界的主航道，也确实在一个虚幻的泡泡里，倾注了无数人对「未来通信」最狂热的想象与探索。查看全文本文为会员文章，出自《单篇文章</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761883183530502?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">那个“爱马仕”，想拯救“智障”小龙虾</h3>
+    <p class="row-desc">文｜Lambda
+  编辑｜晓静
+  4月初，Hermes Agent 火了。这个名字直接让人联想到奢侈品牌爱马仕，所以也被戏称为“爱马仕Agent”。
+  它由 Nous Research 在 2 月发布，定位是「The agent that grows with you」。核心卖点是一个闭环学习系统：Agent 完</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761718611624707?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">9点1氪｜7家涉火车票销售第三方平台被约谈；45秒500万，张雪直播间拍卖冠军复刻赛车“光速”成交；亚马逊辟谣5月将裁员1.4万</h3>
+    <p class="row-desc">今日热点导览
+  
+   香港最严控烟令来了，携带电子烟上街就罚3000港元，游客也不会豁免
+   小米食堂推出小米冰激凌
+   微信3月更新9项功能，微信、企微支持连接自己的龙虾
+   SpaceX去年因AI投入亏损近50亿美元
+   保时捷在华销量再降20%，较三年前缩水6成
+   《OpenClaw类智能体部署风</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://www.zhihu.com/question/2022392046053331729" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">20 块的古董「有线耳机」成最火时尚单品，销量暴涨 20%，它为什么能翻红？戳中年轻人哪些心理？</h3>
+    <p class="row-desc">其他耳机还在卷深度降噪、续航时间、无感佩戴，恨不得和你融为一体，有线耳机这个被淘汰了快10年的老物件，反倒被年轻人请了出来，以一根白线，两个塑料耳塞，几十块的价格，站在了时尚鄙视链的顶端。 在年轻人看来，无线耳机除了无线，全是缺点，有线耳机除了有线，全是优点。“不用充电、不怕弄丢、不用配对，插上就能听，音质吊打千元头戴</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">276 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2025926047250605746" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">华为、小鹏等科技巨头纷纷闯入摩托车赛道，是战略卡位还是新风口已至？他们有哪些底气？</h3>
+    <p class="row-desc">张雪机车近期在赛道夺冠的消息，让原本低调的摩托车行业再次站在了聚光灯下。 这家新品牌能在两年内完成从图纸设计到夺冠的跃迁，背后是成熟资本市场提供的强大推力。 如果说资本为产业注入了源源不断的活力，那么跨界科技巨头的强势入局，则正在从底层逻辑上重塑摩托车的产品定义。这种跨界力量正以前所未有的速度模糊传统的产业边界。 华为</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">201 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2026048720198788999" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">网曝华为自离 N+1 回归，是真的吗？为什么突然迎来反转？</h3>
+    <p class="row-desc">根据内部最新FAQ公告说： 1．除违规违纪导致的除名／辞退外，其他情形的离职员工均享受N+1离职补偿； 2．离职补偿金可以高于法定规则，含标准工资、奖金等； 3．离职补偿金按法定规则封顶； 4．离职补偿金的发放，依法缴税。 除违规违纪导致的除名或辞退外，其他所有情形的离职员工均享受N+1离职补偿。也就是说，无论是合同到</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">198 万热度</span>
+  </div>
+</a><a href="https://kentwalters.com/posts/corners/" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Filing the corners off my MacBooks</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">1110 pts</span>
+  </div>
+</a><a href="https://news.ycombinator.com/item?id=47727960" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Show HN: Pardonned.com – A searchable database of US Pardons</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">168 pts</span>
+  </div>
+</a><a href="https://playstarfling.com" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Starfling: A one-tap endless orbital slingshot game in a single HTML file</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">379 pts</span>
+  </div>
+</a><a href="https://solidean.com/blog/2026/how-much-linear-memory-access-is-enough/" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">How Much Linear Memory Access Is Enough?</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">32 pts</span>
+  </div>
+</a><a href="https://www.passiveradar.com/how-passive-radar-works/" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">How Passive Radar Works</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">83 pts</span>
+  </div>
+</a><a href="https://www.ithome.com/0/938/186.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">苹果部分配置 Mac mini / Mac Studio 在美国缺货，尚不明确是内存芯片短缺还是新品发布前兆</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，据科技媒体 MacRumors 今天报道，苹果部分配置的 Mac mini / Mac Studio 目前在美国官网完全缺货。据报道，目前 32GB/64GB 内存版本的 Mac mini，以及 128GB/256GB 的 Mac Studio 被标记为“目前不可用”（IT之家注：cur</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/938/184.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">消息称佳能将推全新 PowerShot 相机：有望搭载 1 英寸堆栈式 CMOS 传感器，填补手机和无反之间空白</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，消息源 CanonRumors 前天发文，报道称佳能即将推出全新 PowerShot 便携式相机，面向摄影用户而非纯视频用户。据介绍，这款旗舰机型将搭载全新传感器，尺寸小于 1.4 英寸但“更加先进”，有可能是 1 英寸 BSI（堆栈式）CMOS，在画质、高 ISO 表现、读出速度、动态</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/938/183.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">谷歌承认 Pixel 系列手机 3 月更新推送后存在无限重启问题，正在积极调查</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，据科技媒体 Phone Arena 今天报道，本周早些时候，谷歌 Pixel 系列用户集体反馈称，安装 2026 年 3 月稳定版更新后，手机直接变砖。据报道，这些用户安装更新后发现手机陷入无限重启，设备会反复停留在谷歌“G”Logo 开机屏幕，无法进入系统主界面，有人甚至无法进入 RE</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/938/181.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">流媒体巨头联手：Apple TV 将登陆亚马逊 Prime Video，每月 9.99 美元附加订阅</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，亚马逊与苹果公司昨日宣布，Apple TV 即将登陆美国区 Prime Video 平台。从本月晚些时候开始，Prime 会员可以每月 9.99 美元（IT之家注：现汇率约合 68.4 元人民币）的附加订阅直接在 Prime Video 应用内订阅 Apple TV。订阅用户可在 Pri</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/938/180.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">在火狐 Firefox 安装“所有”扩展会发生什么：打开浏览器就得 40 分钟，几乎无法使用</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，火狐 Firefox 浏览器一共有 8.4 万个扩展，全部加起来不到 50GB。而玩家 Jack W.最近突发奇想，尝试将这 8.4 万个扩展一股脑装到电脑上。这名玩家在 4 月 9 日更新的博文中表示，Mozilla 插件商店具有公开 API，没有限速、认证等反爬虫措施，因此看起来可以</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/938/176.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Pura 80 Pro → Pura 90 Pro Max，消息称华为准备命名升维</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，博主 @体验 more 今天在微博透露，华为应该是准备命名升维，价格不升、还是抢份额。同时博主还在文中给出了两个关键信号：Pura 80→Pura 90 ProPura 80 Pro→Pura 90 Pro Max据IT之家此前报道，华为 Pura 90 系列手机所有配色已经公布，其中 </p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/938/175.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">华为 MateBook 14 2026 及 MateBook Pro 通过开源鸿蒙评测认证：预装 6.1.0.117 系统</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，华为 MateBook 14 2026（MNTXM-32A）及 MateBook Pro（HAD-W32）已于昨日通过开源鸿蒙 OpenHarmony 评测认证，均预装了最新的 6.1.0.117 版本系统。@数码闲聊站 此前表示华为 MateBook Neo 已在路上，也就是此次通过认</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661838?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">早报｜「龙虾之父」Claude账号被封又解封/华为Pura 90定档4月20日/AI能力将成教师「必考项」</h3>
+    <p class="row-desc">· 「龙虾之父」Claude 账号被封又解封，官方：系统误判
+· 苹果 Mac 一季度出货量增长 9%，增速领跑全球 PC 市场
+· 追觅俞浩：要把宇树的一切全部抢过来#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661796?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">vivo Pad6 Pro 体验：要的，就是这块 4K 超大屏</h3>
+    <p class="row-desc">你买的是超清高质高刷扩展屏，同时也是全能旗舰 Android 平板。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661692?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">华为 Pura 90 官宣，还有抢跑苹果的「阔折叠」</h3>
+    <p class="row-desc">如何定价，也是发布会的一大看点#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a></div>
+</section>
+<section id="互联网-商业">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#d9730d">🏢</span>
+    <h2>互联网 / 商业</h2>
+    <span class="sec-count">22</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/post/108468" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">派早报：微信支付发布接入 Skill 工具体系等</h3>
+    <p class="row-desc">Amflow 推出电动山地自行车系列、戴森推出手持无叶风扇 HushJet Mini Cool 等。查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3762088319484419?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">拿下豪华种子轮，一家明星AI公司宣布倒闭</h3>
+    <p class="row-desc">作者/吴琼
+  报道/投资界PEdaily
+  唏嘘一幕。
+  近日，知名AI创业公司Yupp宣布：将停止服务，于4月15日正式关闭。要知道，这距离Yupp产品上线才不到一年时间。
+  曾经，Yupp的故事颇具前景：瞄准AI模型评测赛道——通过免费模型服务吸引用户评测，再将测评数据卖给模型厂商。犹记得2024年，公司拿</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761856919093768?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">雷军投的&quot;红娘&quot;要去IPO了</h3>
+    <p class="row-desc">伊达母公司米连科技向港交所递交招股书
+  作者 | 王涛编辑 | 吾人
+  来源 |&amp;amp;nbsp;融中财经
+  又一个“红娘平台”要去IPO了。
+  前不久，伊达母公司米连科技向港交所递交招股书，由华泰国际担任独家保荐人。这也是继去年9月米连首次递表失效后的第二轮冲刺。
+  据悉，米连在海内外运营有多款在线情感社</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761810181210633?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">低空经济第一股，来了</h3>
+    <p class="row-desc">作者丨韦香惠
+  来源丨东四十条资本
+  拿下开年低空经济最大一笔融资后，仅隔不到两个月，沃飞长空便迅速启动IPO进程，直指A股“低空经济第一股”。
+  就在签署上市辅导协议前一天，公司完成股份制改造，由“有限责任公司”整体变更为“股份有限公司”，注册资本由约1.77亿元提升至3.6亿元；与此同时，吉利科技集团CEO徐</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761739153081096?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">36氪首发 | 打破日本工业镜头垄断，松山湖团队融资数千万</h3>
+    <p class="row-desc">作者丨欧雪
+  编辑丨袁斯来
+  硬氪获悉，高端工业镜头研发商——阿基视觉科技（东莞）有限公司（下称“阿基视觉”）近日完成数千万元天使轮融资，由东莞科创、深担创投、松禾资本及林润集团联合投资，德太资本担任本轮融资顾问。本轮融资将用于团队扩充、产能扩建、研发配套及市场拓展，加速高端工业镜头的国产化替代进程。
+  阿基视觉</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761737030894342?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">36氪首发 | 深大教授AI芯片项目再融资近亿，主动式散热微系统服务传音</h3>
+    <p class="row-desc">作者丨欧雪
+  编辑丨袁斯来
+  硬氪获悉，深圳锐盟半导体有限公司（下称“锐盟半导体”）近日完成近亿元A轮融资，由松禾资本领投，中风投-华融盛资本、深圳天使母基金、四海新材及上市公司飞荣达跟投。本轮融资将主要用于核心产品压电主动式散热微系统核心技术迭代、量产示范线建设及头部客户导入等，加快消费电子、AI 终端、高性能计</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761718611624707?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">9点1氪｜7家涉火车票销售第三方平台被约谈；45秒500万，张雪直播间拍卖冠军复刻赛车“光速”成交；亚马逊辟谣5月将裁员1.4万</h3>
+    <p class="row-desc">今日热点导览
+  
+   香港最严控烟令来了，携带电子烟上街就罚3000港元，游客也不会豁免
+   小米食堂推出小米冰激凌
+   微信3月更新9项功能，微信、企微支持连接自己的龙虾
+   SpaceX去年因AI投入亏损近50亿美元
+   保时捷在华销量再降20%，较三年前缩水6成
+   《OpenClaw类智能体部署风</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949810.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">滴滴自动驾驶张博：深耕AI、硬件、场景三大能力，持续强化创新突破</h3>
+    <p class="row-desc">滴滴自动驾驶始终坚持负责任的科技创新。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949752.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">权志龙，一人撑起万亿韩元估值</h3>
+    <p class="row-desc">真正的一人公司。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949630.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">专治AI说谎，25岁天才少女公司估值过百亿</h3>
+    <p class="row-desc">硅谷新贵，窄路逆袭</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.zhihu.com/question/384647710" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">收入降低的时候，怎么养娃更省钱？</h3>
+    <p class="row-desc">一边是降薪裁员，一边是迅速成长为碎钞机的娃，你今年准备怎么多快好省的养孩子？能说说你的好方法吗？</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">92 万热度</span>
+  </div>
+</a><a href="https://www.ithome.com/0/938/187.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">滴滴自动驾驶 CEO 张博：十年积累，已实现 L4 级全栈核心技术的自主可控</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，智能电动汽车发展高层论坛（2026）于 4 月 11 日至 12 日在北京国家会议中心二期举行，主题为“推进新能源汽车智能化、绿色化、融合化、国际化发展”。滴滴联合创始人、滴滴自动驾驶公司 CEO 张博在此次论坛上发表演讲。他表示，滴滴自动驾驶经过十年发展和技术积累，在 AI 核心技术、</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661838?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">早报｜「龙虾之父」Claude账号被封又解封/华为Pura 90定档4月20日/AI能力将成教师「必考项」</h3>
+    <p class="row-desc">· 「龙虾之父」Claude 账号被封又解封，官方：系统误判
+· 苹果 Mac 一季度出货量增长 9%，增速领跑全球 PC 市场
+· 追觅俞浩：要把宇树的一切全部抢过来#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661796?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">vivo Pad6 Pro 体验：要的，就是这块 4K 超大屏</h3>
+    <p class="row-desc">你买的是超清高质高刷扩展屏，同时也是全能旗舰 Android 平板。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661768?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">蔚来 ES9，拒绝成为「XX 揽胜」和「XX 库里南」</h3>
+    <p class="row-desc">没有任何一个领域的开创引领者，希望自己活在别人的影子里。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661725?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替</h3>
+    <p class="row-desc">养龙虾-&gt;拿下你的爱马仕#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661367?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Anthropic的「奥本海默时刻」：最害怕 AI 的公司，正在造最危险的 AI</h3>
+    <p class="row-desc">发现问题，就会负责到底吗？#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661724?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">奇瑞发布了 3 款新燃油车，这才是奇瑞销量的支柱和基本盘</h3>
+    <p class="row-desc">瑞虎才是奇瑞的销量担当。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661708?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">独家｜阿里认领屠榜神秘模型「欢乐马」，ATH 郑波团队打造</h3>
+    <p class="row-desc">是快乐大马，不是快乐小马#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661692?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">华为 Pura 90 官宣，还有抢跑苹果的「阔折叠」</h3>
+    <p class="row-desc">如何定价，也是发布会的一大看点#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661628?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">SBTI说我废物，这是今年听过最舒服的一句话</h3>
+    <p class="row-desc">全网最火人格测试#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661629?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">创造力时代，需要更多创造力机器｜安克 eufyMake E1 体验</h3>
+    <p class="row-desc">想要即得到。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a></div>
+</section>
+<section id="国际-地缘">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#d44c47">🌍</span>
+    <h2>国际 / 地缘</h2>
+    <span class="sec-count">14</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/prime/story/a-look-at-the-galapagos-era-of-japanese-cellphones" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">回望日系手机的「加拉帕戈斯」时代</h3>
+    <p class="row-desc">时代车轮之下，精彩的戏剧即便落幕也会被记住。回望这场漫长而惨烈的旅程，那些最终失意的旧势力留下的不只是封闭与开放的反面教材。真正的失败是从未竭尽全力，而日本手机行业的「加拉帕戈斯时代」，即便偏离了世界的主航道，也确实在一个虚幻的泡泡里，倾注了无数人对「未来通信」最狂热的想象与探索。查看全文本文为会员文章，出自《单篇文章</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761709375521288?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Claude新模型危险，鲍威尔召集华尔街紧急开会！全美安全股暴跌2万亿</h3>
+    <p class="row-desc">【导读】刚刚，华尔街巨头被紧急召往华盛顿！Mythos这个模型让美国财长和美联储主席都恐慌了，向全美金融业CEO发出警告。短短一年内，SaaS市场经历了一场浩劫，2万亿美元直接蒸发。
+  就在这周二，鲍威尔和贝森特紧急召见华尔街，向所有人发出警告——
+  Anthropic的最新模型Mythos，可能对金融业造成重大风</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761739153081096?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">36氪首发 | 打破日本工业镜头垄断，松山湖团队融资数千万</h3>
+    <p class="row-desc">作者丨欧雪
+  编辑丨袁斯来
+  硬氪获悉，高端工业镜头研发商——阿基视觉科技（东莞）有限公司（下称“阿基视觉”）近日完成数千万元天使轮融资，由东莞科创、深担创投、松禾资本及林润集团联合投资，德太资本担任本轮融资顾问。本轮融资将用于团队扩充、产能扩建、研发配套及市场拓展，加速高端工业镜头的国产化替代进程。
+  阿基视觉</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/newsflashes/3762200013603591?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">美国土安全部召回员工，下笔薪资无着落</h3>
+    <p class="row-desc">美国国土安全部10日要求所有因“停摆”而无薪休假的员工返岗。尽管美国总统特朗普已签署行政令，从10日开始为国土安全部超过3.5万名员工补发工资，但这可能是他们短期内最后一笔收入，下笔薪资尚无着落。（新华社）</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://www.zhihu.com/question/2026247933318768336" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">美国3月CPI创近两年最大涨幅，工厂订单连续第二个月停滞，4月消费者信心降至历史新低，对此你怎么看？</h3>
+    <p class="row-desc">3.3%！美国3月CPI创近两年最大涨幅，美联储降息前景遭重创_天天基金网美国4月密歇根消费者信心创历史新低，短期通胀预期飙升__上海有色网美国工厂订单连续第二个月停滞</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">226 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2026413304600420426" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">伊朗称美国同意在黎巴嫩停火，这意味着什么？</h3>
+    <p class="row-desc">当地时间11日，总台记者从伊朗方面获悉，美国同意解冻伊朗资产，并同意在黎巴嫩停火。 美国方面尚未发布相关消息。 当天早前，美国白宫官员否认美国已同意解冻伊朗被冻结资产的消息。更多资讯请下载央视新闻客户端</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">205 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2026402766998843696" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">美媒称数艘美国海军舰船通过霍尔木兹海峡，未与伊朗方面协调，是伊朗战事爆发以来的首次，具体情况如何？</h3>
+    <p class="row-desc">美媒称数艘美国海军舰船通过霍尔木兹海峡新华社分享页</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">135 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2026219072409400768" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">阿耳忒弥斯二号成功返回，此次载人绕月飞行完成了哪些任务？对登月计划有哪些帮助？</h3>
+    <p class="row-desc">执行美国“阿耳忒弥斯2号”载人绕月飞行任务的“猎户座”飞船返回地球，于美东时间10日晚溅落在加利福尼亚州圣迭戈附近海域。 搭载4名宇航员的“猎户座”飞船抛掉承载主火箭系统的服务舱，以约32倍音速冲入大气层，飞船外部温度飙升至高达2760摄氏度。飞船还经历约6分钟的无线电通信中断、也就是“黑障”。溅落太平洋前，降落伞从自</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">132 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2026350014163613144" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">伊朗消息人士称美国已同意解冻伊朗海外资产，是美国让步了吗？局势还会有哪些转机？</h3>
+    <p class="row-desc">伊朗消息人士：美国已同意解冻伊朗海外资产新华社分享页</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">129 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2026384984953418729" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">伊朗提出伊美谈判前提条件，包括完全控制霍尔木兹海峡、解冻所有伊朗海外资产和账户等，美方会同意吗？</h3>
+    <p class="row-desc">巴基斯坦消息人士表示，伊朗谈判代表团11日在与巴基斯坦总理夏巴兹的会见中，提出伊朗和美国谈判的前提条件。 伊方提出的条件包括完全控制霍尔木兹海峡、解冻所有伊朗海外资产和账户、美方支付伊朗重建费用但美国公司不能参与投标、立即停止所有袭击尤其是针对黎巴嫩的袭击、允许伊朗使用民用核能等。 更多资讯请下载央视新闻客户端</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">85 万热度</span>
+  </div>
+</a><a href="https://www.theregister.com/2026/04/10/south_korea_data_access_universal/" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">South Korea introduces universal basic mobile data access</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">92 pts</span>
+  </div>
+</a><a href="https://www.ithome.com/0/938/186.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">苹果部分配置 Mac mini / Mac Studio 在美国缺货，尚不明确是内存芯片短缺还是新品发布前兆</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，据科技媒体 MacRumors 今天报道，苹果部分配置的 Mac mini / Mac Studio 目前在美国官网完全缺货。据报道，目前 32GB/64GB 内存版本的 Mac mini，以及 128GB/256GB 的 Mac Studio 被标记为“目前不可用”（IT之家注：cur</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/938/185.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">谷歌 YouTube Premium 美区涨价：个人版涨至 15.99 美元 / 月，家庭版 26.99 美元</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，谷歌正在对 YouTube Premium 美国订阅计划实施新一轮涨价，最高幅度达到每月 4 美元。新价格即日起对新订阅用户生效，老用户将从 2026 年 6 月的账单周期开始生效。调整后，美区 YouTube Premium 各档位价格如下：个人版从每月 13.99 美元涨至 15.9</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/938/181.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">流媒体巨头联手：Apple TV 将登陆亚马逊 Prime Video，每月 9.99 美元附加订阅</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，亚马逊与苹果公司昨日宣布，Apple TV 即将登陆美国区 Prime Video 平台。从本月晚些时候开始，Prime 会员可以每月 9.99 美元（IT之家注：现汇率约合 68.4 元人民币）的附加订阅直接在 Prime Video 应用内订阅 Apple TV。订阅用户可在 Pri</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a></div>
+</section>
+<section id="新能源-汽车">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#0f7b6c">🔋</span>
+    <h2>新能源 / 汽车</h2>
+    <span class="sec-count">8</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/post/108468" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">派早报：微信支付发布接入 Skill 工具体系等</h3>
+    <p class="row-desc">Amflow 推出电动山地自行车系列、戴森推出手持无叶风扇 HushJet Mini Cool 等。查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761810181210633?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">低空经济第一股，来了</h3>
+    <p class="row-desc">作者丨韦香惠
+  来源丨东四十条资本
+  拿下开年低空经济最大一笔融资后，仅隔不到两个月，沃飞长空便迅速启动IPO进程，直指A股“低空经济第一股”。
+  就在签署上市辅导协议前一天，公司完成股份制改造，由“有限责任公司”整体变更为“股份有限公司”，注册资本由约1.77亿元提升至3.6亿元；与此同时，吉利科技集团CEO徐</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949136.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">国家下场反储能内卷，风电光伏的“学费”不能白交</h3>
+    <p class="row-desc">价格不等于价值</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.zhihu.com/question/2022392046053331729" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">20 块的古董「有线耳机」成最火时尚单品，销量暴涨 20%，它为什么能翻红？戳中年轻人哪些心理？</h3>
+    <p class="row-desc">其他耳机还在卷深度降噪、续航时间、无感佩戴，恨不得和你融为一体，有线耳机这个被淘汰了快10年的老物件，反倒被年轻人请了出来，以一根白线，两个塑料耳塞，几十块的价格，站在了时尚鄙视链的顶端。 在年轻人看来，无线耳机除了无线，全是缺点，有线耳机除了有线，全是优点。“不用充电、不怕弄丢、不用配对，插上就能听，音质吊打千元头戴</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">276 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2025926047250605746" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">华为、小鹏等科技巨头纷纷闯入摩托车赛道，是战略卡位还是新风口已至？他们有哪些底气？</h3>
+    <p class="row-desc">张雪机车近期在赛道夺冠的消息，让原本低调的摩托车行业再次站在了聚光灯下。 这家新品牌能在两年内完成从图纸设计到夺冠的跃迁，背后是成熟资本市场提供的强大推力。 如果说资本为产业注入了源源不断的活力，那么跨界科技巨头的强势入局，则正在从底层逻辑上重塑摩托车的产品定义。这种跨界力量正以前所未有的速度模糊传统的产业边界。 华为</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">201 万热度</span>
+  </div>
+</a><a href="https://www.ithome.com/0/938/187.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">滴滴自动驾驶 CEO 张博：十年积累，已实现 L4 级全栈核心技术的自主可控</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，智能电动汽车发展高层论坛（2026）于 4 月 11 日至 12 日在北京国家会议中心二期举行，主题为“推进新能源汽车智能化、绿色化、融合化、国际化发展”。滴滴联合创始人、滴滴自动驾驶公司 CEO 张博在此次论坛上发表演讲。他表示，滴滴自动驾驶经过十年发展和技术积累，在 AI 核心技术、</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/938/179.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">深蓝 CEO：深蓝汽车 3 月市占率创纪录，多款新车 4 月将亮相</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，今天晚间，深蓝汽车 CEO 姜海荣在微博转发了一则深蓝 S05 获 3 月新能源紧凑型 SUV 销量第一的新闻消息，并配文表示：除了 S05，深蓝其他车型也多点开花全面突破，从行业上险数据来看，2026 年 3 月深蓝汽车全行业市场占有率创下品牌成立以来新纪录。同时姜海荣透露，4 月，深</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1661768?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">蔚来 ES9，拒绝成为「XX 揽胜」和「XX 库里南」</h3>
+    <p class="row-desc">没有任何一个领域的开创引领者，希望自己活在别人的影子里。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a></div>
+</section>
+<section id="社会-文化">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#cb3837">🎭</span>
+    <h2>社会 / 文化</h2>
+    <span class="sec-count">8</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/post/108300" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">AI 时代，我关于教育的思考</h3>
+    <p class="row-desc">Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ...查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3762200670077448?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">为什么有钱人也不买GUCCI了？</h3>
+    <p class="row-desc">曾经一只酒神包便能掀起排队热潮的GUCCI（古驰），如今似乎正通过关店、降价来重新找回市场。
+  3月底，GUCCI上海环贸iapm旗舰店关闭。此前，该品牌已撤掉上海芮欧百货和新世界大丸百货两家标志性门店——仅两年内一个城市内就关了三家店，关店数量占了总数的三分之一。
+  但另一边，开进奥莱的GUCCI热闹非凡，成了排</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761856919093768?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">雷军投的&quot;红娘&quot;要去IPO了</h3>
+    <p class="row-desc">伊达母公司米连科技向港交所递交招股书
+  作者 | 王涛编辑 | 吾人
+  来源 |&amp;amp;nbsp;融中财经
+  又一个“红娘平台”要去IPO了。
+  前不久，伊达母公司米连科技向港交所递交招股书，由华泰国际担任独家保荐人。这也是继去年9月米连首次递表失效后的第二轮冲刺。
+  据悉，米连在海内外运营有多款在线情感社</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949720.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">优思益迷思，为什么保健品的“水”越来越深？</h3>
+    <p class="row-desc">在一份“不是证书”的“证书”背后，一条“铤而走险”的利益链。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.neweekly.com.cn" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">“全民唱跳”的滇西县城，靠一首歌火遍全网</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d9730d">新周刊</span>
+    
+  </div>
+</a><a href="https://www.neweekly.com.cn" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">屈雨瑜：用行动打破偏见，女性照样颠大勺 | 极限女性第二季第9期</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d9730d">新周刊</span>
+    
+  </div>
+</a><a href="https://www.neweekly.com.cn" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">她，不仅仅是“蔡磊的妻子” | 极限女性第二季第7期</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d9730d">新周刊</span>
+    
+  </div>
+</a><a href="https://www.zhihu.com/question/2026379766765286628" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">新赛季苏超开幕，常州3:0南通、扬州0:1苏州、无锡3:1镇江、连云港0:2盐城，如何评价各球队表现？</h3>
+    <p class="row-desc">2026江苏省城市足球联赛，即“苏超”于4月11日晚间鸣哨开赛。 首轮比赛将有四场对决率先上演，分别是常州对阵南通、扬州对阵苏州、无锡对阵镇江、连云港对阵盐城。其中常州主场对阵南通的比赛为本赛季常规赛揭幕战，开赛时间为4月11日19:35。另外三场比赛的开赛时间为19:40。 2026“苏超”在赛制设计上，较2025赛</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">210 万热度</span>
+  </div>
+</a></div>
+</section>
+<section id="财经-宏观">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#0f7b6c">📈</span>
+    <h2>财经 / 宏观</h2>
+    <span class="sec-count">8</span>
+  </div>
+  <div class="rows"><a href="https://36kr.com/p/3762088319484419?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">拿下豪华种子轮，一家明星AI公司宣布倒闭</h3>
+    <p class="row-desc">作者/吴琼
+  报道/投资界PEdaily
+  唏嘘一幕。
+  近日，知名AI创业公司Yupp宣布：将停止服务，于4月15日正式关闭。要知道，这距离Yupp产品上线才不到一年时间。
+  曾经，Yupp的故事颇具前景：瞄准AI模型评测赛道——通过免费模型服务吸引用户评测，再将测评数据卖给模型厂商。犹记得2024年，公司拿</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761856919093768?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">雷军投的&quot;红娘&quot;要去IPO了</h3>
+    <p class="row-desc">伊达母公司米连科技向港交所递交招股书
+  作者 | 王涛编辑 | 吾人
+  来源 |&amp;amp;nbsp;融中财经
+  又一个“红娘平台”要去IPO了。
+  前不久，伊达母公司米连科技向港交所递交招股书，由华泰国际担任独家保荐人。这也是继去年9月米连首次递表失效后的第二轮冲刺。
+  据悉，米连在海内外运营有多款在线情感社</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761810181210633?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">低空经济第一股，来了</h3>
+    <p class="row-desc">作者丨韦香惠
+  来源丨东四十条资本
+  拿下开年低空经济最大一笔融资后，仅隔不到两个月，沃飞长空便迅速启动IPO进程，直指A股“低空经济第一股”。
+  就在签署上市辅导协议前一天，公司完成股份制改造，由“有限责任公司”整体变更为“股份有限公司”，注册资本由约1.77亿元提升至3.6亿元；与此同时，吉利科技集团CEO徐</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761709375521288?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Claude新模型危险，鲍威尔召集华尔街紧急开会！全美安全股暴跌2万亿</h3>
+    <p class="row-desc">【导读】刚刚，华尔街巨头被紧急召往华盛顿！Mythos这个模型让美国财长和美联储主席都恐慌了，向全美金融业CEO发出警告。短短一年内，SaaS市场经历了一场浩劫，2万亿美元直接蒸发。
+  就在这周二，鲍威尔和贝森特紧急召见华尔街，向所有人发出警告——
+  Anthropic的最新模型Mythos，可能对金融业造成重大风</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761739153081096?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">36氪首发 | 打破日本工业镜头垄断，松山湖团队融资数千万</h3>
+    <p class="row-desc">作者丨欧雪
+  编辑丨袁斯来
+  硬氪获悉，高端工业镜头研发商——阿基视觉科技（东莞）有限公司（下称“阿基视觉”）近日完成数千万元天使轮融资，由东莞科创、深担创投、松禾资本及林润集团联合投资，德太资本担任本轮融资顾问。本轮融资将用于团队扩充、产能扩建、研发配套及市场拓展，加速高端工业镜头的国产化替代进程。
+  阿基视觉</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3761737030894342?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">36氪首发 | 深大教授AI芯片项目再融资近亿，主动式散热微系统服务传音</h3>
+    <p class="row-desc">作者丨欧雪
+  编辑丨袁斯来
+  硬氪获悉，深圳锐盟半导体有限公司（下称“锐盟半导体”）近日完成近亿元A轮融资，由松禾资本领投，中风投-华融盛资本、深圳天使母基金、四海新材及上市公司飞荣达跟投。本轮融资将主要用于核心产品压电主动式散热微系统核心技术迭代、量产示范线建设及头部客户导入等，加快消费电子、AI 终端、高性能计</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://www.zhihu.com/question/2026247933318768336" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">美国3月CPI创近两年最大涨幅，工厂订单连续第二个月停滞，4月消费者信心降至历史新低，对此你怎么看？</h3>
+    <p class="row-desc">3.3%！美国3月CPI创近两年最大涨幅，美联储降息前景遭重创_天天基金网美国4月密歇根消费者信心创历史新低，短期通胀预期飙升__上海有色网美国工厂订单连续第二个月停滞</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">226 万热度</span>
+  </div>
+</a><a href="https://www.ithome.com/0/938/180.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">在火狐 Firefox 安装“所有”扩展会发生什么：打开浏览器就得 40 分钟，几乎无法使用</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，火狐 Firefox 浏览器一共有 8.4 万个扩展，全部加起来不到 50GB。而玩家 Jack W.最近突发奇想，尝试将这 8.4 万个扩展一股脑装到电脑上。这名玩家在 4 月 9 日更新的博文中表示，Mozilla 插件商店具有公开 API，没有限速、认证等反爬虫措施，因此看起来可以</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a></div>
+</section>
+<section id="体育">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#337ea9">⚽</span>
+    <h2>体育</h2>
+    <span class="sec-count">4</span>
+  </div>
+  <div class="rows"><a href="https://36kr.com/p/3761718611624707?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">9点1氪｜7家涉火车票销售第三方平台被约谈；45秒500万，张雪直播间拍卖冠军复刻赛车“光速”成交；亚马逊辟谣5月将裁员1.4万</h3>
+    <p class="row-desc">今日热点导览
+  
+   香港最严控烟令来了，携带电子烟上街就罚3000港元，游客也不会豁免
+   小米食堂推出小米冰激凌
+   微信3月更新9项功能，微信、企微支持连接自己的龙虾
+   SpaceX去年因AI投入亏损近50亿美元
+   保时捷在华销量再降20%，较三年前缩水6成
+   《OpenClaw类智能体部署风</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://www.zhihu.com/question/2026379766765286628" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">新赛季苏超开幕，常州3:0南通、扬州0:1苏州、无锡3:1镇江、连云港0:2盐城，如何评价各球队表现？</h3>
+    <p class="row-desc">2026江苏省城市足球联赛，即“苏超”于4月11日晚间鸣哨开赛。 首轮比赛将有四场对决率先上演，分别是常州对阵南通、扬州对阵苏州、无锡对阵镇江、连云港对阵盐城。其中常州主场对阵南通的比赛为本赛季常规赛揭幕战，开赛时间为4月11日19:35。另外三场比赛的开赛时间为19:40。 2026“苏超”在赛制设计上，较2025赛</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">210 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2025926047250605746" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">华为、小鹏等科技巨头纷纷闯入摩托车赛道，是战略卡位还是新风口已至？他们有哪些底气？</h3>
+    <p class="row-desc">张雪机车近期在赛道夺冠的消息，让原本低调的摩托车行业再次站在了聚光灯下。 这家新品牌能在两年内完成从图纸设计到夺冠的跃迁，背后是成熟资本市场提供的强大推力。 如果说资本为产业注入了源源不断的活力，那么跨界科技巨头的强势入局，则正在从底层逻辑上重塑摩托车的产品定义。这种跨界力量正以前所未有的速度模糊传统的产业边界。 华为</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">201 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2026382130578559702" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">2526赛季英超联赛英超第32轮阿森纳 1:2 伯恩茅斯，如何评价这场比赛？</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">107 万热度</span>
+  </div>
+</a></div>
+</section>
+<section id="游戏-娱乐">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#9065e0">🎮</span>
+    <h2>游戏 / 娱乐</h2>
+    <span class="sec-count">4</span>
+  </div>
+  <div class="rows"><a href="https://www.tmtpost.com/7949752.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">权志龙，一人撑起万亿韩元估值</h3>
+    <p class="row-desc">真正的一人公司。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949593.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">拿下全球近四成市场，中国游戏在海外「杀疯了」</h3>
+    <p class="row-desc">老外彻底玩上头了</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://playstarfling.com" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Starfling: A one-tap endless orbital slingshot game in a single HTML file</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">379 pts</span>
+  </div>
+</a><a href="https://www.ithome.com/0/938/182.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">明末题材新作《哀鸿》首周销量近 10 万但口碑两极分化，零创游戏嵇零致歉并承诺补救</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，国产独立游戏《哀鸿：城破十日记》自 2026 年 4 月 3 日正式发售以来，或者说自开启众筹以来，就经常引发争议，而在游戏发售后更是一发不可收拾。昨日，零创游戏官方公布了该作的首周销售数据，并同步发布致歉信。 数据显示，《哀鸿：城破十日记》在发售首周的销量为 95,915 份。然而，尽</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a></div>
+</section>
+<section id="生活-健康">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#448aff">💊</span>
+    <h2>生活 / 健康</h2>
+    <span class="sec-count">3</span>
+  </div>
+  <div class="rows"><a href="https://www.tmtpost.com/7949720.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">优思益迷思，为什么保健品的“水”越来越深？</h3>
+    <p class="row-desc">在一份“不是证书”的“证书”背后，一条“铤而走险”的利益链。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.zhihu.com/question/2022392046053331729" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">20 块的古董「有线耳机」成最火时尚单品，销量暴涨 20%，它为什么能翻红？戳中年轻人哪些心理？</h3>
+    <p class="row-desc">其他耳机还在卷深度降噪、续航时间、无感佩戴，恨不得和你融为一体，有线耳机这个被淘汰了快10年的老物件，反倒被年轻人请了出来，以一根白线，两个塑料耳塞，几十块的价格，站在了时尚鄙视链的顶端。 在年轻人看来，无线耳机除了无线，全是缺点，有线耳机除了有线，全是优点。“不用充电、不怕弄丢、不用配对，插上就能听，音质吊打千元头戴</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">276 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2025998956627322706" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">张维伊亲测「汉堡馒头减肥法」4 天减 2.6 斤，这种方法真的有效吗？有健康风险吗？</h3>
+    <p class="row-desc">早餐：黑咖啡搭配2个水煮蛋（无碳水）；午餐：2个汉堡（如麦当劳板烧鸡腿堡），要求酱料减半或去酱，额外增加蔬菜；晚餐：仅食用1-2个白馒头，无任何配菜；附加规则：全天进食压缩在8小时内，每日饮水2500ml以上，戒冷饮。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">207 万热度</span>
+  </div>
+</a></div>
+</section>
+<section id="其他">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#787774">📌</span>
+    <h2>其他</h2>
+    <span class="sec-count">25</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/post/108496" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">本周看什么 | 最近值得一看的 11 部作品</h3>
+    <p class="row-desc">📅本周新预告《穿普拉达的女王2》终极预告4月6日，《穿普拉达的女王2》发布终极预告。前作演员梅丽尔·斯特里普、艾米丽·布朗特、安妮·海瑟薇、斯坦利·图齐、翠茜·索姆斯、蒂波·费德曼和导演大卫·弗兰科尔 ...查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://sspai.com/post/69533" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">疑难杂症不求人：如何在 Windows 11 中搞定「重装」这件事</h3>
+    <p class="row-desc">掌握这些方法，重装 Windows 11 不求人。查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://sspai.com/post/108426" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">派早报：智谱发布旗舰模型 GLM-5.1、索尼推出 Playerbase 计划等</h3>
+    <p class="row-desc">DeepSeek 上线专家模式、闪迪推出 2TB Extreme Pro UHS-II SD 卡等。查看全文</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3762027785224707?f=rss" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">奥特曼家被炸了！</h3>
+    <p class="row-desc">奥特曼家被炸了
+  【导读】当地时间周五清晨，奥特曼家被炸了。奥特曼发出家人和孩子的照片，并且发出长文表示，AGI如今已经如同魔戒一般，让人做出疯狂的举动。
+  奥特曼家被炸了！
+  就在当地时间周五清晨，一名20岁男子向奥特曼旧金山中投掷了燃烧弹，引起火灾。
+  这栋豪宅价值2700万美元。
+  凌晨4点12分，警方</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949754.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">汪滔VS刘靖康：谁是“取经人”,谁又是“红孩儿”？</h3>
+    <p class="row-desc">汪滔VS刘靖康：谁是“取经人”,谁又是“红孩儿”？</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7949674.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">出去过的每个人都在讲，国外的钱也没有那么好挣</h3>
+    <p class="row-desc">没有捷径，只有更难的路。</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.neweekly.com.cn" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">一个70岁走红的女人，拒绝被浪漫化</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d9730d">新周刊</span>
+    
+  </div>
+</a><a href="https://www.neweekly.com.cn" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">专访舒淇：不会撒娇的女孩，从小就学着长大</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d9730d">新周刊</span>
+    
+  </div>
+</a><a href="https://www.neweekly.com.cn" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">2025年度视频榜发布：在日常的影像里，寻找“现实之上”的力量</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d9730d">新周刊</span>
+    
+  </div>
+</a><a href="https://www.neweekly.com.cn" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">2025年度视频榜丨李路：只要人类还有情感的需求，影视就离退场很远</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d9730d">新周刊</span>
+    
+  </div>
+</a><a href="https://www.neweekly.com.cn" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">新周刊“2025年度新锐榜”发布：抗住各种起伏，稳住就是答案</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d9730d">新周刊</span>
+    
+  </div>
+</a><a href="https://www.neweekly.com.cn" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">因为这些关键词，我不会忘掉2025</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d9730d">新周刊</span>
+    
+  </div>
+</a><a href="https://www.zhihu.com/question/2025597264505169632" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">国博首次完整展出李静训墓文物，为什么说一个 9 岁女孩的墓葬，能撑起一部隋代史？</h3>
+    <p class="row-desc">4月3日，“李静训和她的时代”展在中国国家博物馆对公众展出。此次中国国家博物馆依托馆藏资源，发挥文保团队优势，自主策划“李静训和她的时代”展，首次将馆藏240余件（套）相关文物较为完整地展示出来，同时展出陕西、山西、河南、宁夏、天津等地区10余家考古文博单位的150余件（套）文物珍品。展览以李静训墓出土文物为切口，通过</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">554 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2025615043966814195" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">如何看待本田中国2026第一季度销量12.25万，同比下滑22.4％？</h3>
+    <p class="row-desc">[图片]</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">203 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2026411930252747744" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">如何看待今年苏超常州3：0踢赢南通？</h3>
+    <p class="row-desc">太湖三傻今年全部雄起了，变成太湖三霸，常州进步尤其突出，是什么原因让常州队击败去年苏超霸主？</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">142 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/367881424" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">MATLAB在逐渐被Python淘汰吗？</h3>
+    <p class="row-desc">目前在自学matlab，想到知乎上来查一下matlab中的问题，但是看到铺天盖地劝退matlab建议转Python的，吐槽matlab各种不如Python，但是我们老师都是向学生推荐matlab，请问matlab现在逐渐被Python淘汰吗？（本人目前读机械工程本科，以后可能从事的领域有：（1）航空航天工程（2）自动化</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">117 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/1997375399617926528" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">小领导旁敲侧击善意提醒我不要在背后蛐蛐大领导，我该如何疏导自己，因为实在做不到不蛐蛐 ？</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">112 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/2018018595418980371" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">你如何证明自己用vibe coding比之前古法编程效率高？</h3>
+    <p class="row-desc">时间纬度为需求从方案设计到上线全流程</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">88 万热度</span>
+  </div>
+</a><a href="https://www.zhihu.com/question/14978414776" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">「花气袭人知昼暖」到底什么意思，为什么政老爹听了要生气？</h3>
+    <p class="row-desc">专在这弄词艳赋上下功夫！滚！</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#448aff">知乎</span>
+    <span class="heat">82 万热度</span>
+  </div>
+</a><a href="https://ajitem.com/blog/iron-core-part-1-the-problem-that-built-an-industry/" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">The Problem That Built an Industry</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">27 pts</span>
+  </div>
+</a><a href="https://2swap.github.io/WeakC4/explanation/" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Optimal Strategy for Connect 4</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">173 pts</span>
+  </div>
+</a><a href="https://www.evolvebenchmark.com/blog-posts/cooperative-vectors-introduction" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Cooperative Vectors Introduction</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">20 pts</span>
+  </div>
+</a><a href="https://apnews.com/article/aadam-jacobs-collection-concerts-internet-archive-chicago-b1c9c4466a2db409a83523ad84b79d62" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">Volunteers turn a fan&#x27;s recordings of 10K concerts into an online treasure trove</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">224 pts</span>
+  </div>
+</a><a href="https://rowan441.github.io/1dchess/chess.html" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">1D Chess</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">904 pts</span>
+  </div>
+</a><a href="https://www.ithome.com/0/938/178.htm" target="_blank" rel="noopener" class="row">
+  <div class="row-main">
+    <h3 class="row-title">迅雷“光鸭云盘”开启公测招募：号称免登录、不限速，自带 2TB 免费空间</h3>
+    <p class="row-desc">IT之家 4 月 11 日消息，迅雷旗下云存储产品“光鸭云盘”昨日启动公测招募，注册即享 2TB 免费存储空间，会员可扩容至 500TB。该产品由迅雷全资孙公司深圳市光闪云科技有限公司（成立于 2025 年）提供服务，主打“免登录下载、不限速传输”等核心功能。根据官网介绍，光鸭云盘支持 100GB 单文件上传及 100</p>
+  </div>
+  <div class="row-meta">
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a></div>
+</section>
+
+  </div>
+
+  <div class="ftr">Generated by news_digest.py</div>
+
+</div>
+
+<button class="theme-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+
+<script>
+(function() {
+  const btn = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  const icons = { dark: '🌙', light: '☀️' };
+
+  function sys() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function apply(t) {
+    html.setAttribute('data-theme', t);
+    btn.textContent = icons[t];
+    localStorage.setItem('digest-theme', t);
+  }
+
+  apply(localStorage.getItem('digest-theme') || sys());
+
+  btn.addEventListener('click', function() {
+    apply(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+})()
+</script>
+</body>
+</html>
