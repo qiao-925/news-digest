@@ -1923,18 +1923,11 @@ if __name__ == "__main__":
     all_articles, sorted_topics = collect()
     today = datetime.now().strftime("%Y-%m-%d")
 
-    print("检测趋势...")
-    trends = detect_trends(all_articles)
-    if trends:
-        print(f"  发现 {len(trends)} 个持续热点")
-    else:
-        print("  暂无历史数据，跳过趋势检测")
-
     if BUDGET_PER_TOPIC > 0:
         print(f"降噪预算: 每分类首屏 {BUDGET_PER_TOPIC} 组，学术分类 cluster 总数 14（首屏 7+展开 7），其他 7+7")
 
     md = render_md(all_articles, sorted_topics, today)
-    html = render_html(all_articles, sorted_topics, today, trends=trends)
+    html = render_html(all_articles, sorted_topics, today, trends=None)
     md_path, html_path = save_digest(md, html)
 
     print(f"\n已保存: {md_path}")
