@@ -1653,6 +1653,16 @@ section {{ margin-bottom: 40px; }}
   font-size: 0.75rem;
 }}
 
+/* ── Update Info ── */
+.update-info {{
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: var(--text-light);
+}}
+#updateTime {{
+  opacity: 0.8;
+}}
+
 /* ── Theme toggle ── */
 .theme-btn {{
   position: fixed;
@@ -1796,6 +1806,9 @@ section {{ margin-bottom: 40px; }}
           <path d="M9 18l6-6-6-6"/>
         </svg>
       </button>
+    </div>
+    <div class="update-info">
+      <span id="updateTime">更新中...</span>
     </div>
   </div>
 
@@ -1943,6 +1956,22 @@ section {{ margin-bottom: 40px; }}
   nextBtn.addEventListener('click', function() {{
     navigateDate(1);
   }});
+
+  // 显示更新时间
+  function showUpdateTime() {{
+    const updateTimeEl = document.getElementById('updateTime');
+    // 从页面加载时间估算（静态 HTML 无法获取文件修改时间）
+    const now = new Date();
+    const timeStr = now.toLocaleString('zh-CN', {{
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit'
+    }});
+    updateTimeEl.textContent = '更新于 ' + timeStr;
+  }}
+  showUpdateTime();
 }})()
 </script>
 </body>

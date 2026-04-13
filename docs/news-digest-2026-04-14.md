@@ -66,19 +66,19 @@
   > 空泛的AI技能表述已无法打动企业
   https://www.tmtpost.com/7951204.html
 
-- **Servo is now available on crates.io** — Hacker News [233 pts]
+- **Servo is now available on crates.io** — Hacker News [248 pts]
   https://servo.org/blog/2026/04/13/servo-0.1.0-release/
 
-- **Initial mainline video capture and camera support for Rockchip RK3588** — Hacker News [29 pts]
+- **Initial mainline video capture and camera support for Rockchip RK3588** — Hacker News [33 pts]
   https://www.collabora.com/news-and-blog/news-and-events/mainline-video-capture-and-camera-support-for-rockchip-rk3588.html
 
-- **Microsoft isn't removing Copilot from Windows 11, it's just renaming it** — Hacker News [106 pts]
-  https://www.neowin.net/opinions/microsoft-isnt-removing-copilot-from-windows-11-its-just-renaming-it/
-
-- **MEMS Array Chip Can Project Video the Size of a Grain of Sand** — Hacker News [11 pts]
+- **MEMS Array Chip Can Project Video the Size of a Grain of Sand** — Hacker News [16 pts]
   https://spectrum.ieee.org/mems-photonics
 
-- **Michigan 'digital age' bills pulled after privacy concerns raised** — Hacker News [125 pts]
+- **Microsoft isn't removing Copilot from Windows 11, it's just renaming it** — Hacker News [122 pts]
+  https://www.neowin.net/opinions/microsoft-isnt-removing-copilot-from-windows-11-its-just-renaming-it/
+
+- **Michigan 'digital age' bills pulled after privacy concerns raised** — Hacker News [137 pts]
   https://www.thecentersquare.com/michigan/article_7ca4e268-4a68-42fb-9042-f9d8604ebd7f.html
 
 - **开源监控平台 Grafana 曝提示词漏洞，黑客可诱导 AI 助手泄露企业敏感数据** — IT之家
@@ -119,37 +119,37 @@
   > &lt;p&gt; Digital notarization across 50+ jurisdictions &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/pro
   https://www.producthunt.com/products/legitify
 
-- **Open Comet** — Product Hunt
-  > &lt;p&gt; The autonomous AI browser agent for deep research &amp; tasks &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.pro
-  https://www.producthunt.com/products/open-comet
-
-- **Deconflict** — Product Hunt
-  > &lt;p&gt; Plan your WiFi and see through walls &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/products/dec
-  https://www.producthunt.com/products/deconflict
-
-- **showmd** — Product Hunt
-  > &lt;p&gt; Markdown was never meant to be previewed plain text &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.c
-  https://www.producthunt.com/products/showmd-ai-markdown-quicklook-preview
-
-- **Claunnector** — Product Hunt
-  > &lt;p&gt; Connect your Mac's Mail, Calendar, and more to AI &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com
-  https://www.producthunt.com/products/claunnector
-
 - **GhostDesk** — Product Hunt
   > &lt;p&gt; Your invisible AI co-pilot for interviews &amp; meetings &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producth
   https://www.producthunt.com/products/ghostdesk-2
-
-- **ContextPool** — Product Hunt
-  > &lt;p&gt; Persistent memory for AI coding agents &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/products/c
-  https://www.producthunt.com/products/contextpool
 
 - **Luma Agents** — Product Hunt
   > &lt;p&gt; Agents that plan, iterate, + refine w/ full creative context &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.prod
   https://www.producthunt.com/products/luma-agents
 
-- **SigmaMind MCP** — Product Hunt
-  > &lt;p&gt; Build and control voice AI agents via MCP &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/product
-  https://www.producthunt.com/products/sigma-ai
+- **ContextPool** — Product Hunt
+  > &lt;p&gt; Persistent memory for AI coding agents &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/products/c
+  https://www.producthunt.com/products/contextpool
+
+- **showmd** — Product Hunt
+  > &lt;p&gt; Markdown was never meant to be previewed plain text &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.c
+  https://www.producthunt.com/products/showmd-ai-markdown-quicklook-preview
+
+- **Deconflict** — Product Hunt
+  > &lt;p&gt; Plan your WiFi and see through walls &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/products/dec
+  https://www.producthunt.com/products/deconflict
+
+- **Skills Janitor** — Product Hunt
+  > &lt;p&gt; Find which Claude Code skills you actually use &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/pr
+  https://www.producthunt.com/products/skills-janitor
+
+- **Krisp Accent Converter for YouTube** — Product Hunt
+  > &lt;p&gt; YouTube, but you clearly understand everyone &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/prod
+  https://www.producthunt.com/products/krisp
+
+- **Open Comet** — Product Hunt
+  > &lt;p&gt; The autonomous AI browser agent for deep research &amp; tasks &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.pro
+  https://www.producthunt.com/products/open-comet
 
 - **forrestchang/andrej-karpathy-skills/stargazers** — GitHub [⭐5,828]
   > A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfa
@@ -236,6 +236,10 @@
   > 这里记录每周值得分享的科技内容，周五发布。 本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。 封面图 重庆涪陵某景区架设了世界首座"巨石索桥"，桥面就是一块块巨石
   http://www.ruanyifeng.com/blog/2026/03/weekly-issue-388.html
 
+- **[Claude Code] 有没有什么简单的方法可以把 claude code 里用的模型 TPS 给算出来？现在越来越在意生成速度了** — V2EX
+  > 80 TPS 的模型和 30 TPS 的简直两个世界。前者是一个 glm 的长时间都很快 至于模型的聪明程度对我这边 spec + plan + TDD 的约束下并不是那么重要 所以不知道有什么除了肉眼以外的好方法让我测一下 现在用 cc-
+  https://www.v2ex.com/t/1205628#reply0
+
 - **[Google Gemini] Gemini 最近越来越接近不可用了** — V2EX
   > 今天真的给我做着做着气笑了 听说 Gemini 前端独具一格的优秀，俺就试着拿他逆向我司的一个表单管理系统（别问为啥需要逆向，因为可能开发的乙方都倒闭了俺们还用着他们的系统，也找不到原开发维护了）准备开发一个 ai 的 mcp 服务和 sk
   https://www.v2ex.com/t/1205627#reply0
@@ -246,7 +250,7 @@
 
 - **[Claude] 反重力里的 Claude Opus 4.6 和官网 Max/CLI 版有区别吗？感觉反重力性价比爆棚！** — V2EX
   > 大家好，最近一直在重度使用大模型，有个疑惑想请教一下用过官网 Claude Max （特别是 CLI 版本）的大佬们：请问官方原版的 Opus 4.6 ，和我们现在“反重力”客户端里调用的 Opus 4.6 ，在实际的“智力”表现、长文本上
-  https://www.v2ex.com/t/1205621#reply3
+  https://www.v2ex.com/t/1205621#reply4
 
 - **[接单] [接单] 承接企业官网 / 小程序 / 轻量系统 / AI 自动化项目，支持长期合作** — V2EX
   > 大家好，最近在做中小企业数字化项目这块，主要承接以下几类需求：1. 企业官网 / 品牌官网 / 落地页2. 小程序开发3. 系统定制4. AI 自动化不接的类型：* 需求极度模糊但希望直接报价的* 预算极低但要求全包全做的* 时间特别赶且频
@@ -255,10 +259,6 @@
 - **[问与答] 请问有推荐的云数据库吗，性价比高的** — V2EX
   > 现在用的是亚马逊的，项目是，智能硬件，长期运行的终端很多，现在每个月下来，平均一台设备消耗达到了 20 元/月。我们设备数量很大。每天数据库调用的消耗，单台费用已经快翻倍了。现在成本消耗太高了，😶，自建的话，内部讨论觉得没有用云的靠谱。我们
   https://www.v2ex.com/t/1205616#reply1
-
-- **[推广] Steam 热门游戏限时特惠，这是享受最高折扣的机会** — V2EX
-  > 大家好！今天给大家带来 ChinaPlay 的新一波折扣精选，不少“游戏经典”都来到很有诚意的低价区间；另外 ARC Raiders 的特别优惠还剩 3 天，想入坑或拉上搭子一起开荒的朋友别错过。ARC Raiders 特别席上周官方先后放
-  https://www.v2ex.com/t/1205614#reply0
 
 - **《传送门2社区版》将于 4 月 18 日公测** — Solidot
   > 《传送门2（Portal 2）》自 2011 年 4 月发布至今已有 15 年，期间模组开发者推出了多个衍生版本，包括《Portal Stories: Mel》、《Aperture Tag: The Paint Gun Testing In
@@ -600,6 +600,10 @@
   > 封面图拍摄于春节前几天去了一趟绍兴玩了几天，整体还不错，这个是用无人机拍的安昌古镇的照片，挺好玩，很水乡。 记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知 潮流工具 Kaku：为 AI Coding 
   https://weekly.tw93.fun/posts/257/
 
+- **Read OpenAI&#8217;s latest internal memo about beating the competition — including Anthropic** — The Verge
+  > OpenAI's chief revenue officer, Denise Dresser, sent a four-page memo to employees on Sunday about the company's strateg
+  https://www.theverge.com/ai-artificial-intelligence/911118/openai-memo-cro-ai-competition-anthropic
+
 - **Slate raises $650 million to make its budget electric truck** — The Verge
   > Slate Auto, the EV startup backed by Jeff Bezos, raised $650 million to fund its effort to build an affordable electric 
   https://www.theverge.com/transportation/911085/slate-truck-ev-fundraise-twg-global-bezos
@@ -620,9 +624,9 @@
   > Farmers are very busy in the spring, under pressure to get crops into the ground just as the Northern Hemisphere begins 
   https://www.theverge.com/science/910326/iran-strait-hormuz-fertilizer-feedstock-food-crisis
 
-- **Roblox has games again** — The Verge
-  > Roblox is making a subtle but notable change. After swapping the word "game" for "experience" all over its website and m
-  https://www.theverge.com/games/910699/roblox-games-experiences-switch-friends-connections
+- **Top iRestore Deals for Hair Growth and LED Therapy Devices** — Wired
+  > Today, iRestore is offering up to $900 off select devices and up to $1,550 off bundles.
+  https://www.wired.com/story/irestore-anniversary-sale-2026/
 
 - **Meta Is Warned That Facial Recognition Glasses Will Arm Sexual Predators** — Wired
   > More than 70 organizations, including the ACLU, EPIC, and Fight for the Future, say the AI smart glasses feature would e
@@ -647,10 +651,6 @@
 - **Why Is It So Hard to Fix an Electric Bike? (2026)** — Wired
   > Bike shop mechanics have lost fingers and their shirts while repairing ebikes of dubious origins. Make sure yours is rep
   https://www.wired.com/story/why-is-it-so-hard-to-fix-an-electric-bike/
-
-- **‘The Audacity’ Is the Broligarchy Takedown You Were Waiting For** — Wired
-  > AMC’s new black comedy about a manchild tech titan spinning out of control is a skewering Silicon Valley’s billionaire c
-  https://www.wired.com/story/the-audacity-is-the-broligarchy-takedown-you-were-waiting-for/
 
 - **Mythos, Muse, and the Opportunity Cost of Compute** — Stratechery
   > Does Aggregation Theory survive in a world of constrained compute? Yes, insomuch as controlling demand will give power o
@@ -1042,7 +1042,7 @@
   https://arxiv.org/abs/2603.09038
 
 
-## 科技产品（66 条）
+## 科技产品（65 条）
 
 - **从 iPhone 随阿尔忒弥斯 2 号升空，谈谈 Apple 设备的太空征程** — 少数派
   > 文章代表作者个人观点 ...
@@ -1056,23 +1056,20 @@
   > 36氪获悉，美股大型科技股盘前普跌，截至发稿，英伟达跌超1%，Meta跌0.87%，谷歌跌0.79%，微软跌0.42%，特斯拉跌0.41%，苹果跌0.36%，亚马逊跌0.14%。
   https://36kr.com/newsflashes/3765253864129284?f=rss
 
-- **Nothing Ever Happens: Polymarket bot that always buys No on non-sports markets** — Hacker News [54 pts]
+- **Nothing Ever Happens: Polymarket bot that always buys No on non-sports markets** — Hacker News [100 pts]
   https://github.com/sterlingcrispin/nothing-ever-happens
 
-- **Building a CLI for All of Cloudflare** — Hacker News [39 pts]
+- **Building a CLI for All of Cloudflare** — Hacker News [58 pts]
   https://blog.cloudflare.com/cf-cli-local-explorer/
 
-- **All elementary functions from a single binary operator** — Hacker News [679 pts]
+- **All elementary functions from a single binary operator** — Hacker News [692 pts]
   https://arxiv.org/abs/2603.21852
 
-- **US appeals court declares 158-year-old home distilling ban unconstitutional** — Hacker News [157 pts]
+- **US appeals court declares 158-year-old home distilling ban unconstitutional** — Hacker News [169 pts]
   https://nypost.com/2026/04/11/us-news/us-appeals-court-declares-158-year-old-home-distilling-ban-unconstitutional/
 
-- **The economics of software teams: Why most engineering orgs are flying blind** — Hacker News [332 pts]
+- **The economics of software teams: Why most engineering orgs are flying blind** — Hacker News [336 pts]
   https://www.viktorcessan.com/the-economics-of-software-teams/
-
-- **Android now stops you sharing your location in photos** — Hacker News [241 pts]
-  https://shkspr.mobi/blog/2026/04/android-now-stops-you-sharing-your-location-in-photos/
 
 - **雷神黑武士 · 猎刃 Pro 游戏台式电脑上市，i5-14400F + RTX 5060 版本国补价 7999 元** — IT之家
   > IT之家 4 月 13 日消息，雷神黑武士 · 猎刃 Pro 台式机今日正式上市。新机提供 i9-14900HX+5060Ti 和 i5-14400F+5060 两种配置版本，国补价 7999 元起。i9-14900HX + 5060Ti 
@@ -1481,9 +1478,9 @@
 
 ## 国际 / 地缘（9 条）
 
-- **韩国移动运营商将为其用户提供 400 Kbps 基本数据传输率** — Solidot
-  > 韩国三大移动运营商 SK Telecom、KT 和 LG Uplus 将为逾 700 万移动用户提供 400Kbps 的基本数据传输率。当用户使用的流量超过了其每月限额之后，他们的移动传输率将降至 400Kbps，但不再有流量限制。400K
-  https://www.solidot.org/story?sid=84025
+- **计算机科学的黄金期可能已结束** — Solidot
+  > 2025 年秋季美国四年制大学计算机科学专业的学生入学人数下降了 8.1%。计算机科学专业的本科排名在一年内从第四位跌至第六位，前三则一直是商科、公共卫生和人文科学。从 2008 年到 2024 年，计算机科学一直是美国增长最快的专业，如今
+  https://www.solidot.org/story?sid=84035
 
 - **中国仲裁机构首次聘请外籍专家担任执行机构负责人** — 联合早报
   > 广州仲裁委员会聘请美籍专家担任执行机构负责人，是中国大陆首例。据中新社报道，广州仲裁委员会星期二（2月3日）发布消息，委员会聘请北京大学国际法学院执行院长、法学教授马克·费尔德曼（美国籍）担任执行机构负责人，这是中国大陆仲裁机构首次聘请外籍
@@ -1563,7 +1560,7 @@
   https://www.zaobao.com/news/china/story20260204-8295210
 
 
-## 其他（78 条）
+## 其他（79 条）
 
 - **派评 | 近期值得关注的 App** — 少数派
   > >下载少数派2.0客户端、关注少数派公众号，解锁全新阅读体验📰>实用、好用的正版软件，少数派为你呈现🚀
@@ -1619,17 +1616,20 @@
 - **因为这些关键词，我不会忘掉2025** — 新周刊
   https://www.neweekly.com.cn
 
-- **Make Tmux Pretty and Usable** — Hacker News [110 pts]
+- **The Future of Everything Is Lies, I Guess: Safety** — Hacker News [21 pts]
+  https://aphyr.com/posts/417-the-future-of-everything-is-lies-i-guess-safety
+
+- **Make Tmux Pretty and Usable** — Hacker News [122 pts]
   https://hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
 
-- **We May Be Living Through the Most Consequential Hundred Days in Cyber History** — Hacker News [81 pts]
-  https://ringmast4r.substack.com/p/we-may-be-living-through-the-most
+- **The Rational Conclusion of Doomerism Is Violence** — Hacker News [4 pts]
+  https://www.campbellramble.ai/p/the-rational-conclusion
 
-- **Taking on CUDA with ROCm: 'One Step After Another'** — Hacker News [234 pts]
+- **Tracking down a 25% Regression on LLVM RISC-V** — Hacker News [6 pts]
+  https://blog.kaving.me/blog/tracking-down-a-25-regression-on-llvm-risc-v/
+
+- **Taking on CUDA with ROCm: 'One Step After Another'** — Hacker News [236 pts]
   https://www.eetimes.com/taking-on-cuda-with-rocm-one-step-after-another/
-
-- **DIY Soft Drinks** — Hacker News [611 pts]
-  https://blinry.org/diy-soft-drinks/
 
 - **我国青藏铁路进出藏货物累计突破 1 亿吨** — IT之家
   > IT之家 4 月 13 日消息，据新华社报道，青藏铁路全线通车运营 20 年来，进出藏铁路货运量稳步增长。截至 2026 年 4 月 13 日（今天），通过青藏铁路运输进出藏货物总量累计突破 1 亿吨。IT之家获悉，2006 年 7 月 1
@@ -1657,7 +1657,7 @@
 
 - **[程序员] 各位 GenZ 会考虑招比自己大两轮的下属么？** — V2EX
   > 今天收到一份简历，面试外包全栈开发 95 年上的北化工（楼主 97 ），感觉快 50 岁了，技术栈什么都很匹配，看简历也很强，但是我感觉我驾驭不了这种下属，年龄差太大了，我一怕他不服，二怕他油条，对工作没有激情，到时候又不好搞走。。。
-  https://www.v2ex.com/t/1205622#reply5
+  https://www.v2ex.com/t/1205622#reply6
 
 - **[程序员] 广州汇丰科技 Band 4 的年包是多少？有 60 万吗？** — V2EX
   > Band 4 Low 和 High 会差多少？
