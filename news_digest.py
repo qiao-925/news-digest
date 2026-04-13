@@ -1332,18 +1332,24 @@ body {{
 }}
 .date-nav-btn {{
   background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 4px 12px;
+  border: none;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--text-sec);
-  font-size: 0.85rem;
   cursor: pointer;
-  transition: all 200ms ease;
+  transition: all 150ms ease;
 }}
 .date-nav-btn:hover {{
   background: var(--bg-hover);
   color: var(--text);
-  border-color: var(--border-heavy);
+  transform: scale(1.05);
+}}
+.date-nav-btn:active {{
+  transform: scale(0.95);
 }}
 .date-nav-btn:disabled {{
   opacity: 0.4;
@@ -1779,9 +1785,17 @@ section {{ margin-bottom: 40px; }}
     <h1>Daily Digest</h1>
     <p class="sub"><span>{len(all_articles)}</span> stories &middot; {today}</p>
     <div class="date-nav">
-      <button class="date-nav-btn" id="prevDay" title="前一天">← 前一天</button>
+      <button class="date-nav-btn" id="prevDay" title="前一天">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </button>
       <span class="date-nav-current" id="dateDisplay">{today}</span>
-      <button class="date-nav-btn" id="nextDay" title="后一天">后一天 →</button>
+      <button class="date-nav-btn" id="nextDay" title="后一天">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </button>
     </div>
   </div>
 
@@ -1887,6 +1901,12 @@ section {{ margin-bottom: 40px; }}
       String(date.getDate()).padStart(2, '0');
   }}
 
+  function checkDateExists(dateStr) {{
+    return fetch('news-digest-' + dateStr + '.html', {{method: 'HEAD'}})
+      .then(r => r.status === 200)
+      .catch(() => false);
+  }}
+
   function navigateDate(deltaDays) {{
     const current = parseDate(currentDateStr);
     const target = new Date(current);
@@ -1894,6 +1914,27 @@ section {{ margin-bottom: 40px; }}
     const targetStr = formatDate(target);
     window.location.href = 'news-digest-' + targetStr + '.html';
   }}
+
+  // 检查并禁用不可用的日期按钮
+  const current = parseDate(currentDateStr);
+  const prevDate = new Date(current);
+  prevDate.setDate(prevDate.getDate() - 1);
+  const nextDate = new Date(current);
+  nextDate.setDate(nextDate.getDate() + 1);
+
+  checkDateExists(formatDate(prevDate)).then(exists => {{
+    if (!exists) {{
+      prevBtn.disabled = true;
+      prevBtn.title = '已是最早日期';
+    }}
+  }});
+
+  checkDateExists(formatDate(nextDate)).then(exists => {{
+    if (!exists) {{
+      nextBtn.disabled = true;
+      nextBtn.title = '已是最新日期';
+    }}
+  }});
 
   prevBtn.addEventListener('click', function() {{
     navigateDate(-1);
