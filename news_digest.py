@@ -12,7 +12,11 @@ import ssl
 import math as _math
 import logging as _logging
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
+
+_BJ = timezone(timedelta(hours=8))
+def _now_bj():
+    return datetime.now(_BJ)
 import jieba
 _logging.getLogger("jieba").setLevel(_logging.WARNING)
 try:
@@ -465,13 +469,13 @@ def fetch_deeplearning_batch():
 
 def fetch_hf_papers():
     """Hugging Face Daily Papers"""
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    today_str = _now_bj().strftime("%Y-%m-%d")
     url = f"https://huggingface.co/papers/date/{today_str}"
     try:
         html = get(url)
     except:
         # 如果今天没有，尝试昨天
-        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+        yesterday = (_now_bj() - timedelta(days=1)).strftime("%Y-%m-%d")
         url = f"https://huggingface.co/papers/date/{yesterday}"
         html = get(url)
     
@@ -842,7 +846,7 @@ def detect_trends(all_articles, lookback_days=3):
     import os
     from datetime import timedelta
 
-    today = datetime.now().date()
+    today = _now_bj().date()
     prev_day_titles = {}  # {day_str: [titles]}
 
     for d in range(1, lookback_days + 1):
@@ -1319,6 +1323,38 @@ body {{
   font-weight: 500;
 }}
 
+/* ── Date Nav ── */
+.date-nav {{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}}
+.date-nav-btn {{
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 12px;
+  color: var(--text-sec);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 200ms ease;
+}}
+.date-nav-btn:hover {{
+  background: var(--bg-hover);
+  color: var(--text);
+  border-color: var(--border-heavy);
+}}
+.date-nav-btn:disabled {{
+  opacity: 0.4;
+  cursor: not-allowed;
+}}
+.date-nav-current {{
+  font-size: 0.88rem;
+  color: var(--text-sec);
+  font-weight: 500;
+}}
+
 /* ── Divider ── */
 .divider {{
   height: 1px;
@@ -1742,6 +1778,11 @@ section {{ margin-bottom: 40px; }}
   <div class="hdr">
     <h1>Daily Digest</h1>
     <p class="sub"><span>{len(all_articles)}</span> stories &middot; {today}</p>
+    <div class="date-nav">
+      <button class="date-nav-btn" id="prevDay" title="前一天">← 前一天</button>
+      <span class="date-nav-current" id="dateDisplay">{today}</span>
+      <button class="date-nav-btn" id="nextDay" title="后一天">后一天 →</button>
+    </div>
   </div>
 
   <div class="divider"></div>
@@ -1828,6 +1869,39 @@ section {{ margin-bottom: 40px; }}
     const nextIndex = (currentIndex + 1) % styles.length;
     applyStyle(styles[nextIndex]);
   }});
+
+  // 日期导航
+  const prevBtn = document.getElementById('prevDay');
+  const nextBtn = document.getElementById('nextDay');
+  const dateDisplay = document.getElementById('dateDisplay');
+  const currentDateStr = '{today}';
+
+  function parseDate(str) {{
+    const [y, m, d] = str.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }}
+
+  function formatDate(date) {{
+    return date.getFullYear() + '-' +
+      String(date.getMonth() + 1).padStart(2, '0') + '-' +
+      String(date.getDate()).padStart(2, '0');
+  }}
+
+  function navigateDate(deltaDays) {{
+    const current = parseDate(currentDateStr);
+    const target = new Date(current);
+    target.setDate(target.getDate() + deltaDays);
+    const targetStr = formatDate(target);
+    window.location.href = 'news-digest-' + targetStr + '.html';
+  }}
+
+  prevBtn.addEventListener('click', function() {{
+    navigateDate(-1);
+  }});
+
+  nextBtn.addEventListener('click', function() {{
+    navigateDate(1);
+  }});
 }})()
 </script>
 </body>
@@ -1842,7 +1916,7 @@ ARCHIVE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
 def save_digest(md, html):
     import os
     os.makedirs(ARCHIVE_DIR, exist_ok=True)
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = _now_bj().strftime("%Y-%m-%d")
 
     md_path = os.path.join(ARCHIVE_DIR, f"news-digest-{today}.md")
     with open(md_path, "w", encoding="utf-8") as f:
@@ -1857,7 +1931,7 @@ def save_digest(md, html):
 
 def today_digest_path():
     import os
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = _now_bj().strftime("%Y-%m-%d")
     return os.path.join(ARCHIVE_DIR, f"news-digest-{today}.md")
 
 
@@ -1923,7 +1997,7 @@ if __name__ == "__main__":
 
     print("正在拉取各渠道...")
     all_articles, sorted_topics = collect()
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = _now_bj().strftime("%Y-%m-%d")
 
     if BUDGET_PER_TOPIC > 0:
         print(f"降噪预算: 每分类首屏 {BUDGET_PER_TOPIC} 组，学术分类 cluster 总数 14（首屏 7+展开 7），其他 7+7")

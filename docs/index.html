@@ -4,15 +4,47 @@
 <meta charset="utf-8">
 <title>每日新闻简报</title>
 <script>
-// 自动跳转到今天的简报
-const d = new Date();
+// 使用北京时间获取今天日期
+function getBeijingDate() {
+  const now = new Date();
+  const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+  const beijingTime = new Date(utc + (8 * 3600000));
+  return beijingTime;
+}
+
+const d = getBeijingDate();
 const today = d.getFullYear() + '-' +
   String(d.getMonth()+1).padStart(2,'0') + '-' +
   String(d.getDate()).padStart(2,'0');
-window.location.href = 'news-digest-' + today + '.html';
+
+// 尝试今天的简报，如果不存在则尝试回退到最近7天
+function tryNavigate(dateStr, maxBack = 7) {
+  const xhr = new XMLHttpRequest();
+  xhr.open('HEAD', 'news-digest-' + dateStr + '.html', true);
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      window.location.href = 'news-digest-' + dateStr + '.html';
+    } else {
+      const targetDate = new Date(dateStr);
+      targetDate.setDate(targetDate.getDate() - 1);
+      const prevDate = targetDate.getFullYear() + '-' +
+        String(targetDate.getMonth()+1).padStart(2,'0') + '-' +
+        String(targetDate.getDate()).padStart(2,'0');
+      const daysBack = Math.floor((d - targetDate) / (1000 * 60 * 60 * 24));
+      if (daysBack <= maxBack) {
+        tryNavigate(prevDate, maxBack);
+      } else {
+        document.body.innerHTML = '<p>未找到最近 7 天的简报，请稍后再试。</p>';
+      }
+    }
+  };
+  xhr.send();
+}
+
+tryNavigate(today);
 </script>
 </head>
 <body>
-<p>正在跳转到今日简报...</p>
+<p>正在查找最新简报...</p>
 </body>
 </html>
