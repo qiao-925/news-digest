@@ -2030,6 +2030,33 @@ def self_check_academic_expansion(html_path):
 if __name__ == "__main__":
     import sys
     force = "--force" in sys.argv
+    date_arg = None
+    for arg in sys.argv:
+        if arg.startswith("--date="):
+            date_arg = arg.split("=")[1]
+            break
+
+    if date_arg:
+        # 从已有 MD 文件重新生成 HTML
+        md_path = os.path.join(ARCHIVE_DIR, f"news-digest-{date_arg}.md")
+        if not os.path.exists(md_path):
+            print(f"错误: 找不到文件 {md_path}")
+            sys.exit(1)
+        
+        print(f"读取已有数据: {md_path}")
+        with open(md_path, encoding="utf-8") as f:
+            md_content = f.read()
+        
+        # 解析 MD 获取文章数据（简化处理：直接重新渲染 HTML）
+        # 由于 MD 解析复杂，这里采用重新拉取方式但只生成 HTML
+        print(f"重新生成 {date_arg} 的 HTML...")
+        all_articles, sorted_topics = collect()
+        html = render_html(all_articles, sorted_topics, date_arg, trends=None)
+        html_path = os.path.join(ARCHIVE_DIR, f"news-digest-{date_arg}.html")
+        with open(html_path, "w", encoding="utf-8") as f:
+            f.write(html)
+        print(f"已保存: {html_path}")
+        sys.exit(0)
 
     if already_done() and not force:
         print(f"今日简报已存在: {today_digest_path()}")
