@@ -1,10 +1,14 @@
 # 每日新闻简报 · 2026-04-14
 
-来源: 少数派 / 36氪 / 钛媒体 / 新周刊 / 知乎 | 共 474 条
+来源: 少数派 / 36氪 / 钛媒体 / 新周刊 / 知乎 | 共 486 条
 
 ---
 
-## AI / 人工智能（189 条）
+## AI / 人工智能（188 条）
+
+- **派早报：稳定版 Linux 7.0 内核发布等** — 少数派
+  > 少数派的近期动态少数派年度征文最终轮投票正在进行。手工匠人还是AI助力？选出你心目中更好的文章。前往投票薄至0.13mm的麦金獭手机钢化膜上线啦！首发限时优惠中。赶紧抢一张别让它吃灰：你为家里的「淘汰 ...
+  https://sspai.com/post/108614
 
 - **派早报：微软宣布改进和简化 Windows 预览体验计划** — 少数派
   > 微软宣布改进和简化 Windows 预览体验计划香港向汇丰和渣打发出稳定币发行人牌照红帽裁撤中国区研发团队Linux 内核项目出台 AI 代码提交规则押注天气成为热门交易形式网信办、铁路局约谈火车票销售第三方平台看看就行的简讯少数派的近期动
@@ -14,9 +18,13 @@
   > AX 专门探讨如何设计产品形态，使 AI Agent 能够可靠地「理解」、自主操作并高效集成，而非仅服务于人类用户。
   https://sspai.com/post/107600
 
-- **Claude Code+HA 自动化实战：给宠物龟请个「电子保姆」** — 少数派
-  > 养龟是个慢节奏的事。但每天翻翻聊天软件的报告，看看谁又霸占了晒背台、谁偷偷换了个位置，比蹲在缸前看半天有意思多了。
-  https://sspai.com/post/108453
+- **最前线 | 远见智存发布HBM3/3e高带宽存储芯片，带宽迈入800GB/s级别** — 36氪
+  > 作者&amp;nbsp;|&amp;nbsp;乔钰杰 编辑&amp;nbsp;|&amp;nbsp;袁斯来 近期，深圳远见智存科技有限公司发布其HBM3/3e高带宽存储芯片产品，提供12GB与24GB两种容量规格，带宽达819GB/s，对标
+  https://36kr.com/p/3765986197684736?f=rss
+
+- **半年融资近2亿，他要用AI发球机器人解决全球1亿人的训练难题｜硬氪专访** — 36氪
+  > 作者｜黄楠 编辑｜袁斯来 如果你想找庞伯特创始人张海波，大概率得去公司附近的各种球场。 张海波早把自己训练成了各种球类的高手。 2025年10月，公司网球场刚建成不久，他就拎着自家的发球机器人，从零开始学球。见到张海波时，他告诉硬氪，经过半
+  https://36kr.com/p/3764953900990977?f=rss
 
 - **荣耀做了个“养虾本”，预制5大主虾，要重新定义AI PC｜最前线** — 36氪
   > 4月13日，荣耀正式发布自研终端侧“龙虾”AI智能体YOYO Claw，并宣布其将首发搭载于被称作“养虾本”的荣耀MagicBook系列轻薄本中。 此前，荣耀曾在Magic V6旗舰新品发布会宣布要带来龙虾宇宙，支持YOYO控虾、生态养虾、
@@ -38,56 +46,58 @@
   > 01. 用AI硬扛20天，省出一辆特斯拉 回国做完四颗牙的根管治疗后，英国留学生土土盯着一万多的账单算了算，发现自己回国这一趟，竟然省下了一辆二手“特斯拉”。 就在20天前，土土的牙痛又犯了，连吃饭都变成了一种酷刑。他迫切需要找点缓解的办法
   https://36kr.com/p/3764892434711049?f=rss
 
-- **创业老炮vs00后，谁是下一代“一人公司”的标准样板** — 36氪
-  > 文｜富充 编辑｜苏建勋 2026年春天，“龙虾”火热异常，也直接带火了另一个概念：OPC（One Person Company，一人公司）。 一人公司的概念最早源于2013年英国公司法，原指法律意义上的“一人有限责任公司”。在AI浪潮下，它
-  https://36kr.com/p/3764728843289089?f=rss
+- **2026斯坦福AI指数报告：美国AI投资规模是中国的23倍，但AI模型基本没差距了** — 钛媒体
+  > 中国和美国的AI模型技术几乎势均力敌，同时，现在判断AI带来更广泛的经济影响还为时尚早。
+  https://www.tmtpost.com/7952122.html
 
-- **估值 2.5 亿，成立 4 个月，潮玩中的爱马仕 「MOMOTOY」获数千万元融资** — 36氪
-  > 资本市场对潮玩的关注一直未曾退却。 近日，36氪获悉，AI潮玩品牌「MOMOTOY」已完成数千万元融资，由翼朴基金投资，投后估值2.5亿。 成立仅4个月，MOMOTOY以999足金盲盒+AI情感交互为核心特色，走出高奢化与科技化并行的差异化
-  https://36kr.com/p/3756978314511110?f=rss
+- **Anthropic年入300亿反超OpenAI，但最可怕的不是收入** — 钛媒体
+  > 一边创造收入神话，一边主动筑起高墙。
+  https://www.tmtpost.com/7952140.html
 
-- **小红书出海业务"Redshop"即将上线；海关总署新政：9610模式退货可在全国任一海关办理；有孚国际与孚腾资本80亿美元加码亚太AI产业｜一周出海参考** — 钛媒体
-  > 一周看遍上周出海热点。
-  https://www.tmtpost.com/7951478.html
+- **AI深水区破局，解码中兴重塑政企数智化的价值公式** — 钛媒体
+  > 站在AI时代的舞台中央，中兴通讯不越位、不抢位，以“价值贡献者”的定位联动产业构建高韧性的生态体系，推动数智技术普惠。
+  https://www.tmtpost.com/7952151.html
 
-- **业绩下修股价走弱，3倍“芯片牛”成都华微高估值叙事落空？** — 钛媒体
-  > 上市前就高企的应收账款问题，在上市后不仅未得到改善，反而愈演愈烈。
-  https://www.tmtpost.com/7951428.html
+- **中国AI独角兽的“成人礼”** — 钛媒体
+  > 模型依然是关键变量，但战场已经在发生变化了
+  https://www.tmtpost.com/7952059.html
 
-- **奥特曼“四面楚歌”** — 钛媒体
-  > GPT-6发布之际连遭袭击。
-  https://www.tmtpost.com/7951338.html
-
-- **让Token融入服务：阿里为何押注“智能体经济”** — 钛媒体
-  > 阿里AI多线提速，指向了同一个答案。
-  https://www.tmtpost.com/7951332.html
-
-- **1270万应届毕业生，狂卷AI“金饭碗”** — 钛媒体
-  > 空泛的AI技能表述已无法打动企业
-  https://www.tmtpost.com/7951204.html
-
-- **Servo is now available on crates.io** — Hacker News [248 pts]
+- **Servo is now available on crates.io** — Hacker News [439 pts]
   https://servo.org/blog/2026/04/13/servo-0.1.0-release/
 
-- **Initial mainline video capture and camera support for Rockchip RK3588** — Hacker News [33 pts]
-  https://www.collabora.com/news-and-blog/news-and-events/mainline-video-capture-and-camera-support-for-rockchip-rk3588.html
+- **小米米家电动剃须刀 Pro 套装版预售：附带多功能无线充电基站、鬓角 / 鼻毛修剪器，699 元** — IT之家
+  > IT之家 4 月 14 日消息，小米官方宣布，米家电动剃须刀 Pro 套装版今日开启预售，4 月 21 日开售。该套装主要提供了多功能无线充电基站、鬓角修剪器、鼻毛修剪器及定制礼盒，提供深锖色、双色版可选，定价为 699 元，叠加国补后 5
+  https://www.ithome.com/0/938/884.htm
 
-- **MEMS Array Chip Can Project Video the Size of a Grain of Sand** — Hacker News [16 pts]
-  https://spectrum.ieee.org/mems-photonics
+- **增幅超 50%，台积电 2027 先进封装产能预估达 200 万片晶圆** — IT之家
+  > IT之家 4 月 14 日消息，科技媒体 Wccftech 昨日（4 月 13 日）发布博文，报道称面对 AI 产业面临的高级封装产能瓶颈，台积电计划改造 8 英寸晶圆厂并新建设施，预计 2027 年封装产能将从 130 万片提升至 200
+  https://www.ithome.com/0/938/883.htm
 
-- **Microsoft isn't removing Copilot from Windows 11, it's just renaming it** — Hacker News [122 pts]
-  https://www.neowin.net/opinions/microsoft-isnt-removing-copilot-from-windows-11-its-just-renaming-it/
+- **特斯拉 2026 春季更新公布：一键订阅 FSD、语音唤醒 Grok 等** — IT之家
+  > IT之家 4 月 14 日消息，特斯拉公布了 2026 年春季软件更新，这是该公司迄今为止功能密度最高的季节性版本推送。本次更新包含十二项明确命名的改动，覆盖 FSD、语音人工智能、安全警示灯、行车记录仪存储以及宠物模式显示自定义等多个方面
+  https://www.ithome.com/0/938/881.htm
 
-- **Michigan 'digital age' bills pulled after privacy concerns raised** — Hacker News [137 pts]
-  https://www.thecentersquare.com/michigan/article_7ca4e268-4a68-42fb-9042-f9d8604ebd7f.html
+- **鹏钛存储：PCIe Gen6 & CXL Gen3 固态硬盘主控已在研发** — IT之家
+  > IT之家 4 月 14 日消息，国内企业级存储主控芯片制造商鹏钛存储 PetaIO 上月末在 CFMS | MemoryS 2026 上表示，其支持 PCIe Gen6 与 CXL Gen3 的 AI 固态硬盘主控 "Titanium Hi
+  https://www.ithome.com/0/938/879.htm
 
-- **开源监控平台 Grafana 曝提示词漏洞，黑客可诱导 AI 助手泄露企业敏感数据** — IT之家
-  > IT之家 4 月 13 日消息，安全公司 Noma 发布研究报告，披露开源监控与数据可视化平台 Grafana 的 AI 助手功能中存在一项名为“GrafanaGhost”的安全漏洞，允许黑客利用“间接提示注入”（Indirect Prom
-  https://www.ithome.com/0/938/736.htm
+- **斯坦福 423 页 AI 报告出炉！中美差距仅 2.7%，清华 DeepSeek 冲进全球前十** — IT之家
+  > 今天，斯坦福 HAI 重磅发布「2026 年 AI 指数报告」！这份长达 423 页的年度报告，全面揭示了全球 AI 产业的最新权力版图。它给出了一条核心结论：AI 的本事涨得飞快；但人类衡量和管好它的能力，却没怎么跟上步伐。其中，最震撼的
+  https://www.ithome.com/0/938/869.htm
 
-- **壹号本 ONEXStation i1 迷你主机发售：AMD 锐龙 AI Max+ 395 配 128G RAM，18999 元** — IT之家
-  > IT之家 4 月 13 日消息，壹号本 ONE-NETBOOK 旗下 AI 工作站（迷你主机）ONEXStation i1 现已在京东发售，其搭载 AMD 锐龙 AI Max+ 395 处理器，配备 128GB LPDDR5-8000 RA
-  https://www.ithome.com/0/938/740.htm
+- **60 亿美元 AI 基建项目引发反弹，美国小镇选民罢免半数市议员** — IT之家
+  > IT之家 4 月 14 日消息，科技媒体 Tom's Hardware &nbsp;今天（4 月 14 日）发布博文，报道称因为 60 亿美元（IT之家注：现汇率约合 410.58 亿元人民币）的 AI 基建数据中心项目，美国密苏里州小镇 
+  https://www.ithome.com/0/938/867.htm
+
+- **智能眼镜「iPhone 时刻」终将到来，因为苹果亲自下场了** — 爱范儿
+  > 帅是第一生产力#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。
+  https://www.ifanr.com/1661905?utm_source=rss&utm_medium=rss&utm_campaign=
+
+- **早报｜iOS 26.5 Beta 2曝光地图广告机制/华为公布大阔折叠外观/不到两天，奥特曼住所再遭袭击** — 爱范儿
+  > · OpenAI 伦敦「新家」定档：首个永久办公室明年见
+· 人形机器人「上岗」景区，智元远征 A3 首批商用交付完成
+· 华为 Pura X Max 外观曝光#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时
+  https://www.ifanr.com/1662060?utm_source=rss&utm_medium=rss&utm_campaign=
 
 - **奥特曼家被扔燃烧瓶后，他发长文回应：我理解你们对 AI 的恐惧** — 爱范儿
   > 燃烧瓶砸向造 AI 的人#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。
@@ -99,14 +109,6 @@
 · 追觅俞浩：要把宇树的一切全部抢过来#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内
   https://www.ifanr.com/1661838?utm_source=rss&utm_medium=rss&utm_campaign=
 
-- **取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替** — 爱范儿
-  > 养龙虾->拿下你的爱马仕#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。
-  https://www.ifanr.com/1661725?utm_source=rss&utm_medium=rss&utm_campaign=
-
-- **Anthropic的「奥本海默时刻」：最害怕 AI 的公司，正在造最危险的 AI** — 爱范儿
-  > 发现问题，就会负责到底吗？#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。
-  https://www.ifanr.com/1661367?utm_source=rss&utm_medium=rss&utm_campaign=
-
 - **REasy** — Product Hunt
   > &lt;p&gt; The operating system for African importers &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/produc
   https://www.producthunt.com/products/reasy-2
@@ -116,32 +118,16 @@
   https://www.producthunt.com/products/vekta
 
 - **Legitify** — Product Hunt
-  > &lt;p&gt; Digital notarization across 50+ jurisdictions &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/pro
+  > &lt;p&gt; Compliant cross-border notarization, reimagined. &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/
   https://www.producthunt.com/products/legitify
-
-- **GhostDesk** — Product Hunt
-  > &lt;p&gt; Your invisible AI co-pilot for interviews &amp; meetings &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producth
-  https://www.producthunt.com/products/ghostdesk-2
-
-- **Luma Agents** — Product Hunt
-  > &lt;p&gt; Agents that plan, iterate, + refine w/ full creative context &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.prod
-  https://www.producthunt.com/products/luma-agents
-
-- **ContextPool** — Product Hunt
-  > &lt;p&gt; Persistent memory for AI coding agents &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/products/c
-  https://www.producthunt.com/products/contextpool
 
 - **showmd** — Product Hunt
   > &lt;p&gt; Markdown was never meant to be previewed plain text &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.c
   https://www.producthunt.com/products/showmd-ai-markdown-quicklook-preview
 
-- **Deconflict** — Product Hunt
-  > &lt;p&gt; Plan your WiFi and see through walls &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/products/dec
-  https://www.producthunt.com/products/deconflict
-
-- **Skills Janitor** — Product Hunt
-  > &lt;p&gt; Find which Claude Code skills you actually use &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/pr
-  https://www.producthunt.com/products/skills-janitor
+- **SigmaMind MCP** — Product Hunt
+  > &lt;p&gt; Build and control voice AI agents via MCP &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/product
+  https://www.producthunt.com/products/sigma-ai
 
 - **Krisp Accent Converter for YouTube** — Product Hunt
   > &lt;p&gt; YouTube, but you clearly understand everyone &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/prod
@@ -151,48 +137,63 @@
   > &lt;p&gt; The autonomous AI browser agent for deep research &amp; tasks &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.pro
   https://www.producthunt.com/products/open-comet
 
-- **forrestchang/andrej-karpathy-skills/stargazers** — GitHub [⭐5,828]
+- **ContextPool** — Product Hunt
+  > &lt;p&gt; Persistent memory for AI coding agents &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt.com/products/c
+  https://www.producthunt.com/products/contextpool
+
+- **Clarm** — Product Hunt
+  > &lt;p&gt; AI inbound layer to capture, qualify, and route leads &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthunt
+  https://www.producthunt.com/products/clarm-ai-technical-support
+
+- **GhostDesk** — Product Hunt
+  > &lt;p&gt; Your invisible AI co-pilot for interviews &amp; meetings &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producth
+  https://www.producthunt.com/products/ghostdesk-2
+
+- **forrestchang/andrej-karpathy-skills/stargazers** — GitHub [⭐5,733]
   > A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfa
   https://github.com/forrestchang/andrej-karpathy-skills/stargazers
 
-- **NousResearch/hermes-agent/stargazers** — GitHub [Python · ⭐11,297]
+- **NousResearch/hermes-agent/stargazers** — GitHub [Python · ⭐11,289]
   > The agent that grows with you
   https://github.com/NousResearch/hermes-agent/stargazers
 
-- **shiyu-coder/Kronos/stargazers** — GitHub [Python · ⭐1,552]
+- **shiyu-coder/Kronos/stargazers** — GitHub [Python · ⭐1,554]
   > Kronos: A Foundation Model for the Language of Financial Markets
   https://github.com/shiyu-coder/Kronos/stargazers
 
-- **thedotmack/claude-mem/stargazers** — GitHub [TypeScript · ⭐3,185]
+- **thedotmack/claude-mem/stargazers** — GitHub [TypeScript · ⭐3,175]
   > A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with 
   https://github.com/thedotmack/claude-mem/stargazers
 
-- **multica-ai/multica/stargazers** — GitHub [TypeScript · ⭐1,724]
+- **multica-ai/multica/stargazers** — GitHub [TypeScript · ⭐1,715]
   > The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound
   https://github.com/multica-ai/multica/stargazers
 
-- **coleam00/Archon/stargazers** — GitHub [TypeScript · ⭐679]
+- **coleam00/Archon/stargazers** — GitHub [TypeScript · ⭐677]
   > The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.
   https://github.com/coleam00/Archon/stargazers
 
-- **snarktank/ralph/stargazers** — GitHub [TypeScript · ⭐683]
+- **snarktank/ralph/stargazers** — GitHub [TypeScript · ⭐691]
   > Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are complete.
   https://github.com/snarktank/ralph/stargazers
 
-- **virattt/ai-hedge-fund/stargazers** — GitHub [Python · ⭐782]
+- **virattt/ai-hedge-fund/stargazers** — GitHub [Python · ⭐783]
   > An AI Hedge Fund Team
   https://github.com/virattt/ai-hedge-fund/stargazers
 
-- **anthropics/claude-cookbooks/stargazers** — GitHub [Jupyter Notebook · ⭐328]
+- **anthropics/claude-cookbooks/stargazers** — GitHub [Jupyter Notebook · ⭐1,012]
   > A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.
   https://github.com/anthropics/claude-cookbooks/stargazers
 
-- **shanraisshan/claude-code-best-practice/stargazers** — GitHub [HTML · ⭐2,477]
+- **shanraisshan/claude-code-best-practice/stargazers** — GitHub [HTML · ⭐2,461]
   > practice made claude perfect
   https://github.com/shanraisshan/claude-code-best-practice/stargazers
 
 - **HTML-in-Canvas：让 Canvas 完美渲染 HTML 的 Web 新标准** — 掘金
   https://juejin.cn/post/7627135662009073718
+
+- **从零开始:前端转型AI agent直到就业第五天-第十一天** — 掘金
+  https://juejin.cn/post/7628081158655688710
 
 - **养个 AI 合伙人：Hermes Agent 保姆级部署教程** — 掘金
   https://juejin.cn/post/7626970724986830874
@@ -200,17 +201,14 @@
 - **你的代理归我了：AI 大模型恶意中间人攻击，钱包都被转走了** — 掘金
   https://juejin.cn/post/7627257089388118025
 
-- **AI时代，程序员何去何从？别慌，看完这篇你就明白了** — 掘金
-  https://juejin.cn/post/7627041940022738998
-
 - **前端并发治理：从 Token 刷新聊起，一个 Promise 就够了** — 掘金
   https://juejin.cn/post/7626840247804592166
 
-- **Claude Code 都把宠物养进终端了，我做了一个真正能长期玩的中文宠物游戏** — 掘金
-  https://juejin.cn/post/7627050737278451755
+- **卷AI、卷算法、2026 年的前端工程师到底在卷什么？** — 掘金
+  https://juejin.cn/post/7627690218269851702
 
-- **别再只会写提示词！Superpowers 正在重新定义 AI 编程** — 掘金
-  https://juejin.cn/post/7626601782346154010
+- **😭 在公司用 AI 写代码，你们上线的时候会不会有点慌？** — 掘金
+  https://juejin.cn/post/7627039648390414370
 
 - **科技爱好者周刊（第 392 期）：axios 投毒与好莱坞式骗术** — 阮一峰
   > 这里记录每周值得分享的科技内容，周五发布。 本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。 封面图 今年就将启用的腾讯总部园区，俗称"企鹅岛"，里面不仅包括办公
@@ -236,29 +234,33 @@
   > 这里记录每周值得分享的科技内容，周五发布。 本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。 封面图 重庆涪陵某景区架设了世界首座"巨石索桥"，桥面就是一块块巨石
   http://www.ruanyifeng.com/blog/2026/03/weekly-issue-388.html
 
-- **[Claude Code] 有没有什么简单的方法可以把 claude code 里用的模型 TPS 给算出来？现在越来越在意生成速度了** — V2EX
-  > 80 TPS 的模型和 30 TPS 的简直两个世界。前者是一个 glm 的长时间都很快 至于模型的聪明程度对我这边 spec + plan + TDD 的约束下并不是那么重要 所以不知道有什么除了肉眼以外的好方法让我测一下 现在用 cc-
-  https://www.v2ex.com/t/1205628#reply0
+- **[GitHub Copilot] Copilot 崩了？** — V2EX
+  > 我在 vscode 中使用提示 Language model unavailable ，昨天还好好的，我额度才用了不到 70 ，卸载重启，重新登陆啥的都用了，还是不行。
+  https://www.v2ex.com/t/1205737#reply0
 
-- **[Google Gemini] Gemini 最近越来越接近不可用了** — V2EX
-  > 今天真的给我做着做着气笑了 听说 Gemini 前端独具一格的优秀，俺就试着拿他逆向我司的一个表单管理系统（别问为啥需要逆向，因为可能开发的乙方都倒闭了俺们还用着他们的系统，也找不到原开发维护了）准备开发一个 ai 的 mcp 服务和 sk
-  https://www.v2ex.com/t/1205627#reply0
+- **[互联网] 最近摸了个小项目， XchatAI，通过 AI 分析推文和聊天** — V2EX
+  > 最近摸了个小项目，叫 XchatAI 。可以直接把 X/Twitter 上一个账号的内容拉下来，然后基于这些内容继续聊，引用某条推文接着问也行。 说白了就是把“看 X”这件事做成了能继续对话的形式。 项目地址： https://github
+  https://www.v2ex.com/t/1205728#reply0
 
-- **[分享创造] [开源] Codeg V0.8：专注于代码生成的多智能体 IDE， cc/codex/gemini... GUI，支持 IM 消息通道，支持桌面端、服务端（含 docker）部署** — V2EX
-  > 前言 当前项目纯开源为爱发电，欢迎各种反馈，或者路线建议。 介绍 Codeg （ Code Generation ）是一个专为 AI 编码智能体（如 Claude Code 、Codex 、Gemini CLI OpenCode 等）打造的
-  https://www.v2ex.com/t/1205623#reply1
+- **[GitHub Copilot] GitHub Copilot 限流了，冷却时间 48 小时了。** — V2EX
+  > 我就知道什么事儿只要中国人民开始宣传还在 reddit 上宣传，我就知道好日子到头了。希望来个 300 美元一个月的。
+  https://www.v2ex.com/t/1205727#reply0
 
-- **[Claude] 反重力里的 Claude Opus 4.6 和官网 Max/CLI 版有区别吗？感觉反重力性价比爆棚！** — V2EX
-  > 大家好，最近一直在重度使用大模型，有个疑惑想请教一下用过官网 Claude Max （特别是 CLI 版本）的大佬们：请问官方原版的 Opus 4.6 ，和我们现在“反重力”客户端里调用的 Opus 4.6 ，在实际的“智力”表现、长文本上
-  https://www.v2ex.com/t/1205621#reply4
+- **[程序员] 20% 的代理型强力用户， 20% 完全拒绝者， 60% 仍在使用 Cursor 或类似的聊天工具** — V2EX
+  > Quoting Steve Yegge 简而言之，谷歌工程似乎在人工智能采用程度上与约翰·迪尔（拖拉机公司）处于同一水平。行业内大多数公司的内部采用曲线也大同小异：20% 的代理型强力用户，20% 完全拒绝者，60% 仍在使用 Cursor
+  https://www.v2ex.com/t/1205726#reply0
 
-- **[接单] [接单] 承接企业官网 / 小程序 / 轻量系统 / AI 自动化项目，支持长期合作** — V2EX
-  > 大家好，最近在做中小企业数字化项目这块，主要承接以下几类需求：1. 企业官网 / 品牌官网 / 落地页2. 小程序开发3. 系统定制4. AI 自动化不接的类型：* 需求极度模糊但希望直接报价的* 预算极低但要求全包全做的* 时间特别赶且频
-  https://www.v2ex.com/t/1205619#reply0
+- **[程序员] 龙虾还没玩明白，爱马仕又来了** — V2EX
+  > Hermes Agent 这个项目不到两个月 GitHub 星标突破 3 万，感觉有当初龙虾爆火那味儿了。。。社区里已经有不少从 OpenClaw 迁移过来的开发者了。 据说，比起 OpenClaw “干完一单忘一单”的尿性，Hermes 
+  https://www.v2ex.com/t/1205725#reply10
 
-- **[问与答] 请问有推荐的云数据库吗，性价比高的** — V2EX
-  > 现在用的是亚马逊的，项目是，智能硬件，长期运行的终端很多，现在每个月下来，平均一台设备消耗达到了 20 元/月。我们设备数量很大。每天数据库调用的消耗，单台费用已经快翻倍了。现在成本消耗太高了，😶，自建的话，内部讨论觉得没有用云的靠谱。我们
-  https://www.v2ex.com/t/1205616#reply1
+- **[推广] 当我把实体商品和提示词结合在一起，欢迎体验（抽定制实木相框摆台！）** — V2EX
+  > 起因：因为老婆是个粉丝头子，手下有很多人喜欢做周边收藏，有次向我提需求（她是个产品）说能不能帮他定制卡通版明星的衣服，研究了一番决定做一个可以在线定制实物的网站，通过提示词生图的方式下单不同商品 优势：个人认为市面上 AI 生图站点老多，但
+  https://www.v2ex.com/t/1205720#reply0
+
+- **扎克伯格可能很快会有他的 AI 克隆** — Solidot
+  > FT 报道，Meta 正在构建一个 AI 版本的扎克伯格（Mark Zuckerberg），代替真人与员工互动。报道援引知情人士的消息称，这是该公司目前的优先事项，扎克伯格本人亲自参与了 AI 的训练和测试。AI 的训练内容包括他的举止、语
+  https://www.solidot.org/story?sid=84036
 
 - **《传送门2社区版》将于 4 月 18 日公测** — Solidot
   > 《传送门2（Portal 2）》自 2011 年 4 月发布至今已有 15 年，期间模组开发者推出了多个衍生版本，包括《Portal Stories: Mel》、《Aperture Tag: The Paint Gun Testing In
@@ -316,10 +318,6 @@
   > 针对微软《我们对 Windows 质量的承诺》，目前 Windows 11 测试版中的记事本、截图工具已经删除了 Copilot 按钮，不再进行强制 AI 集成。@Appinn 注意，此前微软承诺要修的 Windows 11 bug，均属于
   https://www.appinn.com/notepad-snipping-tool-remove-copilot-button-windows-11/
 
-- **被 AI 编程坑过两次后，我终于做出了一个上架的微信小程序** — 小众软件
-  > 被 AI 编程坑了两次之后，我终于做出了一个上架的微信小程序：不靠“让 AI 一句话生成微信小程序”，而是换了一种方式：给数据 → 做设计 → 再开发 → 拆任务 → 多对话。 来自 @阿童木先森 的 vibe coding 作品，如果你也
-  https://www.appinn.com/ai-coding-first-mini-program/
-
 - **LongCat-Flash-Prover：AI 攻克数学定理证明，不仅要“算得对”，更要“证得严”** — 美团技术
   > 在常规的数学解题中，模型只需要“答对最终数值”即可，但数学定理证明不同，它要求极度严苛的逻辑链条，任何一句自然语言的模棱两可，都可能导致整个证明的崩塌。那么，如何让 AI 从“猜答案”走向“严谨证明”，成为复杂推理具有挑战的课题。为了解答这
   https://tech.meituan.com/2026/04/07/longcat-flash-prover.html
@@ -336,13 +334,21 @@
   > LongCat-Flash-Thinking-2601模型创新性地打造了 “重思考模式” ，通过并行推理与深度总结，实现推理宽度与深度的协同扩展，显著提升复杂交互与多步规划任务中的表现。
   https://tech.meituan.com/2026/02/02/longcat-flash-thinking-2601-techreport.html
 
-- ** 奥特曼住宅被袭：AI时代“新卢德运动”兴起的标志？ ** — 虎嗅
-  > 本文来自微信公众号： 秦朔朋友圈 ，作者：悟00000空奥特曼发文当地时间4月10日凌晨3:45左右，一名男子向OpenAI CEO山姆·奥特曼位于美国旧金山的住所投掷燃烧瓶，导致外门起火，好在燃烧瓶落地后自行熄灭，仅造成轻微损坏。嫌疑人随
-  https://www.huxiu.com/article/4850225.html?f=rss
+- ** AI算法也更喜欢网红脸？ ** — 虎嗅
+  > 本文来自微信公众号： 印客美学 ，作者：小印继易烊千玺、杨紫、肖战被AI偷脸之后。AI又把手伸向了素人。AI的脸，千篇一律本来以为AI只会偷明星的脸，没想到现在连素人也不放过。一个素人博主自己拍的汉服照片出现在了短剧《桃花簪》中。不管是外貌
+  https://www.huxiu.com/article/4850311.html?f=rss
 
-- ** 人类终于想起来该如何做人 ** — 虎嗅
-  > 本文来自微信公众号： 秦朔朋友圈 ，作者：毛大庆近一年来，人工智能以摧枯拉朽之势渗透进社会的肌理。从办公室里的文案生成、代码编写，到日常生活中的智能导航、内容推荐，再到工业生产中的自动化调度、医疗领域的辅助诊断——AI早已不是实验室里供人参
-  https://www.huxiu.com/article/4850224.html?f=rss
+- ** Token，正在重新计量世界 ** — 虎嗅
+  > 本文来自微信公众号： RUC新闻坊 ，作者：人大新闻系随着以OpenClaw为代表的AI Agent加速进入日常生活，“Token”也从技术圈的专业术语，变成越来越多人频繁提起的新词。3月23日，在中国发展高层论坛2026年年会上，国家数据
+  https://www.huxiu.com/article/4850303.html?f=rss
+
+- ** 能自己想idea、发论文、过评审的AI科学家来了，科研人要被取代了吗？ ** — 虎嗅
+  > 本文来自微信公众号： 生态学时空 ，作者：复旦赵斌，原文标题：《能自己想idea、发论文、过评审的AI科学家来了，科研人要被取代了吗？| 一起读顶刊-2026》别再万事找模板了，一切可公式化、模板化的东西，都可被AI替代。甚至AI都在做无模
+  https://www.huxiu.com/article/4850302.html?f=rss
+
+- ** AI既没你想的那么聪明，也抢不走你的饭碗 ** — 虎嗅
+  > 本文来自微信公众号： 生态学时空 ，作者：复旦赵斌，原文标题：《AI既没你想的那么聪明，也抢不走你的饭碗 | 一起读顶刊-2026》现在刷手机，到处都是AI的新闻。一会儿是AI写代码、做设计、画插画、写论文，好像啥都能干，分分钟就要超越人类
+  https://www.huxiu.com/article/4850301.html?f=rss
 
 - **研究：引入AI阅片有助提升乳腺癌筛查效果** — 联合早报(国际)
   > 瑞典一项研究发现，人工智能（AI）辅助乳腺筛查减少侵袭性“间期癌”。 （示意图 / Pixabay）瑞典隆德大学参与的一项研究显示，在乳腺癌筛查中引入人工智能（AI）辅助阅片，不仅有助于提高筛查检出能力，还能降低确诊于两次筛查之间的乳腺癌（
@@ -412,6 +418,14 @@
   > When communicating via email or chat, people prefer short and memorable messages that do not require too much cognitive 
   https://read.thecoder.cafe/p/three-bullets-one-call-to-action
 
+- **在海湾地区，乌克兰大显身手，展示了其拦截无人机的能力** — 经济学人
+  > In the Gulf, Ukraine flaunts its skill at intercepting drones
+  https://www.economist.com/europe/2026/04/13/in-the-gulf-ukraine-flaunts-its-skill-at-intercepting-drones
+
+- **匈牙利如何在当前引领反非自由主义斗争** — 经济学人
+  > How Hungary can now lead the fight against illiberalism
+  https://www.economist.com/leaders/2026/04/13/how-hungary-can-now-lead-the-fight-against-illiberalism
+
 - **中国养老金制度的缺陷暴露了其最严峻的不平等现象** — 经济学人
   > China’s pension failings expose its harshest inequality
   https://www.economist.com/china/2026/04/13/chinas-pension-failings-expose-its-harshest-inequality
@@ -424,9 +438,9 @@
   > America’s next Fed chair is caught in a vice
   https://www.economist.com/finance-and-economics/2026/04/12/americas-next-fed-chair-is-caught-in-a-vice
 
-- **英国送太多人上大学了吗？** — 经济学人
-  > Does Britain send too many people to university?
-  https://www.economist.com/britain/2026/04/12/does-britain-send-too-many-people-to-university
+- **2026 04 14 HackerNews** — SuperTechFans
+  > 2026-04-14 Hacker News Top Stories # 论文提出用单一二元算子 eml(x,y)=exp(x)-ln(y) 与常数 1 生成全部初等函数并可作可训练电路，HN 讨论了其通用性、复杂度与相较无穷级数/周期函数
+  https://supertechfans.com/cn/post/2026-04-14-HackerNews/
 
 - **2026 04 13 HackerNews** — SuperTechFans
   > 2026-04-13 Hacker News Top Stories # 以每月约20美元的极简栈（廉价VPS+Go单文件服务、本地二手卡跑AI、OpenRouter、Copilot、SQLite+WAL）稳健支撑多款月入一万美元产品，并在
@@ -436,9 +450,9 @@
   > 2026-04-10 Hacker News Top Stories # 1. Linux 版 Little Snitch (LittleSnitch for Linux) # https://obdev.at/products/littl
   https://supertechfans.com/cn/post/2026-04-10-HackerNews/
 
-- **2026 04 09 HackerNews** — SuperTechFans
-  > 2026-04-09 Hacker News Top Stories # 接触新代码库时可通过五个特定Git命令快速识别项目风险点与关键信息。 十多家科技巨头联合发起&quot;玻璃翼计划&quot;，利用前沿AI模型Claude Myth
-  https://supertechfans.com/cn/post/2026-04-09-HackerNews/
+- **2026-04-14** — 橘鸦AI早报
+  > AI 早报 2026-04-14 视频版：哔哩哔哩 ｜ YouTube 概览 模型发布 月之暗面上线 Kimi k2.6-code-preview 模型 ↗ #1 OpenRouter 上线新 stealth 模型 Elephant Alp
+  https://imjuya.github.io/juya-ai-daily/issue-59/
 
 - **2026-04-13** — 橘鸦AI早报
   > AI 早报 2026-04-13 视频版：哔哩哔哩 ｜ YouTube 概览 模型发布 MiniMax 开源 M2.7 模型，明确非商业用途限制 ↗ #1 MOSI.AI 与 OpenMOSS 开源 MOSS-TTS-Nano 语音模型 ↗
@@ -475,10 +489,6 @@
 - **2026-04-05** — 橘鸦AI早报
   > AI 早报 2026-04-05 视频版：哔哩哔哩 ｜ YouTube 概览 开发生态 Kimi 推出 Kimi Code 抢先体验计划，已开放申请 ↗ #1 产品应用 NotebookLM 升级测验闪卡功能，新增总结与建议工具 ↗ #2 
   https://imjuya.github.io/juya-ai-daily/issue-50/
-
-- **2026-04-04** — 橘鸦AI早报
-  > AI 早报 2026-04-04 视频版：哔哩哔哩 ｜ YouTube 概览 模型发布 阿里通义实验室发布 Wan2.7-Video 视频生成模型 ↗ #1 京东开源发布 JoyAI-Image 图像编辑模型权重 ↗ #2 研究团队开源 O
-  https://imjuya.github.io/juya-ai-daily/issue-49/
 
 - **Enterprises power agentic workflows in Cloudflare Agent Cloud with OpenAI** — OpenAI News
   > Cloudflare brings OpenAI’s GPT-5.4 and Codex to Agent Cloud, enabling enterprises to build, deploy, and scale AI agents 
@@ -600,29 +610,41 @@
   > 封面图拍摄于春节前几天去了一趟绍兴玩了几天，整体还不错，这个是用无人机拍的安昌古镇的照片，挺好玩，很水乡。 记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知 潮流工具 Kaku：为 AI Coding 
   https://weekly.tw93.fun/posts/257/
 
+- **Daniel Moreno-Gama is facing federal charges for attacking Sam Altman&#8217;s home and OpenAI’s HQ** — The Verge
+  > Daniel Moreno-Gama is now facing federal charges after allegedly traveling from Texas to California with the intent to k
+  https://www.theverge.com/ai-artificial-intelligence/911423/openai-sam-altman-attack
+
+- **The Mercedes EQS returns with massive range and charging gains** — The Verge
+  > A year ago, Mercedes-Benz did the prudent thing and paused its EQ lineup of electric vehicles in the US. With customer d
+  https://www.theverge.com/transportation/911196/mercedes-benz-eqs-ev-range-battery-charging-2027
+
+- **RAMageddon has come for Microsoft&#8217;s Surface Pro and Surface Laptop** — The Verge
+  > Microsoft just raised the prices across its line of Surface devices amid the global RAM shortage. Now, the 13-inch Surfa
+  https://www.theverge.com/tech/911322/microsoft-surface-price-increase-ram
+
+- **AI influencers are ‘everywhere’ at Coachella** — The Verge
+  > Coachella kicked off on Friday, and as usual, it's the place to be for online influencers looking to show off their memo
+  https://www.theverge.com/ai-artificial-intelligence/911267/ai-influencers-coachella
+
+- **Xbox Game Pass &#8216;has become too expensive,’ says Microsoft’s new gaming chief in leaked memo** — The Verge
+  > Microsoft's new Xbox chief, Asha Sharma, has signaled that Xbox Game Pass pricing is about to change. In an internal mem
+  https://www.theverge.com/tech/911182/microsoft-xbox-game-pass-too-expensive-leaked-memo
+
 - **Read OpenAI&#8217;s latest internal memo about beating the competition — including Anthropic** — The Verge
   > OpenAI's chief revenue officer, Denise Dresser, sent a four-page memo to employees on Sunday about the company's strateg
   https://www.theverge.com/ai-artificial-intelligence/911118/openai-memo-cro-ai-competition-anthropic
 
-- **Slate raises $650 million to make its budget electric truck** — The Verge
-  > Slate Auto, the EV startup backed by Jeff Bezos, raised $650 million to fund its effort to build an affordable electric 
-  https://www.theverge.com/transportation/911085/slate-truck-ev-fundraise-twg-global-bezos
+- **You Can Soon Buy a $4,370 Humanoid Robot on AliExpress** — Wired
+  > Unitree is bringing its R1 to international markets. It arrives with some aerobatic capabilities and an entry-level pric
+  https://www.wired.com/story/unitree-r1-humanoid-robot-for-sale-on-aliexpress/
 
-- **Microsoft is testing OpenClaw-like AI bots for 365 Copilot** — The Verge
-  > Microsoft is looking into ways it can integrate OpenClaw-style features into 365 Copilot, according to a report from The
-  https://www.theverge.com/tech/911080/microsoft-ai-openclaw-365-businesses
+- **What’s in Hasan Piker’s Starter Pack? Creatine, Zyns, Signal** — Wired
+  > The internet’s most jacked leftist shares the tech and daily rituals that fuel his marathon streams.
+  https://www.wired.com/story/hasan-pikers-starter-pack/
 
-- **SwitchBot’s button-pressing robot is now available with a rechargeable battery** — The Verge
-  > SwitchBot is introducing a new version of the tiny button-pressing robot that helped launch the company a decade ago. Th
-  https://www.theverge.com/tech/909765/switchbot-bot-rechargeable-smart-home-usb-c
-
-- **Mark Zuckerberg is reportedly building an AI clone to replace him in meetings** — The Verge
-  > Meta CEO Mark Zuckerberg could soon have an AI clone of himself to interact with and provide feedback to employees, acco
-  https://www.theverge.com/tech/910990/meta-ceo-mark-zuckerberg-ai-clone
-
-- **The Strait of Hormuz blockade is causing a slow-moving food crisis** — The Verge
-  > Farmers are very busy in the spring, under pressure to get crops into the ground just as the Northern Hemisphere begins 
-  https://www.theverge.com/science/910326/iran-strait-hormuz-fertilizer-feedstock-food-crisis
+- **Marine Animals in the Strait of Hormuz Don’t Get a Ceasefire** — Wired
+  > As ships return to the Strait of Hormuz, mines, sonar, and congestion continue to reshape the Gulf beneath the surface.
+  https://www.wired.com/story/marine-animals-in-the-strait-of-hormuz-dont-get-a-ceasefire/
 
 - **Top iRestore Deals for Hair Growth and LED Therapy Devices** — Wired
   > Today, iRestore is offering up to $900 off select devices and up to $1,550 off bundles.
@@ -639,18 +661,6 @@
 - **The 4 Best Water Filter Pitchers (2026): PFAS, Microplastics** — Wired
   > Water filters promise the moon—but only some back up their claims. Here are the best filtered-water pitchers for those w
   https://www.wired.com/story/best-water-filter-pitchers/
-
-- **The Dumbest Hack of the Year Exposed a Very Real Problem** — Wired
-  > Last April, a hacker hijacked crosswalk announcements to mimic Mark Zuckerberg and Elon Musk. Records obtained by WIRED 
-  https://www.wired.com/story/crosswalk-city-hack-cybersecurity-lessons/
-
-- **AI Agents Are Coming for Your Dating Life** — Wired
-  > The developers of Pixel Societies are using AI agents to simulate social interactions. It's an attempt optimize the proc
-  https://www.wired.com/story/ai-agents-are-coming-for-your-dating-life-next/
-
-- **Why Is It So Hard to Fix an Electric Bike? (2026)** — Wired
-  > Bike shop mechanics have lost fingers and their shirts while repairing ebikes of dubious origins. Make sure yours is rep
-  https://www.wired.com/story/why-is-it-so-hard-to-fix-an-electric-bike/
 
 - **Mythos, Muse, and the Opportunity Cost of Compute** — Stratechery
   > Does Aggregation Theory survive in a world of constrained compute? Yes, insomuch as controlling demand will give power o
@@ -684,56 +694,49 @@
   > An interview with Asymco's Horace Dediu about his career in tech, Apple's first 50 years, and the prospects for the next
   https://stratechery.com/2026/an-interview-with-asymcos-horace-dediu-about-apple-at-50/
 
-- **Vercel CEO Guillermo Rauch signals IPO readiness as AI agents fuel revenue surge** — TechCrunch
-  > "The company is ready and getting more ready for every day," Rauch said about an IPO at HumanX conference.
-  https://techcrunch.com/2026/04/13/vercel-ceo-guillermo-rauch-signals-ipo-readiness-as-ai-agents-fuel-revenue-surge/
+- **An Amazon warehouse worker died on the job at Oregon facility** — TechCrunch
+  > Though Amazon has faced issues with warehouse safety, the company said that the death was not work related.
+  https://techcrunch.com/2026/04/13/an-amazon-warehouse-worker-died-on-the-job-at-oregon-facility/
 
-- **Hack at Anodot leaves over a dozen breached companies facing extortion** — TechCrunch
-  > The data breach at Anodot, which affects customers like Rockstar Games, is the latest hack aimed at stealing data from a
-  https://techcrunch.com/2026/04/13/hack-at-anodot-leaves-over-a-dozen-breached-companies-facing-extortion/
+- **OpenAI has bought AI personal finance startup Hiro** — TechCrunch
+  > The acquisition indicates a capability that OpenAI is building into ChatGPT: financial planning.
+  https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/
 
-- **Slate Auto raises $650M to fund its affordable EV truck plans** — TechCrunch
-  > Slate Auto's latest funding round was led by existing investor TWG Global, a firm run by LA Dodgers owner Mark Walter.
-  https://techcrunch.com/2026/04/13/slate-auto-raises-650m-to-fund-its-affordable-ev-truck-plans/
+- **Uber and Nuro begin testing premium robotaxi service in San Francisco** — TechCrunch
+  > Uber employees can now hail a Lucid robotaxi as part of the testing.
+  https://techcrunch.com/2026/04/13/uber-nuro-san-francisco-testing-premium-robotaxi-service/
 
-- **Trump officials may be encouraging banks to test Anthropic’s Mythos model** — TechCrunch
-  > The report is particularly surprising since the Department of Defense recently declared Anthropic a supply-chain risk.
-  https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/
+- **Microsoft is working on yet another OpenClaw-like agent** — TechCrunch
+  > The new features would be geared toward enterprise customers, with better security controls than the famously risky open
+  https://techcrunch.com/2026/04/13/microsoft-is-working-on-yet-another-openclaw-like-agent/
 
-- **X says it’s reducing payments to clickbait accounts** — TechCrunch
-  > X is cutting back on payments to accounts that are “flooding the timeline” with clickbait and rapid-fire news aggregatio
-  https://techcrunch.com/2026/04/12/x-says-its-reducing-payments-to-clickbait-accounts/
+- **Stanford report highlights growing disconnect between AI insiders and everyone else** — TechCrunch
+  > Stanford’s latest AI Index shows a widening gap between experts and the public, with rising anxiety over jobs, healthcar
+  https://techcrunch.com/2026/04/13/stanford-report-highlights-growing-disconnect-between-ai-insiders-and-everyone-else/
 
-- **TechCrunch Mobility: Who is poaching all the self-driving vehicle talent?** — TechCrunch
-  > Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, how AI is playin
-  https://techcrunch.com/2026/04/12/techcrunch-mobility-who-is-poaching-all-the-self-driving-vehicle-talent/
+- **Booking.com confirms hackers accessed customers’ data** — TechCrunch
+  > The travel giant notified customers that their personal data, including names, email addresses, and phone numbers, may h
+  https://techcrunch.com/2026/04/13/booking-com-confirms-hackers-accessed-customers-data/
 
-- **From LLMs to hallucinations, here’s a simple guide to common AI terms** — TechCrunch
-  > The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most 
-  https://techcrunch.com/2026/04/12/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
-
-- **Anthropic’s Claude Mythos Problem, Dark DNA Unveiled, Pitfalls for Assistive Models, Simulating Fluid Dynamics** — The Batch
+- **The Batch: Apple Weakens Privacy, AI&#x27;s Invention Wins A Patent, Deere All-In For Robot Tractors, Atari-Playing Algo Learns New Trick** — The Batch
   https://www.deeplearning.ai/the-batch/
 
-- **Introducing DeepLearning.AI Pro** — The Batch
+- **The Batch: AI Recognizes Race in X-Rays, Robots Do Bees&#x27; Work, Transformers Pay Closer Attention, New Research Centers** — The Batch
   https://www.deeplearning.ai/the-batch/
 
-- **Reinforcement Learning Heats Up, White House Orders Muscular AI Policy, Computer Use Gains Momentum, Fine Control of Fine-Tuning** — The Batch
+- **The Batch: Gunshot Detection Under Fire, AI At The Olympics, AlphaFold Goes Open-Source, Revenge Of The Perceptrons** — The Batch
   https://www.deeplearning.ai/the-batch/
 
-- **DeepSeek Sharpens Its Reasoning: DeepSeek-R1, an affordable rival to OpenAI’s o1** — The Batch
+- **The Batch: Face Recognition Audit, Gamers Cheat with AI, Who Rules the Smart City?, Language Learning Generalizes to Other Domains** — The Batch
   https://www.deeplearning.ai/the-batch/
 
-- **Claude Code’s Source Leaks, OpenAI Exits Video Generation, Gemini Adds Music Generation, LLMs Learn at Inference** — The Batch
+- **The Batch: Amazon&#x27;s Algorithmic Mismanagement, Brainwaves to Text, OpenAI Drops Robotics, Multi-Scene Synthesis** — The Batch
   https://www.deeplearning.ai/the-batch/
 
-- **Nvidia’s Open Salvo, OpenAI’s Amazon Deal, Grok Cuts Video Prices, Recursive Language Models** — The Batch
+- **The Batch: Zillow&#x27;s New Neural Net, Optimizing Traffic City-Wide, Classifying Creepy Crawlies, Behavioral Cloning** — The Batch
   https://www.deeplearning.ai/the-batch/
 
-- **Attacks On Data Centers, Qwen3.5 In All Sizes, DeepSeek’s Huawei Play, Apple’s Multimodal Tokenizer** — The Batch
-  https://www.deeplearning.ai/the-batch/
-
-- **GPT-5.4 Makes A Splash, AI’s Growth on Mobile, Data Centers Go Off-Grid, Apple’s Diffusion Research** — The Batch
+- **The Batch: Amazon&#x27;s Grab-And-Go Grocery, The Trouble With Ethical AI, Airlines Optimized, Few-Shot Learning** — The Batch
   https://www.deeplearning.ai/the-batch/
 
 - **See all AI trends &amp; statistics** — Epoch AI
@@ -743,303 +746,327 @@
   https://epoch.ai/trends
 
 
-## 学术/AI 研究（77 条）
+## 学术/AI 研究（83 条）
 
-- **WildDet3D: Scaling Promptable 3D Detection in the Wild** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.08626
+- **Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.10098
 
-- **FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.07413
+- **Strips as Tokens: Artist Mesh Generation with Native UV Segmentation** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.09132
 
-- **RefineAnything: Multimodal Region-Specific Refinement for Perfect Local Details** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.06870
+- **OmniShow: Unifying Multimodal Conditions for Human-Object Interaction Video Generation** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.11804
 
-- **EXAONE 4.5 Technical Report** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.08644
+- **Pseudo-Unification: Entropy Probing Reveals Divergent Information Patterns in Unified Multimodal Models** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.10949
 
-- **Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.08995
+- **CodeTracer: Towards Traceable Agent States** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.11641
 
-- **ECHO: Efficient Chest X-ray Report Generation with One-step Block Diffusion** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.09450
+- **CocoaBench: Evaluating Unified Digital Agents in the Wild** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.11201
 
-- **ELT: Elastic Looped Transformers for Visual Generation** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.09168
+- **ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.11784
 
-- **Backdoor Attacks on Decentralised Post-Training** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.02372
+- **Introspective Diffusion Language Models** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.11035
 
-- **Multi-User Large Language Model Agents** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.08567
+- **General365: Benchmarking General Reasoning in Large Language Models Across Diverse and Challenging Tasks** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.11778
 
-- **VisionFoundry: Teaching VLMs Visual Perception with Synthetic Images** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.09531
+- **Audio Flamingo Next: Next-Generation Open Audio-Language Models for Speech, Sound, and Music** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.10905
 
-- **Structured Causal Video Reasoning via Multi-Objective Alignment** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.04415
+- **From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.09459
 
-- **ScheMatiQ: From Research Question to Structured Data through Interactive Schema Discovery** — 🔬 HF Papers
-  https://huggingface.co/papers/2604.09237
+- **Eliciting Medical Reasoning with Knowledge-enhanced Data Synthesis: A Semi-Supervised Reinforcement Learning Approach** — 🔬 HF Papers
+  https://huggingface.co/papers/2604.11547
 
-- **GNN-as-Judge: Unleashing the Power of LLMs for Graph Learning with GNN Feedback** — 🔬 arXiv-LG
-  > arXiv:2604.08553v1 Announce Type: new Abstract: Large Language Models (LLMs) have shown strong performance on text-attri
-  https://arxiv.org/abs/2604.08553
+- **The Diffusion-Attention Connection** — 🔬 arXiv-LG
+  > arXiv:2604.09560v1 Announce Type: new Abstract: Transformers, diffusion-maps, and magnetic Laplacians are usually treate
+  https://arxiv.org/abs/2604.09560
 
-- **Memory-Guided Trust-Region Bayesian Optimization (MG-TuRBO) for High Dimensions** — 🔬 arXiv-LG
-  > arXiv:2604.08569v1 Announce Type: new Abstract: Traffic simulation and digital-twin calibration is a challenging optimiz
-  https://arxiv.org/abs/2604.08569
+- **Fairboard: a quantitative framework for equity assessment of healthcare models** — 🔬 arXiv-LG
+  > arXiv:2604.09656v1 Announce Type: new Abstract: Despite there now being more than 1,000 FDA-authorised AI medical device
+  https://arxiv.org/abs/2604.09656
 
-- **QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation** — 🔬 arXiv-LG
-  > arXiv:2604.08570v1 Announce Type: new Abstract: Large Language Models (LLMs) are increasingly used for code generation, 
-  https://arxiv.org/abs/2604.08570
+- **Deliberative Alignment is Deep, but Uncertainty Remains: Inference time safety improvement in reasoning via attribution of unsafe behavior to base model** — 🔬 arXiv-LG
+  > arXiv:2604.09665v1 Announce Type: new Abstract: While the wide adoption of refusal training in large language models (LL
+  https://arxiv.org/abs/2604.09665
 
-- **Robust Reasoning Benchmark** — 🔬 arXiv-LG
-  > arXiv:2604.08571v1 Announce Type: new Abstract: While Large Language Models (LLMs) achieve high performance on standard 
-  https://arxiv.org/abs/2604.08571
+- **Human-like Working Memory Interference in Large Language Models** — 🔬 arXiv-LG
+  > arXiv:2604.09670v1 Announce Type: new Abstract: Intelligent systems must maintain and manipulate task-relevant informati
+  https://arxiv.org/abs/2604.09670
 
-- **Ranked Activation Shift for Post-Hoc Out-of-Distribution Detection** — 🔬 arXiv-LG
-  > arXiv:2604.08572v1 Announce Type: new Abstract: State-of-the-art post-hoc out-of-distribution detection methods rely on 
-  https://arxiv.org/abs/2604.08572
+- **Belief-State RWKV for Reinforcement Learning under Partial Observability** — 🔬 arXiv-LG
+  > arXiv:2604.09671v1 Announce Type: new Abstract: We propose a stronger formulation of RL on top of RWKV-style recurrent s
+  https://arxiv.org/abs/2604.09671
 
-- **Silhouette Loss: Differentiable Global Structure Learning for Deep Representations** — 🔬 arXiv-LG
-  > arXiv:2604.08573v1 Announce Type: new Abstract: Learning discriminative representations is a central goal of supervised 
-  https://arxiv.org/abs/2604.08573
+- **Active Inference with a Self-Prior in the Mirror-Mark Task** — 🔬 arXiv-LG
+  > arXiv:2604.09673v1 Announce Type: new Abstract: The mirror self-recognition test evaluates whether a subject touches a m
+  https://arxiv.org/abs/2604.09673
 
-- **Distilling Genomic Models for Efficient mRNA Representation Learning via Embedding Matching** — 🔬 arXiv-LG
-  > arXiv:2604.08574v1 Announce Type: new Abstract: Large Genomic Foundation Models have recently achieved remarkable result
-  https://arxiv.org/abs/2604.08574
+- **A Comparative Theoretical Analysis of Entropy Control Methods in Reinforcement Learning** — 🔬 arXiv-LG
+  > arXiv:2604.09676v1 Announce Type: new Abstract: Reinforcement learning (RL) has become a key approach for enhancing reas
+  https://arxiv.org/abs/2604.09676
 
-- **MolPaQ: Modular Quantum-Classical Patch Learning for Interpretable Molecular Generation** — 🔬 arXiv-LG
-  > arXiv:2604.08575v1 Announce Type: new Abstract: Molecular generative models must jointly ensure validity, diversity, and
-  https://arxiv.org/abs/2604.08575
+- **STaR-DRO: Stateful Tsallis Reweighting for Group-Robust Structured Prediction** — 🔬 arXiv-LG
+  > arXiv:2604.09737v1 Announce Type: new Abstract: Structured prediction requires models to generate ontology-constrained l
+  https://arxiv.org/abs/2604.09737
 
-- **Systematic API Testing Through Model Checking and Executable Contracts** — 🔬 arXiv-SE
-  > arXiv:2604.08633v1 Announce Type: new Abstract: Automated black-box testing of APIs typically relies on interface specif
-  https://arxiv.org/abs/2604.08633
+- **A Vision for Context-Aware CI Adoption Decisions** — 🔬 arXiv-SE
+  > arXiv:2604.09683v1 Announce Type: new Abstract: Continuous Integration (CI) is widely adopted in modern software develop
+  https://arxiv.org/abs/2604.09683
 
-- **An Eye for Trust: An Exploration of Developers' Trust Perceptions Through Urgency and Reputation** — 🔬 arXiv-SE
-  > arXiv:2604.08713v1 Announce Type: new Abstract: Code reuse is a widespread practice across software development projects
-  https://arxiv.org/abs/2604.08713
+- **Building an Internal Coding Agent at Zup: Lessons and Open Questions** — 🔬 arXiv-SE
+  > arXiv:2604.09805v1 Announce Type: new Abstract: Enterprise teams building internal coding agents face a gap between prot
+  https://arxiv.org/abs/2604.09805
 
-- **Demystifying the Silence of Correctness Bugs in PyTorch Compiler** — 🔬 arXiv-SE
-  > arXiv:2604.08720v1 Announce Type: new Abstract: Performance optimization of AI infrastructure is key to the fast adoptio
-  https://arxiv.org/abs/2604.08720
+- **Automating Structural Analysis Across Multiple Software Platforms Using Large Language Models** — 🔬 arXiv-SE
+  > arXiv:2604.09866v1 Announce Type: new Abstract: Recent advances in large language models (LLMs) have shown the promise t
+  https://arxiv.org/abs/2604.09866
 
-- **A Longitudinal Study of Dependency Reclassifications in JavaScript Projects** — 🔬 arXiv-SE
-  > arXiv:2604.08747v1 Announce Type: new Abstract: Modern software projects depend on third-party dependencies, whose decla
-  https://arxiv.org/abs/2604.08747
+- **Engineering Resource-constrained Software Systems with DNN Components: a Concept-based Pruning Approach** — 🔬 arXiv-SE
+  > arXiv:2604.09988v1 Announce Type: new Abstract: Deep Neural Networks (DNNs) are widely used by engineers to solve diffic
+  https://arxiv.org/abs/2604.09988
 
-- **Real-Time Toxicity Filtering for Open-Source Code Reviews** — 🔬 arXiv-SE
-  > arXiv:2604.08886v1 Announce Type: new Abstract: Toxic interactions in open-source software development harm community co
-  https://arxiv.org/abs/2604.08886
+- **MR-Coupler: Automated Metamorphic Test Generation via Functional Coupling Analysis** — 🔬 arXiv-SE
+  > arXiv:2604.10126v1 Announce Type: new Abstract: Metamorphic testing (MT) is a widely recognized technique for alleviatin
+  https://arxiv.org/abs/2604.10126
 
-- **qPRO-AQFP: Post-Routing Optimization of AQFP Circuits with Delay Line Clocking** — 🔬 arXiv-ET
-  > arXiv:2604.08705v1 Announce Type: new Abstract: Adiabatic Quantum-Flux-Parametron (AQFP) logic is an ultra-low-power sup
-  https://arxiv.org/abs/2604.08705
+- **Sense Less, Infer More: Agentic Multimodal Transformers for Edge Medical Intelligence** — 🔬 arXiv-ET
+  > arXiv:2604.10404v1 Announce Type: new Abstract: Edge-based multimodal medical monitoring requires models that balance di
+  https://arxiv.org/abs/2604.10404
 
-- **A Physically-Informed Subgraph Isomorphism Approach to Molecular Docking Using Quantum Annealers** — 🔬 arXiv-ET
-  > arXiv:2604.09540v1 Announce Type: new Abstract: Molecular docking is a crucial step in the development of new drugs as i
-  https://arxiv.org/abs/2604.09540
+- **Roadside LiDAR for Cooperative Safety Auditing at Urban Intersections: Toward Auditable V2X Infrastructure Intelligence** — 🔬 arXiv-ET
+  > arXiv:2604.10419v1 Announce Type: new Abstract: Urban intersections expose the limitations of single-vehicle perception 
+  https://arxiv.org/abs/2604.10419
 
-- **Arqon: A suite of control applications enabling a reliable quantum network** — 🔬 arXiv-ET
-  > arXiv:2604.08692v1 Announce Type: cross Abstract: A quantum network's purpose is to enable users to execute applications
-  https://arxiv.org/abs/2604.08692
-
-- **TeamLLM: Exploring the Capabilities of LLMs for Multimodal Group Interaction Prediction** — 🔬 arXiv-ET
-  > arXiv:2604.08771v1 Announce Type: cross Abstract: Predicting group behavior, how individuals coordinate, communicate, an
-  https://arxiv.org/abs/2604.08771
-
-- **Unidirectional information flow in a nanomagnetic metamaterial** — 🔬 arXiv-ET
-  > arXiv:2604.09420v1 Announce Type: cross Abstract: Artificial spin ice (ASI) are metamaterials composed of interacting na
-  https://arxiv.org/abs/2604.09420
-
-- **An Energy-Efficient Lyapunov-Based Cooperative Adaptive Cruise Controller for Electric Vehicles** — 🔬 arXiv-SY
-  > arXiv:2604.08689v1 Announce Type: new Abstract: As electric vehicles (EVs) are increasingly adopted as platforms for con
-  https://arxiv.org/abs/2604.08689
-
-- **Linear Feedback Controller for Homogeneous Polynomial Systems** — 🔬 arXiv-SY
-  > arXiv:2604.08721v1 Announce Type: new Abstract: This paper studies stabilization and its corresponding closed-loop regio
-  https://arxiv.org/abs/2604.08721
-
-- **Invariance of Competition Outcomes in Hypergraph Competitive Dynamics** — 🔬 arXiv-SY
-  > arXiv:2604.08730v1 Announce Type: new Abstract: Winner-take-all (WTA)--type selection is a fundamental mechanism in netw
-  https://arxiv.org/abs/2604.08730
-
-- **An Asynchronous Delta Modulator for Spike Encoding in Event-Driven Brain-Machine Interface** — 🔬 arXiv-SY
-  > arXiv:2604.08758v1 Announce Type: new Abstract: This paper presents the design and implementation of an asynchronous del
-  https://arxiv.org/abs/2604.08758
-
-- **Quantifying the resilience benefits of undergrounding a circuit with utility data** — 🔬 arXiv-SY
-  > arXiv:2604.08789v1 Announce Type: new Abstract: We leverage historical outage data to quantify the resilience benefits o
-  https://arxiv.org/abs/2604.08789
-
-- **Sensor Placement for Tsunami Early Warning via Large-Scale Bayesian Optimal Experimental Design** — 🔬 arXiv-DC
-  > arXiv:2604.08812v1 Announce Type: new Abstract: Real-time tsunami early warning relies on distributed sensor networks to
-  https://arxiv.org/abs/2604.08812
-
-- **Finding Nemo-Nemo: CFT DAG-based Consensus in the WAN** — 🔬 arXiv-DC
-  > arXiv:2604.08914v1 Announce Type: new Abstract: This paper introduces Nemo-Nemo, a practical crash-fault tolerant (CFT) 
-  https://arxiv.org/abs/2604.08914
-
-- **Watt Counts: Energy-Aware Benchmark for Sustainable LLM Inference on Heterogeneous GPU Architectures** — 🔬 arXiv-DC
-  > arXiv:2604.09048v1 Announce Type: new Abstract: While the large energy consumption of Large Language Models (LLMs) is re
-  https://arxiv.org/abs/2604.09048
-
-- **TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training** — 🔬 arXiv-DC
-  > arXiv:2604.09107v1 Announce Type: new Abstract: Modern LLM reinforcement learning (RL) workloads require a highly effici
-  https://arxiv.org/abs/2604.09107
-
-- **MATCHA: Efficient Deployment of Deep Neural Networks on Multi-Accelerator Heterogeneous Edge SoCs** — 🔬 arXiv-DC
-  > arXiv:2604.09124v1 Announce Type: new Abstract: Deploying DNNs on System-on-Chips (SoC) with multiple heterogeneous acce
-  https://arxiv.org/abs/2604.09124
-
-- **Automated Standardization of Legacy Biomedical Metadata Using an Ontology-Constrained LLM Agent** — 🔬 arXiv-DB
-  > arXiv:2604.08552v1 Announce Type: new Abstract: Scientific metadata are often incomplete and noncompliant with community
-  https://arxiv.org/abs/2604.08552
-
-- **QCFuse: Query-Centric Cache Fusion for Efficient RAG Inference** — 🔬 arXiv-DB
-  > arXiv:2604.08585v1 Announce Type: new Abstract: Cache fusion accelerates generation process of LLMs equipped with RAG th
-  https://arxiv.org/abs/2604.08585
-
-- **STIndex: A Context-Aware Multi-Dimensional Spatiotemporal Information Extraction System** — 🔬 arXiv-DB
-  > arXiv:2604.08597v1 Announce Type: new Abstract: Extracting structured knowledge from unstructured data still faces pract
-  https://arxiv.org/abs/2604.08597
-
-- **Evaluating Data Quality Tools: Measurement Capabilities and LLM Integration** — 🔬 arXiv-DB
-  > arXiv:2604.09163v1 Announce Type: new Abstract: High data quality is critical for reliable analytics and operational eff
-  https://arxiv.org/abs/2604.09163
-
-- **Decoupling Vector Data and Index Storage for Space Efficiency** — 🔬 arXiv-DB
-  > arXiv:2604.09173v1 Announce Type: new Abstract: Managing large-scale vector datasets with disk-based approximate nearest
-  https://arxiv.org/abs/2604.09173
-
-- **Optimal Single-Pass Streaming Lower Bounds for Approximating CSPs** — 🔬 arXiv-CC
-  > arXiv:2604.08731v1 Announce Type: new Abstract: For an arbitrary family of predicates $\mathcal{F} \subseteq \{0,1\}^{[q
-  https://arxiv.org/abs/2604.08731
-
-- **Planted clique detection and recovery from the hypergraph adjacency matrix** — 🔬 arXiv-CC
-  > arXiv:2604.08691v1 Announce Type: cross Abstract: Hypergraph data are often projected onto a weighted graph by construct
-  https://arxiv.org/abs/2604.08691
-
-- **Parameterized Complexity Of Representing Models Of MSO Formulas** — 🔬 arXiv-CC
-  > arXiv:2604.08707v1 Announce Type: cross Abstract: Monadic second order logic (MSO2) plays an important role in parameter
-  https://arxiv.org/abs/2604.08707
-
-- **Instance complexity of Boolean functions** — 🔬 arXiv-CC
-  > arXiv:2309.15026v3 Announce Type: replace Abstract: In the area of query complexity of Boolean functions, the most widel
-  https://arxiv.org/abs/2309.15026
-
-- **Accurate and Reliable Uncertainty Estimates for Deterministic Predictions Extensions to Under and Overpredictions** — 🔬 arXiv-CE
-  > arXiv:2604.08755v1 Announce Type: new Abstract: Computational models support high-stakes decisions across engineering an
-  https://arxiv.org/abs/2604.08755
-
-- **Scale-invariant projection optimization in tomographic volumetric additive manufacturing** — 🔬 arXiv-CE
-  > arXiv:2604.08997v1 Announce Type: new Abstract: Tomographic volumetric additive manufacturing (TVAM) requires projection
-  https://arxiv.org/abs/2604.08997
-
-- **Modeling and Simulation of Nitrogen Generation by Pressure Swing Adsorption for Power-to-Ammonia** — 🔬 arXiv-CE
-  > arXiv:2604.09053v1 Announce Type: new Abstract: Power-to-ammonia (P2A) provides a carbon-free alternative to conventiona
-  https://arxiv.org/abs/2604.09053
-
-- **Taming the Black Swan: A Momentum-Gated Hierarchical Optimisation Framework for Asymmetric Alpha Generation** — 🔬 arXiv-CE
-  > arXiv:2604.09060v1 Announce Type: new Abstract: Conventional momentum strategies, despite their proven efficacy in gener
-  https://arxiv.org/abs/2604.09060
-
-- **Responsive Distribution of G-normal Random Variables** — 🔬 arXiv-CE
-  > arXiv:2604.09103v1 Announce Type: new Abstract: A $G$-normal random variable $X\sim \mathcal{N}(0,[\underline{\sigma}^2,
-  https://arxiv.org/abs/2604.09103
-
-- **Towards Generalizable Representations of Mathematical Strategies** — 🔬 arXiv-CY
-  > arXiv:2604.08693v1 Announce Type: new Abstract: Pretrained encoders for mathematical texts have achieved significant imp
-  https://arxiv.org/abs/2604.08693
-
-- **Communicate-Predict-Act: Evaluating Social Intelligence of Agents** — 🔬 arXiv-CY
-  > arXiv:2604.08727v1 Announce Type: new Abstract: As large language model (LLM) agents become more prevalent in real world
-  https://arxiv.org/abs/2604.08727
-
-- **Scrapyard AI** — 🔬 arXiv-CY
-  > arXiv:2604.08803v1 Announce Type: new Abstract: This paper considers AI model churn as an opportunity for frugal investi
-  https://arxiv.org/abs/2604.08803
-
-- **Scheming in the wild: detecting real-world AI scheming incidents with open-source intelligence** — 🔬 arXiv-CY
-  > arXiv:2604.09104v1 Announce Type: new Abstract: Scheming, the covert pursuit of misaligned goals by AI systems, represen
-  https://arxiv.org/abs/2604.09104
-
-- **Artificial intelligence can persuade people to take political actions** — 🔬 arXiv-CY
-  > arXiv:2604.09200v1 Announce Type: new Abstract: There is substantial concern about the ability of advanced artificial in
-  https://arxiv.org/abs/2604.09200
-
-- **Some variations of the secretary problem** — 🔬 arXiv-DS
-  > arXiv:2604.08593v1 Announce Type: new Abstract: We consider two variations of the classical secretary problem. * A varia
-  https://arxiv.org/abs/2604.08593
-
-- **Speed Thrills: Visceral Demonstrations That Get Students Excited About Efficient Algorithms** — 🔬 arXiv-DS
-  > arXiv:2604.08938v1 Announce Type: new Abstract: We address the problem of motivating students in Data Structures and Alg
-  https://arxiv.org/abs/2604.08938
-
-- **Packing Compact Subgraphs with Applications to Districting** — 🔬 arXiv-DS
-  > arXiv:2604.09522v1 Announce Type: new Abstract: Packing disjoint subgraphs in a given graph is a fundamental problem wit
-  https://arxiv.org/abs/2604.09522
-
-- **Robust Algorithms for Finding Cliques in Random Intersection Graphs via Sum-of-Squares** — 🔬 arXiv-DS
-  > arXiv:2511.20376v5 Announce Type: replace Abstract: We study efficient algorithms for recovering cliques in dense random
-  https://arxiv.org/abs/2511.20376
-
-- **A Domain-Theoretic Foundation for Imprecise Probability and Credal Sets** — 🔬 arXiv-LO
-  > arXiv:2604.09272v1 Announce Type: new Abstract: We develop a domain-theoretic framework for imprecise probability reason
-  https://arxiv.org/abs/2604.09272
-
-- **Hypergraph Neural Networks Accelerate MUS Enumeration** — 🔬 arXiv-LO
-  > arXiv:2604.09001v1 Announce Type: cross Abstract: Enumerating Minimal Unsatisfiable Subsets (MUSes) is a fundamental tas
-  https://arxiv.org/abs/2604.09001
-
-- **A Deductive System for Contract Satisfaction Proofs** — 🔬 arXiv-LO
-  > arXiv:2604.09165v1 Announce Type: cross Abstract: Hardware-software contracts are abstract specifications of a CPU's lea
-  https://arxiv.org/abs/2604.09165
-
-- **Automatic Generation of Safety-compliant Linear Temporal Logic via Large Language Model: A Self-supervised Framework** — 🔬 arXiv-LO
-  > arXiv:2503.15840v3 Announce Type: replace Abstract: Converting high-level tasks described by natural language into forma
-  https://arxiv.org/abs/2503.15840
-
-- **Proving Circuit Functional Equivalence in Zero Knowledge** — 🔬 arXiv-LO
-  > arXiv:2601.11173v2 Announce Type: replace-cross Abstract: The modern integrated circuit ecosystem is increasingly relian
-  https://arxiv.org/abs/2601.11173
-
-- **Beyond the Individual: Virtualizing Multi-Disciplinary Reasoning for Clinical Intake via Collaborative Agents** — 🔬 arXiv-MA
-  > arXiv:2604.08927v1 Announce Type: new Abstract: The initial outpatient consultation is critical for clinical decision-ma
-  https://arxiv.org/abs/2604.08927
-
-- **Aligned Agents, Biased Swarm: Measuring Bias Amplification in Multi-Agent Systems** — 🔬 arXiv-MA
-  > arXiv:2604.08963v1 Announce Type: new Abstract: While Multi-Agent Systems (MAS) are increasingly deployed for complex wo
-  https://arxiv.org/abs/2604.08963
-
-- **Multi-agent Reinforcement Learning for Low-Carbon P2P Energy Trading among Self-Interested Microgrids** — 🔬 arXiv-MA
-  > arXiv:2604.08973v1 Announce Type: new Abstract: Uncertainties in renewable generation and demand dynamics challenge day-
-  https://arxiv.org/abs/2604.08973
-
-- **Social Reality Construction via Active Inference: Modeling the Dialectic of Conformity and Creativity** — 🔬 arXiv-MA
-  > arXiv:2604.09026v1 Announce Type: new Abstract: Social agents both internalize collective norms and reshape them through
-  https://arxiv.org/abs/2604.09026
-
-- **Plasticity-Enhanced Multi-Agent Mixture of Experts for Dynamic Objective Adaptation in UAVs-Assisted Emergency Communication Networks** — 🔬 arXiv-MA
-  > arXiv:2604.09028v1 Announce Type: new Abstract: Unmanned aerial vehicles serving as aerial base stations can rapidly res
-  https://arxiv.org/abs/2604.09028
-
-- **Choose, Don't Label: Multiple-Choice Query Synthesis for Program Disambiguation** — 🔬 arXiv-PL
-  > arXiv:2604.08792v1 Announce Type: new Abstract: High-level specifications of code are inherently ambiguous, and prior sy
-  https://arxiv.org/abs/2604.08792
-
-- **Tracers for debugging and program exploration** — 🔬 arXiv-PL
-  > arXiv:2604.09301v1 Announce Type: new Abstract: Programmers often use an iterative process of hypothesis generation ("pe
-  https://arxiv.org/abs/2604.09301
-
-- **CIR+CVN: Bridging LLM Semantic Understanding and Petri-Net Verification for Concurrent Programs** — 🔬 arXiv-PL
-  > arXiv:2604.09318v1 Announce Type: new Abstract: Recovering concurrency structure directly from source code is difficult 
-  https://arxiv.org/abs/2604.09318
-
-- **Accelerating High-Order Finite Element Simulations at Extreme Scale with FP64 Tensor Cores** — 🔬 arXiv-PF
-  > arXiv:2603.09038v2 Announce Type: replace-cross Abstract: Finite element simulations play a critical role in a wide rang
-  https://arxiv.org/abs/2603.09038
+- **Entangled happily ever after: Wedding reception seating mapped to classical and quantum optimizers** — 🔬 arXiv-ET
+  > arXiv:2604.10497v1 Announce Type: new Abstract: Although optimization is one of the most promising applications of quant
+  https://arxiv.org/abs/2604.10497
+
+- **Connecting Distributed Ledgers: Surveying Novel Interoperability Solutions in On-chain Finance** — 🔬 arXiv-ET
+  > arXiv:2603.21797v1 Announce Type: cross Abstract: This paper emphasizes the critical role of interoperability in enablin
+  https://arxiv.org/abs/2603.21797
+
+- **Persistent Identity in AI Agents: A Multi-Anchor Architecture for Resilient Memory and Continuity** — 🔬 arXiv-ET
+  > arXiv:2604.09588v1 Announce Type: cross Abstract: Modern AI agents suffer from a fundamental identity problem: when cont
+  https://arxiv.org/abs/2604.09588
+
+- **On Feedback Speed Control for a Planar Tracking** — 🔬 arXiv-SY
+  > arXiv:2604.09795v1 Announce Type: new Abstract: This paper investigates a planar tracking problem between a leader and f
+  https://arxiv.org/abs/2604.09795
+
+- **Variable Dead-Time Based Novel Soft-Start Method for Dual Active Bridge Converters** — 🔬 arXiv-SY
+  > arXiv:2604.09811v1 Announce Type: new Abstract: Effective startup control is critical for the safe and reliable operatio
+  https://arxiv.org/abs/2604.09811
+
+- **Agentic Workflows for Resolving Conflict Over Shared Resources: A Power Grid Application** — 🔬 arXiv-SY
+  > arXiv:2604.09823v1 Announce Type: new Abstract: The increasing use of LLM-based agents to support decision-making and co
+  https://arxiv.org/abs/2604.09823
+
+- **Online Electricity Pricing from Frequency Measurements** — 🔬 arXiv-SY
+  > arXiv:2604.09931v1 Announce Type: new Abstract: Frequency dynamics in power systems reflect active power imbalance in re
+  https://arxiv.org/abs/2604.09931
+
+- **Agentic Application in Power Grid Static Analysis: Automatic Code Generation and Error Correction** — 🔬 arXiv-SY
+  > arXiv:2604.09995v1 Announce Type: new Abstract: This paper introduces an LLM agent that automates power grid static anal
+  https://arxiv.org/abs/2604.09995
+
+- **Para-B&B: Load-Balanced Deterministic Parallelization of Solving MIP** — 🔬 arXiv-DC
+  > arXiv:2604.09556v1 Announce Type: new Abstract: Mixed-integer programming (MIP) extends linear programming by incorporat
+  https://arxiv.org/abs/2604.09556
+
+- **SPEED-Bench: A Unified and Diverse Benchmark for Speculative Decoding** — 🔬 arXiv-DC
+  > arXiv:2604.09557v1 Announce Type: new Abstract: Speculative Decoding (SD) has emerged as a critical technique for accele
+  https://arxiv.org/abs/2604.09557
+
+- **VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination** — 🔬 arXiv-DC
+  > arXiv:2604.09558v1 Announce Type: new Abstract: With the widening gap between compute and memory operation latencies, da
+  https://arxiv.org/abs/2604.09558
+
+- **Interferences within a certifiable design methodology for high-performance multi-core platforms** — 🔬 arXiv-DC
+  > arXiv:2604.09559v1 Announce Type: new Abstract: The adoption of high-performance multi-core platforms in avionics and au
+  https://arxiv.org/abs/2604.09559
+
+- **StreamServe: Adaptive Speculative Flows for Low-Latency Disaggregated LLM Serving** — 🔬 arXiv-DC
+  > arXiv:2604.09562v1 Announce Type: new Abstract: Efficient LLM serving must balance throughput and latency across diverse
+  https://arxiv.org/abs/2604.09562
+
+- **Horrila: Cost-Based Placement of Semantic Operators in Hybrid Query Plans** — 🔬 arXiv-DB
+  > arXiv:2604.09944v1 Announce Type: new Abstract: Recent database systems have introduced semantic operators that leverage
+  https://arxiv.org/abs/2604.09944
+
+- **gMatch: Fine-Grained and Hardware-Efficient Subgraph Matching on GPUs** — 🔬 arXiv-DB
+  > arXiv:2604.10601v1 Announce Type: new Abstract: Subgraph matching is a core operation in graph analytics, supporting a b
+  https://arxiv.org/abs/2604.10601
+
+- **Natural Language to What? A Vision for Intermediate Representations in NL-to-X Querying** — 🔬 arXiv-DB
+  > arXiv:2604.10776v1 Announce Type: new Abstract: Natural-language-initiated querying is usually framed as translation int
+  https://arxiv.org/abs/2604.10776
+
+- **Ozone: A Unified Platform for Transportation Research** — 🔬 arXiv-DB
+  > arXiv:2604.10959v1 Announce Type: new Abstract: Intelligent Transportation Systems increasingly depend on heterogeneous 
+  https://arxiv.org/abs/2604.10959
+
+- **Foundations of the GraphAlg Language** — 🔬 arXiv-DB
+  > arXiv:2604.11454v1 Announce Type: new Abstract: The GraphAlg domain-specific language for graph algorithms enables user-
+  https://arxiv.org/abs/2604.11454
+
+- **Complexity of Consistency Testing for the Release-Acquire Semantics** — 🔬 arXiv-CC
+  > arXiv:2604.09589v1 Announce Type: new Abstract: In a seminal work, Gibbons and Korach studied the complexity of deciding
+  https://arxiv.org/abs/2604.09589
+
+- **Complexity Theory meets Ordinary Differential Equations** — 🔬 arXiv-CC
+  > arXiv:2604.09790v1 Announce Type: new Abstract: This contribution investigates the computational complexity of simulatin
+  https://arxiv.org/abs/2604.09790
+
+- **Near Optimal Algorithms for Noisy $k$-XOR under Low-Degree Heuristic** — 🔬 arXiv-CC
+  > arXiv:2604.10457v1 Announce Type: new Abstract: Noisy $k$-XOR is a basic average-case inference problem in which one obs
+  https://arxiv.org/abs/2604.10457
+
+- **Geometric Interpretation of 3-SAT and Phase Transition** — 🔬 arXiv-CC
+  > arXiv:2509.19740v2 Announce Type: cross Abstract: Interpretation of 3-SAT as a volume filling problem, and its use to ex
+  https://arxiv.org/abs/2509.19740
+
+- **Algorithms for Standard-form ILP Problems via Koml\'os' Discrepancy Setting** — 🔬 arXiv-CC
+  > arXiv:2604.09806v1 Announce Type: cross Abstract: We study the standard-form ILP problem $\max\{ c^\top x \colon A x = b
+  https://arxiv.org/abs/2604.09806
+
+- **What Happens When Institutional Liquidity Enters Prediction Markets: Identification, Measurement, and a Synthetic Proof of Concept** — 🔬 arXiv-CE
+  > arXiv:2604.10005v1 Announce Type: new Abstract: Prediction markets are starting to look less like crowd polls and more l
+  https://arxiv.org/abs/2604.10005
+
+- **Data-adaptive spline surfaces for non-separable hyperelastic energy functions** — 🔬 arXiv-CE
+  > arXiv:2604.10059v1 Announce Type: new Abstract: Invariant-based models for incompressible isotropic hyperelasticity are 
+  https://arxiv.org/abs/2604.10059
+
+- **GasLiteAA: Optimizing ERC-4337 for Efficient and Secure Gas Sponsorship** — 🔬 arXiv-CE
+  > arXiv:2604.10160v1 Announce Type: new Abstract: ERC-4337, the Ethereum account abstraction standard, simplifies account 
+  https://arxiv.org/abs/2604.10160
+
+- **A Total Lagrangian Finite Element Framework for Multibody Dynamics: Part II -- GPU Implementation and Numerical Experiments** — 🔬 arXiv-CE
+  > arXiv:2604.10357v1 Announce Type: new Abstract: We present the numerical methods and GPU-accelerated implementation unde
+  https://arxiv.org/abs/2604.10357
+
+- **Driving-Cycle-Aware Shape and Topology Optimization of an Interior Permanent Magnet Synchronous Machine for a Traction Drive** — 🔬 arXiv-CE
+  > arXiv:2604.10640v1 Announce Type: new Abstract: This paper presents a driving-cycle-aware shape and topology optimizatio
+  https://arxiv.org/abs/2604.10640
+
+- **Assessing the Pedagogical Readiness of Large Language Models as AI Tutors in Low-Resource Contexts: A Case Study of Nepal's K-10 Curriculum** — 🔬 arXiv-CY
+  > arXiv:2604.09619v1 Announce Type: new Abstract: The integration of Large Language Models (LLMs) into educational ecosyst
+  https://arxiv.org/abs/2604.09619
+
+- **LLM Nepotism in Organizational Governance** — 🔬 arXiv-CY
+  > arXiv:2604.09620v1 Announce Type: new Abstract: Large language models are increasingly used to support organizational de
+  https://arxiv.org/abs/2604.09620
+
+- **Explainability and Certification of AI-Generated Educational Assessments** — 🔬 arXiv-CY
+  > arXiv:2604.09622v1 Announce Type: new Abstract: The rapid adoption of generative artificial intelligence (AI) in educati
+  https://arxiv.org/abs/2604.09622
+
+- **The Hourglass Revolution: A Theoretical Framework of AI's Impact on Organizational Structures in Developed and Emerging Markets** — 🔬 arXiv-CY
+  > arXiv:2604.09623v1 Announce Type: new Abstract: This paper presents a theoretical framework examining how artificial int
+  https://arxiv.org/abs/2604.09623
+
+- **Investigating Vaccine Buyer's Remorse: Post-Vaccination Decision Regret in COVID-19 Social Media Using Politically Diverse Human Annotation** — 🔬 arXiv-CY
+  > arXiv:2604.09626v1 Announce Type: new Abstract: A significant gap exists in datasets regarding post-COVID-19 vaccination
+  https://arxiv.org/abs/2604.09626
+
+- **On the Approximability of Max-Cut on 3-Colorable Graphs and Graphs with Large Independent Sets** — 🔬 arXiv-DS
+  > arXiv:2604.10318v1 Announce Type: new Abstract: Max-Cut is a classical graph-partitioning problem where given a graph $G
+  https://arxiv.org/abs/2604.10318
+
+- **Optimal FPT-Approximability for Modular Linear Equations** — 🔬 arXiv-DS
+  > arXiv:2604.10369v1 Announce Type: new Abstract: We show optimal FPT-approximability results for solving almost satisfiab
+  https://arxiv.org/abs/2604.10369
+
+- **Tradeoffs in Privacy, Welfare, and Fairness for Facility Location** — 🔬 arXiv-DS
+  > arXiv:2604.10443v1 Announce Type: new Abstract: The differentially private (DP) facility location problem seeks to deter
+  https://arxiv.org/abs/2604.10443
+
+- **Edge-Tilting Field Dynamics: Rapid Mixing at the Uniqueness Threshold and Optimal Mixing for Swendsen-Wang Dynamics** — 🔬 arXiv-DS
+  > arXiv:2604.10525v1 Announce Type: new Abstract: We prove two results on the mixing times of Markov chains for two-spin s
+  https://arxiv.org/abs/2604.10525
+
+- **Neuro-Symbolic Strong-AI Robots with Closed Knowledge Assumption: Learning and Deductions** — 🔬 arXiv-LO
+  > arXiv:2604.09567v1 Announce Type: new Abstract: Knowledge representation formalisms are aimed to represent general conce
+  https://arxiv.org/abs/2604.09567
+
+- **A Linear Temporal Logic of Frequencies on Series of Events** — 🔬 arXiv-LO
+  > arXiv:2604.10669v1 Announce Type: new Abstract: This paper introduces LTLF, a temporal logic designed to express the fre
+  https://arxiv.org/abs/2604.10669
+
+- **Knowledge on a Budget** — 🔬 arXiv-LO
+  > arXiv:2604.11245v1 Announce Type: new Abstract: In various computational systems, accessing information incurs time, mem
+  https://arxiv.org/abs/2604.11245
+
+- **Factorizing formal contexts from closures of necessity operators** — 🔬 arXiv-LO
+  > arXiv:2604.09582v1 Announce Type: cross Abstract: Factorizing datasets is an interesting process in a multitude of appro
+  https://arxiv.org/abs/2604.09582
+
+- **Heterogeneous Consensus-Progressive Reasoning for Efficient Multi-Agent Debate** — 🔬 arXiv-MA
+  > arXiv:2604.09679v1 Announce Type: new Abstract: Multi-Agent Debate (MAD) is a collaborative framework in which multiple 
+  https://arxiv.org/abs/2604.09679
+
+- **MPAC: A Multi-Principal Agent Coordination Protocol for Interoperable Multi-Agent Collaboration** — 🔬 arXiv-MA
+  > arXiv:2604.09744v1 Announce Type: new Abstract: The AI agent ecosystem has converged on two protocols: the Model Context
+  https://arxiv.org/abs/2604.09744
+
+- **CONSCIENTIA: Can LLM Agents Learn to Strategize? Emergent Deception and Trust in a Multi-Agent NYC Simulation** — 🔬 arXiv-MA
+  > arXiv:2604.09746v1 Announce Type: new Abstract: As large language models (LLMs) are increasingly deployed as autonomous 
+  https://arxiv.org/abs/2604.09746
+
+- **Toward Explanatory Equilibrium: Verifiable Reasoning as a Coordination Mechanism under Asymmetric Information** — 🔬 arXiv-MA
+  > arXiv:2604.09917v1 Announce Type: new Abstract: LLM-based agents increasingly coordinate decisions in multi-agent system
+  https://arxiv.org/abs/2604.09917
+
+- **Prosociality by Coupling, Not Mere Observation: Homeostatic Sharing in an Inspectable Recurrent Artificial Life Agent** — 🔬 arXiv-MA
+  > arXiv:2604.10760v1 Announce Type: new Abstract: Artificial agents can be made to "help" for many reasons, including expl
+  https://arxiv.org/abs/2604.10760
+
+- **SSA without Dominance for Higher-Order Programs** — 🔬 arXiv-PL
+  > arXiv:2604.09961v1 Announce Type: new Abstract: Dominance is a fundamental concept in compilers based on static single a
+  https://arxiv.org/abs/2604.09961
+
+- **Vanilla Object Orientation (VOO): A Value-Semantics Approach to Classes in Tcl** — 🔬 arXiv-PL
+  > arXiv:2604.10399v1 Announce Type: new Abstract: I present Vanilla Object Orientation (VOO), a framework that composes cl
+  https://arxiv.org/abs/2604.10399
+
+- **Points-to Analysis Using MDE: A Multi-level Deduplication Engine for Repetitive Data and Operations** — 🔬 arXiv-PL
+  > arXiv:2604.10445v1 Announce Type: new Abstract: Precise pointer analysis is a foundational component of many client anal
+  https://arxiv.org/abs/2604.10445
+
+- **Denotational reasoning for asynchronous multiparty session types** — 🔬 arXiv-PL
+  > arXiv:2604.10646v1 Announce Type: new Abstract: We provide the first denotational semantics for asynchronous multiparty 
+  https://arxiv.org/abs/2604.10646
+
+- **Emulation-Completeness of Programming Languages** — 🔬 arXiv-PL
+  > arXiv:2604.11021v1 Announce Type: new Abstract: We study when a programming language can emulate programs written in tha
+  https://arxiv.org/abs/2604.11021
+
+- **Mosaic: Cross-Modal Clustering for Efficient Video Understanding** — 🔬 arXiv-PF
+  > arXiv:2604.10060v1 Announce Type: new Abstract: Large vision-language models (VLMs) are enabling interactive video reaso
+  https://arxiv.org/abs/2604.10060
+
+- **WaveTune: Wave-aware Bilinear Modeling for Efficient GPU Kernel Auto-tuning** — 🔬 arXiv-PF
+  > arXiv:2604.10187v1 Announce Type: new Abstract: The rapid adoption of Large Language Models (LLMs) has made GPU inferenc
+  https://arxiv.org/abs/2604.10187
+
+- **Architectural Trade-offs in the Energy-Efficient Era: A Comparative Study of power-capping NVIDIA H100 and H200** — 🔬 arXiv-PF
+  > arXiv:2604.11391v1 Announce Type: new Abstract: Modern NVIDIA GPUs like the H100 (HBM2e) and H200 (HBM3e) share similar 
+  https://arxiv.org/abs/2604.11391
+
+- **Simplicity Scales** — 🔬 arXiv-PF
+  > arXiv:2604.09591v1 Announce Type: cross Abstract: The dominant data interchange formats encode integers using a variable
+  https://arxiv.org/abs/2604.09591
+
+- **MoEITS: A Green AI approach for simplifying MoE-LLMs** — 🔬 arXiv-PF
+  > arXiv:2604.10603v1 Announce Type: cross Abstract: Large language models are transforming all areas of academia and indus
+  https://arxiv.org/abs/2604.10603
 
 
 ## 科技产品（65 条）
@@ -1052,66 +1079,56 @@
   > 我们把 Find N6 带进生活，带进真实场景，看看它用起来到底怎么样。
   https://sspai.com/post/108469
 
-- **美股大型科技股盘前普跌，英伟达跌超1%** — 36氪
-  > 36氪获悉，美股大型科技股盘前普跌，截至发稿，英伟达跌超1%，Meta跌0.87%，谷歌跌0.79%，微软跌0.42%，特斯拉跌0.41%，苹果跌0.36%，亚马逊跌0.14%。
-  https://36kr.com/newsflashes/3765253864129284?f=rss
+- **8点1氪丨“马斯克版微信”将于4月17日上线；美军开始拦截进出霍尔木兹海峡船只；字节与荣耀合作“豆包手机”细节尚未达成一致** — 36氪
+  > 今日热点导览 张雪回应机车新手禁令 西班牙首相桑切斯参观小米科技园 中央网信办：加强网络直播打赏规范管理 小红书跨境电商平台Redshop将于今年6月正式上线 A股景气度投资或回归主线 TOP3大新闻 “马斯克版微信”或在4月17日上线 美
+  https://36kr.com/p/3765932138103554?f=rss
 
-- **Nothing Ever Happens: Polymarket bot that always buys No on non-sports markets** — Hacker News [100 pts]
+- **瑞士信息与通信科技公司DemoSquare研发公共事务监测与分析软件，提升公共事务处理效率** — 钛媒体
+  > 每周可减少20小时的工作量。
+  https://www.tmtpost.com/7952148.html
+
+- **L3能不能跳过？华为死磕必经之路，小鹏带头直扑L4** — 钛媒体
+  > 所以L3存废之争，本质是政策红利之争。不过，就在L3还刚刚开始试点之际，就有一批从业者认为要跳过L3、直奔L4，体现出“信心上的大跃进”，他们看到了什么？华为难道没看到？
+  https://www.tmtpost.com/7952170.html
+
+- **Nothing Ever Happens: Polymarket bot that always buys No on non-sports markets** — Hacker News [374 pts]
   https://github.com/sterlingcrispin/nothing-ever-happens
 
-- **Building a CLI for All of Cloudflare** — Hacker News [58 pts]
-  https://blog.cloudflare.com/cf-cli-local-explorer/
+- **Rust Threads on the GPU** — Hacker News [14 pts]
+  https://www.vectorware.com/blog/threads-on-gpu/
 
-- **All elementary functions from a single binary operator** — Hacker News [692 pts]
-  https://arxiv.org/abs/2603.21852
-
-- **US appeals court declares 158-year-old home distilling ban unconstitutional** — Hacker News [169 pts]
+- **US appeals court declares 158-year-old home distilling ban unconstitutional** — Hacker News [330 pts]
   https://nypost.com/2026/04/11/us-news/us-appeals-court-declares-158-year-old-home-distilling-ban-unconstitutional/
 
-- **The economics of software teams: Why most engineering orgs are flying blind** — Hacker News [336 pts]
-  https://www.viktorcessan.com/the-economics-of-software-teams/
+- **Building a CLI for all of Cloudflare** — Hacker News [276 pts]
+  https://blog.cloudflare.com/cf-cli-local-explorer/
 
-- **雷神黑武士 · 猎刃 Pro 游戏台式电脑上市，i5-14400F + RTX 5060 版本国补价 7999 元** — IT之家
-  > IT之家 4 月 13 日消息，雷神黑武士 · 猎刃 Pro 台式机今日正式上市。新机提供 i9-14900HX+5060Ti 和 i5-14400F+5060 两种配置版本，国补价 7999 元起。i9-14900HX + 5060Ti 
-  https://www.ithome.com/0/938/745.htm
+- **华硕破晓 Ultra 新增 32GB 内存版本：X7 358H 处理器 + 2.8K OLED 触控屏，重 1.1kg 厚 10.9mm** — IT之家
+  > IT之家 4 月 14 日消息，华硕破晓 Ultra 笔记本电脑于今年 1 月发售，首发价 16999 元（64GB 内存 + 2TB 固态硬盘），但现在已经涨至 19999 元。华硕今日新上架了一款搭载 32GB 内存 + 1TB 固态硬
+  https://www.ithome.com/0/938/874.htm
 
-- **鸿蒙智行官方首曝全新一代问界 M9 系列星际贯穿式“大”蓝灯实车点亮效果** — IT之家
-  > IT之家 4 月 13 日消息，鸿蒙智行全新一代问界 M9 已于今日上午正式首发亮相。IT之家注意到，在官方今日发布的视频里，还首次展示了全新一代问界 M9 系列的星际贯穿式“大”蓝灯实车点亮效果。画面显示，新车除了前脸的贯穿式蓝灯外，还在
-  https://www.ithome.com/0/938/744.htm
-
-- **大疆 Osmo Pocket 4 Pro 手持云台相机谍照曝光，双摄设计** — IT之家
-  > IT之家 4 月 13 日消息，消息人士 Igor Bogdanov 今天在 X 平台发文，放出大疆 Osmo Pocket 4 Pro 手持云台相机的谍照。从照片中可以看到，Osmo Pocket 4 Pro 的云台模组体积较大，采用双摄
-  https://www.ithome.com/0/938/743.htm
-
-- **OPPO Pad 5 Pro 平板现身官网：三色齐发，至高 16GB+512GB 规格** — IT之家
-  > IT之家 4 月 13 日消息，OPPO 官方今日终于公开了 OPPO Pad 5 Pro 平板的外观。新机三色齐发，主打“优雅”和“高级”特点，包括「晨曦金」、「摩卡棕」和「莫奈紫」，新机将在 4 月 21 日 19:00 全球首发。IT
-  https://www.ithome.com/0/938/733.htm
+- **消息称三星电子重视空间半导体，积极推进相关研发** — IT之家
+  > IT之家 4 月 14 日消息，韩媒 MK 当地时间本月 9 日报道称，三星电子重视空间半导体领域，正积极推进相关研发工作。报道指出，三星半导体的存储器业务已在去年启动 DRAM 和 NAND 的空间环境性能验证；而晶圆代工业务也将空间半导
+  https://www.ithome.com/0/938/870.htm
 
 - **Apple Vision Pro 没有完蛋** — 爱范儿
   > 而是从工程问题，转到影视问题。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。
   https://www.ifanr.com/1662019?utm_source=rss&utm_medium=rss&utm_campaign=
 
-- **vivo Pad6 Pro 体验：要的，就是这块 4K 超大屏** — 爱范儿
-  > 你买的是超清高质高刷扩展屏，同时也是全能旗舰 Android 平板。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。
-  https://www.ifanr.com/1661796?utm_source=rss&utm_medium=rss&utm_campaign=
-
-- **microsoft/markitdown/stargazers** — GitHub [Python · ⭐2,811]
+- **microsoft/markitdown/stargazers** — GitHub [Python · ⭐2,808]
   > Python tool for converting files and office documents to Markdown.
   https://github.com/microsoft/markitdown/stargazers
 
-- **jamiepine/voicebox/stargazers** — GitHub [TypeScript · ⭐652]
+- **jamiepine/voicebox/stargazers** — GitHub [TypeScript · ⭐512]
   > The open-source voice synthesis studio
   https://github.com/jamiepine/voicebox/stargazers
 
 - **别让压图拖垮首帧：系统 Picker + TaskPool + ImagePacker，把 HarmonyOS 图片整理链路做顺** — 掘金
   https://juejin.cn/post/7627665051667283983
 
-- **[NAS] 群晖自带 ddns 实现 ipv6 外网访问的问题** — V2EX
-  > 我只有 ipv6 ，没有 ipv4 的外网 ip ，所以就用了群晖自带的 ddns 。现在的问题是：用家里的 wifi 可以用 xxx.i234.me 域名访问，但用手机 5g 就不行。自己有群晖的 qc ，速度也就 2m/s 左右，如果能
-  https://www.v2ex.com/t/1205624#reply0
-
-- **[问与答] 预算 3500，恳请推荐笔记本电脑，主要用途：网页、视频、文档，偶尔制作短视频、编程语言学习** — V2EX
-  https://www.v2ex.com/t/1205615#reply1
+- **[分享创造] [免费分享] 厌倦了臃肿偷隐私的输入法？我给自己写了个干净的跨平台输入效率工具** — V2EX
+  > 最近花了三个月时间打磨和深度使用，给自己打造了一个桌面端输入法兼效率工具「素言 SuYan 」。 主要想解决市面上商业输入法普遍存在的痛点： 隐私焦虑：受够了强制联网上传隐私数据，即使不用也在后台偷偷上传 臃肿干扰：各种弹窗、广告和捆绑功能
+  https://www.v2ex.com/t/1205730#reply0
 
 - **Google Play 下架《心跳文学部》** — Solidot
   > Google Play 下架了《心跳文学部（Doki Doki Literature Club）》，理由是游戏内容违反了与敏感主题相关的服务条款。作者 Dan Salvato 在一份声明中表示在致力于让游戏在 Google Play 重新上
@@ -1124,6 +1141,10 @@
 - **中纬度地区的夏季比 1960 年代延长了 30 天** — Solidot
   > 根据发表在《Environmental Research Letters》期刊上的一项研究，1990-2023 年间热带和极地之间的中纬度地区的夏季平均每十年延长约 6 天。城市的变化更为惊人，澳大利亚悉尼的夏季如今持续 130 天，而在 
   https://www.solidot.org/story?sid=84029
+
+- **boringBar – 只需 40 刀，让你的 Mac 拥有 Windows 的开始菜单和任务栏** — 小众软件
+  > 是时候给 Mac 用户一点点震撼了！现在只需要40刀，就可以让 macOS 拥有 Windows 的开始菜单和任务栏。 boringBar 无聊吧 怎么说呢，模仿的惟妙惟肖。 开始菜单： 窗口预览： 多桌面切换： 通知： 这点比 Windo
+  https://www.appinn.com/boringbar/
 
 - **离谱！西甲一开赛，Cloudflare 就被封，Docker 也跟着崩了** — 小众软件
   > 有西班牙当地用户在 hackernews 吐槽：每当进行足球比赛时，网络就会出现故障，包括 Docker 拉取镜像、GitHub 代码库无法访问，甚至防盗警报器、自动门也会停止工作。 当用户直接访问相关IP地址时，会弹出横幅： 根据巴塞罗那
@@ -1208,17 +1229,17 @@
   > There&#8217;s no issue with abstracting code into a helper function. If we want to optimize for cognitive load, the inte
   https://read.thecoder.cafe/p/linus-torvalds-ambiguous-abstractions
 
+- **《战情室》通讯：封锁霍尔木兹海峡的后果** — 经济学人
+  > The War Room newsletter: The consequences of the Hormuz blockade
+  https://www.economist.com/middle-east-and-africa/2026/04/13/the-war-room-newsletter-the-consequences-of-the-hormuz-blockade
+
+- **特朗普政府为何要打击欺诈行为** — 经济学人
+  > Why the Trump administration is waging war on fraud
+  https://www.economist.com/united-states/2026/04/13/why-the-trump-administration-is-waging-war-on-fraud
+
 - **彼得·马加尔在匈牙利击败了反自由主义的英雄维克托·奥尔班** — 经济学人
   > Peter Magyar defeats illiberal hero Viktor Orban in Hungary
   https://www.economist.com/europe/2026/04/12/peter-magyar-defeats-illiberal-hero-viktor-orban-in-hungary
-
-- **美国和伊朗展开一场高风险谈判，旨在结束两国间的战争** — 经济学人
-  > America and Iran start a high-stakes negotiation to end their war
-  https://www.economist.com/middle-east-and-africa/2026/04/11/america-and-iran-start-a-high-stakes-negotiation-to-end-their-war
-
-- **气候问题：蓝色弹珠——过去与现在** — 经济学人
-  > The Climate Issue: The blue marble, then and now
-  https://www.economist.com/science-and-technology/2026/04/11/the-climate-issue-the-blue-marble-then-and-now
 
 - **2026 04 12 HackerNews** — SuperTechFans
   > 2026-04-12 Hacker News Top Stories # 作者用锉刀与砂纸打磨 MacBook 底部锋利边角，做好遮蔽与固定以防铝屑和滑动，显著改善手腕触感并提倡按需个性化改造工具。 NASA 的 Artemis II 载人
@@ -1260,21 +1281,25 @@
   > 今天家里的一台电脑（型号：联想拯救者刃7000台式电脑）忽然无法启动，启动时一直提示&ldquo;正在撤销对计算机所作的更改&rdquo;，等待几分钟之后，系统提示&ldquo;你的设备遇到问题，需要重启。我们将为你重新启动。终止代码：SY
   https://www.williamlong.info/archives/7535.html
 
-- **Google’s Pixel 10A is a good midrange phone that’s $50 off** — The Verge
-  > If it’s time for you to upgrade your phone, it’s worth considering the Pixel 10A, Google’s latest midrange phone that ha
-  https://www.theverge.com/gadgets/910966/google-pixel-10a-sony-wf-1000xm6-earbuds-deal-sale
+- **Justin Bieber&#8217;s YouTube Coachella set had nothing to do with who owns his music** — The Verge
+  > This past Saturday at the Coachella music festival, Justin Bieber played the first of two headlining sets in a deal repo
+  https://www.theverge.com/entertainment/911340/justin-bieber-youtube-coachella
 
-- **Pragmata is just OK, but it could’ve been great** — The Verge
-  > Over the last few years, Capcom has done an exceptional job of solidifying its lineup of big, long-running franchises. T
-  https://www.theverge.com/games/910385/pragmata-review-ps5-xbox-switch-2-pc
+- **NZXT to pay $3.45 million settlement over Flex PC rentals** — The Verge
+  > NZXT and its business partner Fragile have agreed to pay $3.45 million to settle a class-action lawsuit that accused the
+  https://www.theverge.com/tech/911297/nzxt-flex-pc-rental-settlement
 
-- **Can Puck reinvent the news business for the influencer age?** — The Verge
-  > Today, I’m talking with Sarah Personette, CEO of Puck, which is a fancy new media company that’s been around for just ab
-  https://www.theverge.com/podcast/910443/can-puck-reinvent-the-news-business-for-the-influencer-age
+- **The Apple Watch Series 11 has returned to its best-ever price** — The Verge
+  > If you’re still holding onto an older Apple Watch, now might be a good time to upgrade. Right now, the 42mm Apple Watch 
+  https://www.theverge.com/gadgets/911191/apple-watch-series-11-smartwatch-amazon-april-deal-sale
 
-- **Roblox will need age verification to make sure you’re at least 9 years old** — The Verge
-  > Roblox is about to make a big change to how you can access games on its platform: If you want to play any game that's in
-  https://www.theverge.com/games/910218/roblox-age-verification-check-games-kids-select-accounts
+- **You can make a multicolor MacBook Neo out of Apple&#8217;s spare parts** — The Verge
+  > If you're having trouble deciding on a color for a new MacBook Neo, you might not have to choose just one. The folks ove
+  https://www.theverge.com/tech/911172/macbook-neo-apple-spare-parts-multicolor
+
+- **Staunch Trump Supporters Are Now Asking if He’s the Antichrist** — Wired
+  > The Iran war and a series of social media posts, including one depicting Trump as Jesus Christ, have some conservative c
+  https://www.wired.com/story/staunch-trump-supporters-are-now-asking-if-hes-the-antichrist/
 
 - **What Is the Best Fitness Tracker in 2026? Garmin, Oura, More** — Wired
   > With almost ten years of hands-on testing, WIRED knows what separates the best fitness trackers from the rest.
@@ -1284,48 +1309,47 @@
   > WIRED witnessed the game-changing Denza Z9 GT charge its battery in just 9 minutes. But the pricing for BYD's premium br
   https://www.wired.com/story/byd-denza-z9-gt-fastest-charging-car-in-the-world/
 
-- **The Internet's Most Powerful Archiving Tool Is in Peril** — Wired
-  > As major news outlets cut off the Wayback Machine, journalists and advocacy groups are rallying to protect the Internet 
-  https://www.wired.com/story/the-internets-most-powerful-archiving-tool-is-in-mortal-peril/
+- **Microsoft is officially killing its Outlook Lite app next month** — TechCrunch
+  > Launched in 2022, Outlook Lite is a lightweight version of the regular Outlook app, designed for Android phones with lim
+  https://techcrunch.com/2026/04/13/microsoft-is-officially-killing-its-outlook-lite-app-next-month/
 
-- **The largest orbital compute cluster is open for business** — TechCrunch
-  > Kepler Communications is flying 40 GPUs in Earth orbit. And its latest customer is Sophia Space.
-  https://techcrunch.com/2026/04/13/the-largest-orbital-compute-cluster-is-open-for-business/
+- **Thousands of rare concert recordings are landing on the Internet Archive — listen now** — TechCrunch
+  > Chicago-based music superfan Aadam Jacobs has been recording the concerts he goes to since the 1980s, amassing an archiv
+  https://techcrunch.com/2026/04/13/thousands-of-rare-concert-recordings-are-landing-on-the-internet-archive-listen-now/
 
-- **Apple reportedly testing four designs for upcoming smart glasses** — TechCrunch
-  > These glasses are a step back from an ambitious plan that once called for Apple to launch a variety of mixed and augment
-  https://techcrunch.com/2026/04/12/apple-reportedly-testing-four-designs-for-upcoming-smart-glasses/
+- **FBI announces takedown of phishing operation that targeted thousands of victims** — TechCrunch
+  > Cybercriminals allegedly used the W3LL phishing kit to target more than 17,000 victims worldwide, stealing their passwor
+  https://techcrunch.com/2026/04/13/fbi-announces-takedown-of-phishing-operation-that-targeted-thousands-of-victims/
+
+- **The Batch: Walking the Robot Dog, Mistaking German for English, Making Art With an Image Classifier, Zero-Shot Object Detection** — The Batch
+  https://www.deeplearning.ai/the-batch/
 
 
-## 互联网 / 商业（19 条）
+## 互联网 / 商业（20 条）
 
-- **派早报：微信支付发布接入 Skill 工具体系等** — 少数派
-  > Amflow 推出电动山地自行车系列、戴森推出手持无叶风扇 HushJet Mini Cool 等。
-  https://sspai.com/post/108468
+- **恒指午间休盘涨0.43%，恒生科技指数涨0.17%** — 36氪
+  > 36氪获悉，恒指午间休盘涨0.43%，恒生科技指数涨0.17%；耐用消费品、半导体、软件服务板块领涨，泡泡玛特涨超6%，百度集团涨超3%，华虹半导体涨超2%；汽车、医药生物、能源板块走弱，理想汽车、中石化油服跌超2%，百济神州跌超1%；南向
+  https://36kr.com/newsflashes/3766146235073029?f=rss
 
-- **早期项目 | 前大疆工程师创业陪伴机器人，李泽湘连投三轮，产品即将登陆众筹** — 36氪
-  > 作者&amp;nbsp;|&amp;nbsp;乔钰杰 编辑&amp;nbsp;|&amp;nbsp;袁斯来 陪伴机器人走向同质化的当下，什么样的产品能吸引人？ 今年年初的CES 2026上，一款身着橙色连体衣的小型机器人COCOMO，意外成
-  https://36kr.com/p/3764777930621705?f=rss
+- **阶跃星辰与月之暗面争相IPO：谁是下一个中国龙虾** — 钛媒体
+  > 上市不是终点，而是淘汰赛的开始。
+  https://www.tmtpost.com/7952134.html
 
-- **热门中概股美股盘前多数下跌，理想汽车跌超2%** — 36氪
-  > 36氪获悉，热门中概股美股盘前多数下跌，截至发稿，理想汽车跌超2%，阿里巴巴、京东跌超1%，小鹏集团跌0.86%，网易跌0.55%，拼多多跌0.31%，蔚来涨超1%，百度涨0.68%，哔哩哔哩涨0.17%。
-  https://36kr.com/newsflashes/3765256730903046?f=rss
+- **阿里巴巴首款具身机器人：消息称高德将发布机器狗产品** — IT之家
+  > IT之家 4 月 14 日消息，据新浪科技今日报道，阿里巴巴旗下高德的具身业务部即将发布首款产品 —— 一款四足机器人。据悉，这是阿里巴巴集团推出的首款具身机器人产品。知情人士透露，人形机器人、机器狗等产品形态均在高德具身业务部的探索方向之
+  https://www.ithome.com/0/938/868.htm
 
-- **精智达年报换“芯”：营收狂奔、利润掉队，30亿定增豪赌半导体测试｜看财报** — 钛媒体
-  > 半导体存储器件测试设备业务已成第一大收入，30亿定增计划曝光更大野心。
-  https://www.tmtpost.com/7951395.html
+- **诺瓦聚变完成 7 亿元天使 + 轮融资，目标 2026 年底实现首次等离子体放电** — IT之家
+  > IT之家 4 月 14 日消息，可控核聚变技术企业诺瓦聚变 NovaFusionX 本月 10 日宣布完成 7 亿元天使 + 轮融资，成立一年天使轮阶段融资两轮累计达 12 亿元。诺瓦聚变的本次融资由国内某顶尖互联网大厂（根据参投方云岫资本
+  https://www.ithome.com/0/938/865.htm
 
-- **字节击败Sora，高兴的可能是腾讯** — 钛媒体
-  > Sora颠覆不了抖音，豆包就能颠覆微信吗？
-  https://www.tmtpost.com/7951136.html
+- **数字排毒，我们这代人的赎罪券｜硬哲学** — 爱范儿
+  > 用消费对抗消费主义。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。
+  https://www.ifanr.com/1661961?utm_source=rss&utm_medium=rss&utm_campaign=
 
-- **腾讯《洛克王国世界》出现“水域连续捕捉”异常，官方将向全服玩家发放自选异色精灵补偿** — IT之家
-  > IT之家 4 月 13 日消息，腾讯《洛克王国世界》游戏今日发布《致小洛克的一封信》，针对游戏道具产出机制体验、“水域连续捕捉”异常的处理以及近期其他热点问题进展等进行了说明。IT之家附信中重点内容如下：一、有关洛克贝、咕噜球的产出体验说明
-  https://www.ithome.com/0/938/739.htm
-
-- **是 Steam Controller 吗？消息称V社在美国接收大量“无线 PC 控制器”货物** — IT之家
-  > IT之家 4 月 13 日消息，爆料人士 @SadlyItsBradley 今天在 X 平台透露，V社（Valve）上周在美国大量收到首批名为“无线 PC 控制器”的货物。不过，我们目前还无法确认这批“货物”是否是去年 11 月发布的 St
-  https://www.ithome.com/0/938/738.htm
+- **年轻与豪华兼得，12.99 万元起的奇瑞风云 T9L ，是真正的家用「六边形战士」** — 爱范儿
+  > 最年轻好看的一台奇瑞。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。
+  https://www.ifanr.com/1662037?utm_source=rss&utm_medium=rss&utm_campaign=
 
 - **Vidu Q3 闷声放大招，参考生之王回归，漫剧短剧影视广告的好日子来了** — 爱范儿
   > 出片即交付，你来讲故事#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。
@@ -1341,10 +1365,6 @@
   > 枷锁，以及枷锁之后#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。
   https://www.ifanr.com/1661836?utm_source=rss&utm_medium=rss&utm_campaign=
 
-- **蔚来 ES9，拒绝成为「XX 揽胜」和「XX 库里南」** — 爱范儿
-  > 没有任何一个领域的开创引领者，希望自己活在别人的影子里。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。
-  https://www.ifanr.com/1661768?utm_source=rss&utm_medium=rss&utm_campaign=
-
 - **美团 BI 在指标平台和分析引擎上的探索和实践** — 美团技术
   > 美团数据平台构建了以指标平台为核心的新一代 BI 架构，通过自动语义和增强计算两种核心能力的建设，部分解决了传统 BI 平台在个性化数据集驱动下产生的数据口径混乱、查询性能差等问题。
   https://tech.meituan.com/2026/03/20/busniness-intelligence-practice-in-meituan.html
@@ -1353,9 +1373,21 @@
   > 值此马年春节来临之际，我们精选了过去一年美团技术团队微信公众号发布的 40 多篇优质技术文章，精心汇编成一本 500 多页的电子书。谨以此作为一份特别的新年礼物，献给每一位热爱技术、持续探索的同学。
   https://tech.meituan.com/2026/02/02/2025-spring-festival-present.html
 
-- ** 聊聊最火那件事 ** — 虎嗅
-  > 本文来自微信公众号： Sir电影 ，作者：毒Sir如果你的朋友圈还没有被它刷屏，那可能是因为年轻人浓度太低了——SBTI。用它干啥？垃圾分类。给自己——如果说MBTI是正向的人格全肯定。那SBTI就与它是彻底的背道而驰——粗糙、阴湿、无意义
-  https://www.huxiu.com/article/4850223.html?f=rss
+- ** 鲜花为什么越来越便宜？9块9花束产业链真相 ** — 虎嗅
+  > 不管是下班路上随处可见的流动小贩，还是地铁站里的自助售花机，或是盒马小象这样的生鲜电商，都不难找到九块九一束的康乃馨、玫瑰或者多头小菊。叠上平台的折扣券或者碰上会员日，还能再便宜个一两块钱。于是，我每周一次的生鲜电商大采购的内容，除了面包牛
+  https://www.huxiu.com/article/4850044.html?f=rss
+
+- ** 为什么那么多人共情恐怖主义 ** — 虎嗅
+  > 本文来自微信公众号： 西坡原创 ，作者：西坡在和平社会里，也总会有些人共情恐怖主义，虽然他们变成恐怖分子的几率微不足道，但这种心态的蔓延让人不安。我们本能地想要知道，坐在自己身边的人，擦肩而过的人，究竟看待世界。因为这可以帮我们推想，将来万
+  https://www.huxiu.com/article/4850312.html?f=rss
+
+- ** 刚刚，张西强“官宣”：雀巢“老将”刘兴罡转场，昔日"铁搭档"重聚金光APP ** — 虎嗅
+  > 本文来自微信公众号： 食品内参 ，作者：不浪费读者时间的，原文标题：《突发！刚刚，张西强“官宣”：雀巢“老将”刘兴罡转场，昔日"铁搭档"重聚金光APP》在雀巢大中华区管理层剧烈震荡的背景下，高管的去向成了行业观察快消品市场风向标的关键。继雀
+  https://www.huxiu.com/article/4850309.html?f=rss
+
+- ** 留给复星的空间不多了 ** — 虎嗅
+  > 本文来自微信公众号： 巨潮WAVE ，编辑：杨旭然，作者：小卢鱼，原文标题：《留给复星的空间不多了 | 巨潮》复星国际去年的财报公布如同一块巨石砸向沙漠，溅起一片烟尘。数据显示，复星国际全年总收入约1734.25亿元，同比减少9.74%；归
+  https://www.huxiu.com/article/4850308.html?f=rss
 
 - **港澳办：若巴拿马一意孤行 必将在政治经济上都付出沉重代价** — 联合早报
   > 在巴拿马最高法院裁定，香港长和子公司运营巴拿马运河港口的合同违反宪法后，负责香港事务的中国国务院港澳办发文指出，巴拿马应当认清形势、迷途知返，并警告如果一意孤行，执迷不悟，巴拿马必将在政治和经济上都付出沉重代价。港澳办星期二（2月3日）晚在
@@ -1377,7 +1409,7 @@
   https://www.williamlong.info/archives/7529.html
 
 
-## 社会 / 文化（15 条）
+## 社会 / 文化（16 条）
 
 - **城市漫步指南：在浓油赤酱中寻找江南底蕴** — 少数派
   > 趁着四月底的小长假，我去了趟南昌和赣州。此前，江西并不在我的旅行计划内。虽不至于被网上「环江西发展带」之类的梗影响情绪，但确实因为了解有限，一直没生出过探索的念头。转机源于深夜刷到的一段视频。那是家开 ...
@@ -1391,6 +1423,14 @@
 
 - **她，不仅仅是“蔡磊的妻子” | 极限女性第二季第7期** — 新周刊
   https://www.neweekly.com.cn
+
+- **鸿蒙智行首款旗舰 MPV 智界 V9 官宣首发一体“环宇”三联屏，全新搭载自由卡片桌面** — IT之家
+  > IT之家 4 月 14 日消息，智界汽车官方今日宣布，鸿蒙智行首款旗舰 MPV —— 智界 V9 将首发一体“环宇”三联屏。超清视野：双 17.2 英寸大屏横贯，双 3.4K 高清画质超宽比例：21:10 沉浸宽屏比，副驾观影不偏头超真色彩
+  https://www.ithome.com/0/938/871.htm
+
+- **索尼确认将制作《血源诅咒》R 级动画电影，《塞尔达传说》电影已杀青** — IT之家
+  > IT之家 4 月 14 日消息，在今日开幕的 CinemaCon 2026 活动上，一众明星大腕，以及索尼影业等片商携新作亮相。例如索尼影业举行了《蜘蛛侠：崭新之日》《蜘蛛侠：超越宇宙》《勇敢者游戏》《养家之人》《社交清算》《绝地潜兵》《生
+  https://www.ithome.com/0/938/863.htm
 
 - **长期接触农药可能诱发糖尿病** — Solidot
   > 2023 年全球农药使用量达 373 万吨，约为 1990 年的两倍。农药相关健康风险研究长期集中在急性中毒、神经毒性和癌症方面。新型基因技术如今已能用于追踪农药对肠道菌群的影响。印度团队对印度南部近 3000 人开展研究后发现，城市地区 
@@ -1428,24 +1468,67 @@
   > 大多数人的努力只有输入没有输出，缺少反馈闭环。闭环不是把事做完，是让判断变准。先执行，再观测，用结果校准下一次判断。
   https://yousali.com/posts/20260307-closed-loop-thinking/
 
-- **印度最宜居特大城市的秘诀** — 经济学人
-  > The secret of India’s most liveable megacity
-  https://www.economist.com/asia/2026/04/12/the-secret-of-indias-most-liveable-megacity
-
 - **分享各类电子书（政治、IT、科普、历史、等，97本）** — 编程随想
   > 插播一条消息： 4月22日，俺在前一篇博文回复读者评论。当时有人建议俺：把博客的评论都导入 Github。然后俺回了一条留言（链接）告诉对方：已经有热心网友干了这事儿。并且俺还贴出 Github 已有的某个仓库的网址（该仓库的作者会把博客新
   https://program-think.blogspot.com/feeds/329569519001390000/comments/default
 
 
-## 财经 / 宏观（9 条）
+## 国际 / 地缘（12 条）
 
-- **晶盛机电转型阵痛：光伏业务“渡劫”，毛利率创十年新低 | 看财报** — 钛媒体
-  > 晶盛机电短期内业绩快速翻转压力不小。
-  https://www.tmtpost.com/7951503.html
+- **餐饮出海有新招儿吗？从鼎泰丰与贡茶拿下美国初代销冠聊起** — 钛媒体
+  > 四字箴言：避免自嗨。
+  https://www.tmtpost.com/7952116.html
 
-- **[推广] 香港 Za bank 众安银行开户返 300HKD ！截止日到 5.27** — V2EX
-  > 香港旅游 众安开户享受 hkd2k 回赠! 开户链接： https://l.za.group/oBWam 电报 https://t.me/fgvbt123 小红书：云居民 众安银行 ZA Bank 是香港首家数字虚拟银行,全程 [线上自助开
-  https://www.v2ex.com/t/1205626#reply0
+- **计算机科学的黄金期可能已结束** — Solidot
+  > 2025 年秋季美国四年制大学计算机科学专业的学生入学人数下降了 8.1%。计算机科学专业的本科排名在一年内从第四位跌至第六位，前三则一直是商科、公共卫生和人文科学。从 2008 年到 2024 年，计算机科学一直是美国增长最快的专业，如今
+  https://www.solidot.org/story?sid=84035
+
+- ** 伊美停火两周！这两周他们会干啥？ ** — 虎嗅
+  > 伊美决定停火两周，在特朗普所谓的最后期限前不到两个小时，伊美双方突然说不打了，这下又让特朗普给装到了。但有一件事特别反常，以色列前一天还在叫嚣着不要停，第二天就突然改主意同意停火了。正所谓事出反常必有妖，伊朗要更加小心了，那么这两周里他们都
+  https://www.huxiu.com/article/4848880.html?f=rss
+
+- **中国仲裁机构首次聘请外籍专家担任执行机构负责人** — 联合早报
+  > 广州仲裁委员会聘请美籍专家担任执行机构负责人，是中国大陆首例。据中新社报道，广州仲裁委员会星期二（2月3日）发布消息，委员会聘请北京大学国际法学院执行院长、法学教授马克·费尔德曼（美国籍）担任执行机构负责人，这是中国大陆仲裁机构首次聘请外籍
+  https://www.zaobao.com/news/china/story20260204-8295200
+
+- **美军击落伊朗无人机 核谈判计划不受影响** — 联合早报(国际)
+  > 美军说，伊朗无人机星期二（2月3日）在阿拉伯海飞近美军“亚伯拉罕·林肯号”航母，美军出动战机将其击落。图为亚伯拉罕·林肯号航母2025年8月出现在加利福尼亚州圣地亚哥的北岛海空军基地。 （路透社档案照片）美国海军在阿拉伯海击落一架靠近美国航
+  https://www.zaobao.com/news/world/story20260204-8295368
+
+- **美媒：伊朗想将伊美核谈判定在别处** — 联合早报(国际)
+  > 特朗普并未透露美伊核谈判定在何处，他星期二（2月3日）在白宫告诉记者，会谈选址“不止一个地方”。 （路透社档案照片）美国原计划在土耳其伊斯坦布尔与伊朗举行核谈判，但伊朗希望另择地点会谈，美国总统特朗普拒绝透露会议到底定在何处。媒体预计美伊核
+  https://www.zaobao.com/news/world/story20260204-8295251
+
+- **以总理会见美特使 强调伊朗“无法信守承诺”** — 联合早报(国际)
+  > 以色列总理内坦亚胡告诉美国总统中东问题特使威特科夫，伊朗已一再证明无法信守承诺。 （路透社档案照片）美国和伊朗即将重启核谈判之际，以色列总理内坦亚胡在耶路撒冷会见美国总统中东问题特使威特科夫，并告诉后者伊朗“无法信守承诺”。综合新华社和《耶
+  https://www.zaobao.com/news/world/story20260204-8295233
+
+- **美众议院通过拨款法案 结束部分政府停摆** — 联合早报(国际)
+  > 根据众议院星期二（2月3日）通过的拨款法案，对国土安全部的拨款仅延续至2月13日，两党议员须在那之前就这个问题达成协议。 （路透社档案照片）美国由共和党主导的国会众议院投票通过政府拨款方案，结束为期四天的部分政府停摆。综合美国广播公司（AB
+  https://www.zaobao.com/news/world/story20260204-8295173
+
+- **特朗普怂恿共和党人“接管选举” 将选举治理权“国有化”** — 联合早报(国际)
+  > 联邦调查局探员上周到佐治亚州富尔顿县一个选举办公室搜查，押走700箱选举资料，包括选票箱。行动由国家情报总监加巴德（图）指挥，还与特朗普现场电话连线。特朗普一直宣称自己2020年在佐治亚州胜出。 （路透社）（华盛顿综合电）面对今年底中期选举
+  https://www.zaobao.com/news/world/story20260203-8294147
+
+- **港大团队首创静电捕获术，实现纳米金刚石晶圆级规模化集成** — MIT科技评论
+  > 在一块 8 英寸晶圆上，如何将上亿颗只有百纳米大小的纳米金刚石精准放进对应的小孔里？这项听起来像不可能完成的任务，现在只需要 5 分钟就能实现。近期，香港大学副教授褚智勤团队与南方科技大学、韩国科学技术院等团队合作，提出了一种基于静电捕获的
+  https://www.mittrchina.com/news/detail/16229
+
+- **从拉夫·劳伦到The Row，美国奢侈品行业正蓬勃发展** — 经济学人
+  > From Ralph Lauren to The Row, American luxury is booming
+  https://www.economist.com/business/2026/04/13/from-ralph-lauren-to-the-row-american-luxury-is-booming
+
+- **唐纳德·特朗普封锁霍尔木兹海峡是一场危险的赌博** — 经济学人
+  > Donald Trump’s blockade of Hormuz is a dangerous gamble
+  https://www.economist.com/middle-east-and-africa/2026/04/13/donald-trumps-blockade-of-hormuz-is-a-dangerous-gamble
+
+
+## 财经 / 宏观（8 条）
+
+- ** PPI转正，美林时钟走进复苏期 ** — 虎嗅
+  > 时隔整整41个月，中国的PPI同比数据终于转正了，这是周期拐点确认的重要信号。看懂PPI转正对于大家理解当前经济周期中的特点、抓住周期中的机会很有帮助，本期视频就一起来聊聊。
+  https://www.huxiu.com/article/4849993.html?f=rss
 
 - **国共智库论坛登场 达成恢复两岸人员往来正常化等共同意见** — 联合早报
   > 由中共中央台办海峡两岸关系研究中心与中国国民党国政研究基金会共同主办，以“两岸交流合作前瞻”为主题的国共两党智库论坛，星期二（2月3日）在北京开幕。图为中共中央台办主任宋涛（左）、中国国民党副主席萧旭岑（右）出席论坛。 （中新社）国共智库论
@@ -1476,50 +1559,10 @@
   https://www.bmpi.dev/money/myinvestpilot/2025_review/
 
 
-## 国际 / 地缘（9 条）
+## 游戏 / 娱乐（4 条）
 
-- **计算机科学的黄金期可能已结束** — Solidot
-  > 2025 年秋季美国四年制大学计算机科学专业的学生入学人数下降了 8.1%。计算机科学专业的本科排名在一年内从第四位跌至第六位，前三则一直是商科、公共卫生和人文科学。从 2008 年到 2024 年，计算机科学一直是美国增长最快的专业，如今
-  https://www.solidot.org/story?sid=84035
-
-- **中国仲裁机构首次聘请外籍专家担任执行机构负责人** — 联合早报
-  > 广州仲裁委员会聘请美籍专家担任执行机构负责人，是中国大陆首例。据中新社报道，广州仲裁委员会星期二（2月3日）发布消息，委员会聘请北京大学国际法学院执行院长、法学教授马克·费尔德曼（美国籍）担任执行机构负责人，这是中国大陆仲裁机构首次聘请外籍
-  https://www.zaobao.com/news/china/story20260204-8295200
-
-- **美军击落伊朗无人机 核谈判计划不受影响** — 联合早报(国际)
-  > 美军说，伊朗无人机星期二（2月3日）在阿拉伯海飞近美军“亚伯拉罕·林肯号”航母，美军出动战机将其击落。图为亚伯拉罕·林肯号航母2025年8月出现在加利福尼亚州圣地亚哥的北岛海空军基地。 （路透社档案照片）美国海军在阿拉伯海击落一架靠近美国航
-  https://www.zaobao.com/news/world/story20260204-8295368
-
-- **美媒：伊朗想将伊美核谈判定在别处** — 联合早报(国际)
-  > 特朗普并未透露美伊核谈判定在何处，他星期二（2月3日）在白宫告诉记者，会谈选址“不止一个地方”。 （路透社档案照片）美国原计划在土耳其伊斯坦布尔与伊朗举行核谈判，但伊朗希望另择地点会谈，美国总统特朗普拒绝透露会议到底定在何处。媒体预计美伊核
-  https://www.zaobao.com/news/world/story20260204-8295251
-
-- **以总理会见美特使 强调伊朗“无法信守承诺”** — 联合早报(国际)
-  > 以色列总理内坦亚胡告诉美国总统中东问题特使威特科夫，伊朗已一再证明无法信守承诺。 （路透社档案照片）美国和伊朗即将重启核谈判之际，以色列总理内坦亚胡在耶路撒冷会见美国总统中东问题特使威特科夫，并告诉后者伊朗“无法信守承诺”。综合新华社和《耶
-  https://www.zaobao.com/news/world/story20260204-8295233
-
-- **美众议院通过拨款法案 结束部分政府停摆** — 联合早报(国际)
-  > 根据众议院星期二（2月3日）通过的拨款法案，对国土安全部的拨款仅延续至2月13日，两党议员须在那之前就这个问题达成协议。 （路透社档案照片）美国由共和党主导的国会众议院投票通过政府拨款方案，结束为期四天的部分政府停摆。综合美国广播公司（AB
-  https://www.zaobao.com/news/world/story20260204-8295173
-
-- **特朗普怂恿共和党人“接管选举” 将选举治理权“国有化”** — 联合早报(国际)
-  > 联邦调查局探员上周到佐治亚州富尔顿县一个选举办公室搜查，押走700箱选举资料，包括选票箱。行动由国家情报总监加巴德（图）指挥，还与特朗普现场电话连线。特朗普一直宣称自己2020年在佐治亚州胜出。 （路透社）（华盛顿综合电）面对今年底中期选举
-  https://www.zaobao.com/news/world/story20260203-8294147
-
-- **港大团队首创静电捕获术，实现纳米金刚石晶圆级规模化集成** — MIT科技评论
-  > 在一块 8 英寸晶圆上，如何将上亿颗只有百纳米大小的纳米金刚石精准放进对应的小孔里？这项听起来像不可能完成的任务，现在只需要 5 分钟就能实现。近期，香港大学副教授褚智勤团队与南方科技大学、韩国科学技术院等团队合作，提出了一种基于静电捕获的
-  https://www.mittrchina.com/news/detail/16229
-
-- **美伊对话仍有重启的可能** — 经济学人
-  > There is still time to resurrect talks between America and Iran
-  https://www.economist.com/middle-east-and-africa/2026/04/12/there-is-still-time-to-resurrect-talks-between-america-and-iran
-
-
-## 游戏 / 娱乐（5 条）
-
-- **小岛秀夫谍战新作《Physint》选角开始，反派要求神似“拔叔”但更具风格** — IT之家
-  > IT之家 4 月 13 日消息，据游戏媒体 MP1ST 昨天报道，小岛秀夫在发布《死亡搁浅 2：冥滩之上》后一直忙于扩展“死亡搁浅”IP 宇宙，并开发恐怖游戏《OD》。不过他的谍战新作《Physint》同样引人关注，目前部分演员阵容已经开始
-  https://www.ithome.com/0/938/735.htm
+- **WiiFin – Jellyfin Client for Nintendo Wii** — Hacker News [95 pts]
+  https://github.com/fabienmillet/WiiFin
 
 - **介绍几款单人桌游** — 云风
   > 上个月我花了不少时间在 dotAge 这个游戏中。我很喜欢这种通过精算规划应对确定风险的感觉。由于 dotAge 有很强的欧式桌游的设计感，所以我在桌游中尝试了一些有类似设计元素的单人游戏。 我感觉体验比较接近的有 Voidfall (20
@@ -1533,24 +1576,23 @@
   > 玩了这么多年游戏，从早期的DOS时代的《仙剑奇侠传》、街机时代的PS，到后来的PS2、PS3、PS4主机大作，兜兜转转这么一大圈，最终我发现，占据我游戏时间最多的，依然还是那个熟悉的老朋友&mdash;&mdash;《魔兽世界》。 说起《魔
   https://www.williamlong.info/archives/7540.html
 
-- **Roblox introduces ‘Kids’ and ‘Select’ accounts for age-appropriate access to games and chat** — TechCrunch
-  > Users aged five to nine will be assigned to a "Roblox Kids" account, and users aged nine to 15 to will be put in a "Robl
-  https://techcrunch.com/2026/04/13/roblox-introduces-kids-and-select-accounts-for-age-appropriate-access-to-games-and-chat/
 
+## 新能源 / 汽车（2 条）
 
-## 新能源 / 汽车（3 条）
-
-- **大众 CEO 承认现有电动车产品脱节：全新 ID 系列将拨乱反正，回归品牌传统风格** — IT之家
-  > IT之家 4 月 13 日消息，据汽车媒体 electrek 今天报道，大众首席执行官 Thomas Schäfer 最近承认，公司产品与消费者脱节，将通过今年推出的新一代电动汽车阵容拨乱反正。这名 CEO 在一次媒体活动中坦言：“我很清楚
-  https://www.ithome.com/0/938/742.htm
-
-- **上汽通用五菱 × 宁德时代达成合作，将共同开发电量从 10% 充至 80% 不到 10 分钟的快充技术方案** — IT之家
-  > IT之家 4 月 13 日消息，宁德时代今日宣布，其与上汽通用五菱近日在福建宁德签署战略合作协议。双方将围绕产业规模化、乘商兼容换电、联合出海与生态协同四大方向开展深度合作。在电池供应方面，上汽通用五菱全谱系超 15 款新能源车型将选择宁德
-  https://www.ithome.com/0/938/741.htm
+- **[广州] 广州电动自行车预约简直比春运还难** — V2EX
+  > 白云石井直接没号，同和去到 5.7 后。。。 5 号买的车，一直无法上牌。。。 话说有科技可以刷这个时间吗？
+  https://www.v2ex.com/t/1205729#reply1
 
 - **《华尔街日报》对特斯拉涉Autopilot事故风险的调查发现了什么？** — 华尔街日报
   > 特斯拉的Autopilot自动辅助驾驶技术主要基于摄像头进行感知，在业内可谓独树一帜，不少人长期担心其可靠性。《华尔街日报》搜集了200多起涉特斯拉Autopilot撞车事故的信息，相关视频和数据显示，上述担忧正在道路上显现，技术缺陷正给公
   https://cn.wsj.com/amp/articles/tesla-autopilot-crash-investigation-cdb0173c
+
+
+## 生活 / 健康（1 条）
+
+- **[健康] 关于减肥/减脂, 根本不需要改变饮食,也不需要那么多方法!** — V2EX
+  > 这方式我也是无意中发现的,很简单,也颇为有效,只是从来没有见哪里发过. 之前有阵子,担心自己血糖可能会有些高[后证明是多虑],所以那一两个月里每天的生活就注意这两件事情:1. 把之前一顿的饭量减少到 2/3[习惯后甚至可以 1/2], 同时
+  https://www.v2ex.com/t/1205733#reply2
 
 
 ## 体育（1 条）
@@ -1560,7 +1602,11 @@
   https://www.zaobao.com/news/china/story20260204-8295210
 
 
-## 其他（79 条）
+## 其他（84 条）
+
+- **首销优惠即将截止！少数派麦金獭无感膜 10 大常见问题解答** — 少数派
+  > 如果你也在找一款「贴完就忘」的钢化膜，如果你不想再为厚重、反光、难贴的钢化膜烦恼，不妨趁首发优惠，入手体验一下。
+  https://sspai.com/post/108594
 
 - **派评 | 近期值得关注的 App** — 少数派
   > >下载少数派2.0客户端、关注少数派公众号，解锁全新阅读体验📰>实用、好用的正版软件，少数派为你呈现🚀
@@ -1582,21 +1628,25 @@
   > 文｜贺哲馨 编辑｜乔芊 从外表看，司泰峰（Stéphane de La Faverie）并不是那类锋芒毕露的“改革派”。 他多数时候带着温和的笑意，步伐与语速都偏慢——或许带着一点法国人特有的松弛感。你也很难想象，在成为父亲之前，司泰峰是“
   https://36kr.com/p/3756542711120640?f=rss
 
-- **泡泡玛特做家电：全球最会赚钱的潮玩公司，为何扎进利润不到10%的苦生意？** — 钛媒体
-  > 是野心，也是焦虑
-  https://www.tmtpost.com/7951340.html
+- **恒大集团、恒大地产及许家印案一审开庭** — 36氪
+  > 2026年4月13日至14日，广东省深圳市中级人民法院对深圳市人民检察院提起公诉的被告单位恒大集团有限公司非法吸收公众存款、集资诈骗、违法发放贷款、欺诈发行证券、违规披露重要信息、单位行贿，被告单位恒大地产集团有限公司欺诈发行证券，被告人许
+  https://36kr.com/newsflashes/3766153730409225?f=rss
 
-- **常州国资超10亿纾困被套，雪浪环境傍上商业航天新贵保壳** — 钛媒体
-  > 环保故事不好讲，商业航天来救场。
-  https://www.tmtpost.com/7951350.html
+- **100亿，对赌杀死一只独角兽** — 钛媒体
+  > 计划赶不上变化。
+  https://www.tmtpost.com/7952179.html
 
-- **三千一盒的新药被抢购，“风团”年轻人买出一门好生意？** — 钛媒体
-  > 现象级的“风团”新药
-  https://www.tmtpost.com/7951116.html
+- **一季度签约近1.45万间客房，高端酒店开始抢地盘** — 钛媒体
+  > 高端酒店，开得越对越好。
+  https://www.tmtpost.com/7952117.html
 
-- **600亿管线BD背后的真实账本：药企实际到手不足5%？** — 钛媒体
-  > 付款比例不到3%，里程碑为何是“纸上财富”？
-  https://www.tmtpost.com/7951118.html
+- **宁波神秘老板买下三家“富力系”酒店** — 钛媒体
+  > 买下酒店只是开始。
+  https://www.tmtpost.com/7952147.html
+
+- **人民币一年大涨超6000基点，升值逻辑能否持续？** — 钛媒体
+  > 在本轮升值背后，人民币国际化进程正在悄然提速。
+  https://www.tmtpost.com/7952159.html
 
 - **一个70岁走红的女人，拒绝被浪漫化** — 新周刊
   https://www.neweekly.com.cn
@@ -1616,34 +1666,46 @@
 - **因为这些关键词，我不会忘掉2025** — 新周刊
   https://www.neweekly.com.cn
 
-- **The Future of Everything Is Lies, I Guess: Safety** — Hacker News [21 pts]
-  https://aphyr.com/posts/417-the-future-of-everything-is-lies-i-guess-safety
+- **DaVinci Resolve releases Photo Editor** — Hacker News [95 pts]
+  https://www.blackmagicdesign.com/products/davinciresolve/photo
 
-- **Make Tmux Pretty and Usable** — Hacker News [122 pts]
+- **A new spam policy for "back button hijacking"** — Hacker News [38 pts]
+  https://developers.google.com/search/blog/2026/04/back-button-hijacking
+
+- **Someone bought 30 WordPress plugins and planted a backdoor in all of them** — Hacker News [775 pts]
+  https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/
+
+- **GitHub Stacked PRs** — Hacker News [527 pts]
+  https://github.github.com/gh-stack/
+
+- **Lean proved this program correct; then I found a bug** — Hacker News [145 pts]
+  https://kirancodes.me/posts/log-who-watches-the-watchers.html
+
+- **Design and implementation of DuckDB internals** — Hacker News [55 pts]
+  https://duckdb.org/library/design-and-implementation-of-duckdb-internals/
+
+- **How to make Firefox builds 17% faster** — Hacker News [146 pts]
+  https://blog.farre.se/posts/2026/04/10/caching-webidl-codegen/
+
+- **Write less code, be more responsible** — Hacker News [47 pts]
+  https://blog.orhun.dev/code-responsibly/
+
+- **Make tmux pretty and usable (2024)** — Hacker News [333 pts]
   https://hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
-
-- **The Rational Conclusion of Doomerism Is Violence** — Hacker News [4 pts]
-  https://www.campbellramble.ai/p/the-rational-conclusion
-
-- **Tracking down a 25% Regression on LLVM RISC-V** — Hacker News [6 pts]
-  https://blog.kaving.me/blog/tracking-down-a-25-regression-on-llvm-risc-v/
-
-- **Taking on CUDA with ROCm: 'One Step After Another'** — Hacker News [236 pts]
-  https://www.eetimes.com/taking-on-cuda-with-rocm-one-step-after-another/
-
-- **我国青藏铁路进出藏货物累计突破 1 亿吨** — IT之家
-  > IT之家 4 月 13 日消息，据新华社报道，青藏铁路全线通车运营 20 年来，进出藏铁路货运量稳步增长。截至 2026 年 4 月 13 日（今天），通过青藏铁路运输进出藏货物总量累计突破 1 亿吨。IT之家获悉，2006 年 7 月 1
-  https://www.ithome.com/0/938/737.htm
 
 - **Cleo Labs** — Product Hunt
   > &lt;p&gt; Automate global compliance for selling physical products &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producth
   https://www.producthunt.com/products/cleo-labs
 
-- **Android 上为什么主题字体对 Flutter 不生效，对 Compose 生效？Flutter 中文字体问题修复** — 掘金
-  https://juejin.cn/post/7626644683527389203
+- **Revenue by Sleek Analytics** — Product Hunt
+  > &lt;p&gt; See your revenue alongside your traffic. In real time. &lt;/p&gt; &lt;p&gt; &lt;a href="https://www.producthun
+  https://www.producthunt.com/products/sleek-analytics
 
 - **XChat 为什么选择 Rust 语言开发** — 掘金
   https://juejin.cn/post/7627479246866513960
+
+- **Android 上为什么主题字体对 Flutter 不生效，对 Compose 生效？Flutter 中文字体问题修复** — 掘金
+  https://juejin.cn/post/7626644683527389203
 
 - **我的 2026 全栈选型：Vue3 + Elysia + Bun + AlovaJS** — 掘金
   https://juejin.cn/post/7627396290867839039
@@ -1651,21 +1713,17 @@
 - ** 不要让调用方承担你本该承担的复杂度 —— Android Data 层设计原则** — 掘金
   https://juejin.cn/post/7626633182273208366
 
-- **[无人机] 无人机黑飞被处罚** — V2EX
-  > 3 月底的时候去了趟长兴郊野公园，无人机没有注册 UOM,今天派出所打来电话，时间地点说的清清楚楚，要进行 100 元处罚，只能认罚，持有无人机的朋友们注意一下最近关于无人机管理的政策，该注册注册，该报备报批的就报备报批。
-  https://www.v2ex.com/t/1205625#reply0
+- **[分享创造] 足迹记录应用的新思路** — V2EX
+  > 我是个喜欢将生活数字化的人，记录自己走过的路也成为一个习惯，或者说需求。用过不少足迹类应用，大体上功能都差不多，就是在地图上绘制出每天的轨迹，有的能显示出速度信息，有的可以生成动态路线图。但不管怎么变都是停留在轨迹层面。积累了几年的轨迹数据
+  https://www.v2ex.com/t/1205736#reply1
 
-- **[程序员] 各位 GenZ 会考虑招比自己大两轮的下属么？** — V2EX
-  > 今天收到一份简历，面试外包全栈开发 95 年上的北化工（楼主 97 ），感觉快 50 岁了，技术栈什么都很匹配，看简历也很强，但是我感觉我驾驭不了这种下属，年龄差太大了，我一怕他不服，二怕他油条，对工作没有激情，到时候又不好搞走。。。
-  https://www.v2ex.com/t/1205622#reply6
+- **[装修] 年轻人的第一套房（求指导！）** — V2EX
+  > 上周末上头冲动入手了一套苏州的房子（租房受够了），房子是精装修的，不准备大动，通通阳台买点家具啥的，有没有大佬给点建议指导一下，感谢 v 站大佬，附一个户型图
+  https://www.v2ex.com/t/1205734#reply3
 
-- **[程序员] 广州汇丰科技 Band 4 的年包是多少？有 60 万吗？** — V2EX
-  > Band 4 Low 和 High 会差多少？
-  https://www.v2ex.com/t/1205618#reply0
-
-- **Linux 7.0 释出** — Solidot
-  > Linus Torvalds 在内核邮件列表上宣布释出 Linux 7.0，它将会是支持 i486 CPU 的最后一个版本。Linux 7.0 的主要新特性包括：Rust 代码不再是实验性；io_uring 操作的新过滤机制，CPU 调度器
-  https://www.solidot.org/story?sid=84026
+- **[问与答] 目前的梯子不稳定，有自建的合租的吗？** — V2EX
+  > 大概每个月多少？稳定不！ 之前一直用的，现在涨价了差不多 50%，而且现在用着非常不稳定。 自建的要稳定很多对吧 绿色：jerfo0
+  https://www.v2ex.com/t/1205732#reply3
 
 - **NiceTab – 浏览器多标签页管理扩展，OneTab、Toby、N-Tab 等同类替代品** — 小众软件
   > 如果你经常在浏览器中打开很多标签页，但又不能很快读完并且关闭，那么可以考虑使用 NiceTab、OneTab、Toby 等扩展，用来帮你保存、管理这些标签页，从而节约内存、节约电量。@Appinn 青小蛙一直在使用 OneTab，也推荐过很
@@ -1722,20 +1780,20 @@
 - **** — 财富中文
   https://www.fortunechina.com/shangye/
 
+- **我发现初中跟不上的孩子，都有一个通病** — 三联生活
+  http://weixin.sogou.com/weixin?type=2&query=%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A+%E6%88%91%E5%8F%91%E7%8E%B0%E5%88%9D%E4%B8%AD%E8%B7%9F%E4%B8%8D%E4%B8%8A%E7%9A%84%E5%AD%A9%E5%AD%90%EF%BC%8C%E9%83%BD%E6%9C%89%E4%B8%80%E4%B8%AA%E9%80%9A%E7%97%85
+
+- **全球第一大律所“暴雷”：梅向荣和疯狂扩张下的失序业务** — 三联生活
+  http://weixin.sogou.com/weixin?type=2&query=%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A+%E5%85%A8%E7%90%83%E7%AC%AC%E4%B8%80%E5%A4%A7%E5%BE%8B%E6%89%80%E2%80%9C%E6%9A%B4%E9%9B%B7%E2%80%9D%EF%BC%9A%E6%A2%85%E5%90%91%E8%8D%A3%E5%92%8C%E7%96%AF%E7%8B%82%E6%89%A9%E5%BC%A0%E4%B8%8B%E7%9A%84%E5%A4%B1%E5%BA%8F%E4%B8%9A%E5%8A%A1
+
+- **200年前孤身穿越16国，她才是真正的大女主！** — 三联生活
+  http://weixin.sogou.com/weixin?type=2&query=%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A+200%E5%B9%B4%E5%89%8D%E5%AD%A4%E8%BA%AB%E7%A9%BF%E8%B6%8A16%E5%9B%BD%EF%BC%8C%E5%A5%B9%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E7%9A%84%E5%A4%A7%E5%A5%B3%E4%B8%BB%EF%BC%81
+
 - **价格暴跌至8年来新低，中国人曾经最爱的“餐桌顶流”不香了？** — 三联生活
   http://weixin.sogou.com/weixin?type=2&query=%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A+%E4%BB%B7%E6%A0%BC%E6%9A%B4%E8%B7%8C%E8%87%B38%E5%B9%B4%E6%9D%A5%E6%96%B0%E4%BD%8E%EF%BC%8C%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%9B%BE%E7%BB%8F%E6%9C%80%E7%88%B1%E7%9A%84%E2%80%9C%E9%A4%90%E6%A1%8C%E9%A1%B6%E6%B5%81%E2%80%9D%E4%B8%8D%E9%A6%99%E4%BA%86%EF%BC%9F
 
 - **今年最好的决定：放弃低密度内容** — 三联生活
   http://weixin.sogou.com/weixin?type=2&query=%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A+%E4%BB%8A%E5%B9%B4%E6%9C%80%E5%A5%BD%E7%9A%84%E5%86%B3%E5%AE%9A%EF%BC%9A%E6%94%BE%E5%BC%83%E4%BD%8E%E5%AF%86%E5%BA%A6%E5%86%85%E5%AE%B9
-
-- **票房全球破纪录的童年神作，为何口碑两极？** — 三联生活
-  http://weixin.sogou.com/weixin?type=2&query=%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A+%E7%A5%A8%E6%88%BF%E5%85%A8%E7%90%83%E7%A0%B4%E7%BA%AA%E5%BD%95%E7%9A%84%E7%AB%A5%E5%B9%B4%E7%A5%9E%E4%BD%9C%EF%BC%8C%E4%B8%BA%E4%BD%95%E5%8F%A3%E7%A2%91%E4%B8%A4%E6%9E%81%EF%BC%9F
-
-- **年轻人之夜活动招募｜不上班，行吗？** — 三联生活
-  http://weixin.sogou.com/weixin?type=2&query=%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A+%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%B9%8B%E5%A4%9C%E6%B4%BB%E5%8A%A8%E6%8B%9B%E5%8B%9F%EF%BD%9C%E4%B8%8D%E4%B8%8A%E7%8F%AD%EF%BC%8C%E8%A1%8C%E5%90%97%EF%BC%9F
-
-- **走，探墓去！丨《地下有知》洛阳古墓博物馆专场活动来啦！** — 三联生活
-  http://weixin.sogou.com/weixin?type=2&query=%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A+%E8%B5%B0%EF%BC%8C%E6%8E%A2%E5%A2%93%E5%8E%BB%EF%BC%81%E4%B8%A8%E3%80%8A%E5%9C%B0%E4%B8%8B%E6%9C%89%E7%9F%A5%E3%80%8B%E6%B4%9B%E9%98%B3%E5%8F%A4%E5%A2%93%E5%8D%9A%E7%89%A9%E9%A6%86%E4%B8%93%E5%9C%BA%E6%B4%BB%E5%8A%A8%E6%9D%A5%E5%95%A6%EF%BC%81
 
 - **《城南旧事》里面美仑美奂的插图** — 读库
   http://weixin.sogou.com/weixin?type=2&query=%E8%AF%BB%E5%BA%93%E5%B0%8F%E6%8A%A5+%E3%80%8A%E5%9F%8E%E5%8D%97%E6%97%A7%E4%BA%8B%E3%80%8B%E9%87%8C%E9%9D%A2%E7%BE%8E%E4%BB%91%E7%BE%8E%E5%A5%82%E7%9A%84%E6%8F%92%E5%9B%BE
@@ -1785,10 +1843,6 @@
 - **Build Your Own Key-Value Storage Engine—Week 3** — The Coder Cafe
   > Durability with Write-Ahead Logging
   https://read.thecoder.cafe/p/build-your-own-kv-engine-3
-
-- **《制衡》通讯：为何特朗普的空话依然重要** — 经济学人
-  > Checks and Balance newsletter: Why Trump’s empty words still matter
-  https://www.economist.com/united-states/2026/04/11/checks-and-balance-newsletter-why-trumps-empty-words-still-matter
 
 - **2026 04 11 HackerNews** — SuperTechFans
   > 2026-04-11 Hacker News Top Stories # EFF 宣布退出 X，因触达骤降与平台治理倒退，将转向多平台发声并引发其政治中立性与立场偏移的争议。 法国启动以 Linux 取代 Windows 的政府桌面计划以强
@@ -1845,6 +1899,10 @@
 - **第259期 - 空中径山** — 潮流周刊
   > 封面图拍摄于周末带着无人机去径山花海玩，当前只有油菜花，其他的花没有怎么开，拿着无人机飞到最高拍照玩，看到不少不错的景色。 记录每周看到的接地气的潮流技术，筛选后发布于此，觉得不错可关注此周刊，方便获取更新通知 潮流工具 妙言最近也更新了，
   https://weekly.tw93.fun/posts/259/
+
+- **IBM pays $17M fine to end DOJ suit over DEI programs** — TechCrunch
+  > IBM entered into a $17 million settlement agreement on Friday with the U.S. DOJ over allegations that it engaged in “ill
+  https://techcrunch.com/2026/04/13/ibm-pays-17m-fine-to-end-doj-suit-over-dei-programs/
 
 - **Newsletter: Gradient Updates** — Epoch AI
   https://epoch.ai/gradient-updates
