@@ -1,0 +1,2415 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Digest · 2026-05-23</title>
+<style>
+/* ═══════════════════════════════════════════════════
+   Notion-inspired Design System
+   Warm minimalism · Serif headings · Soft surfaces
+   ═══════════════════════════════════════════════════ */
+
+/* ── Tokens (Light — default, Notion is light-first) ── */
+:root, [data-theme="light"] {
+  --bg:         #ffffff;
+  --bg-hover:   #f7f6f3;
+  --bg-gray:    #f1f1ef;
+  --bg-nav:     rgba(255,255,255,0.92);
+  --border:     #e9e9e7;
+  --border-heavy:#ddddd9;
+  --text:       #37352f;
+  --text-sec:   #6b6b6b;
+  --text-light: #9b9a97;
+  --accent:     #2eaadc;
+  --shadow:     0 1px 3px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.03);
+  --shadow-lg:  0 4px 16px rgba(0,0,0,0.06);
+  color-scheme: light;
+}
+
+/* ── Tokens (Dark) ── */
+[data-theme="dark"] {
+  --bg:         #191919;
+  --bg-hover:   #212121;
+  --bg-gray:    #252525;
+  --bg-nav:     rgba(25,25,25,0.92);
+  --border:     #2f2f2f;
+  --border-heavy:#3a3a3a;
+  --text:       #e3e2df;
+  --text-sec:   #9b9a97;
+  --text-light: #6b6b6b;
+  --accent:     #529cca;
+  --shadow:     0 1px 3px rgba(0,0,0,0.15), 0 0 0 1px rgba(255,255,255,0.04);
+  --shadow-lg:  0 4px 16px rgba(0,0,0,0.2);
+  color-scheme: dark;
+}
+
+/* ── Design Styles ── */
+[data-style="notion"] {
+  --font-title: 'Georgia', 'Noto Serif SC', 'Source Han Serif CN', 'Songti SC', serif;
+  --accent:     #2eaadc;
+  --radius:     3px;
+  --max-w:      900px;
+  --shadow:     0 1px 2px rgba(0,0,0,0.05);
+}
+
+[data-style="apple"] {
+  --font-title: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  --accent:     #007AFF;
+  --radius:     12px;
+  --max-w:      980px;
+  --shadow:     0 2px 8px rgba(0,0,0,0.08);
+}
+
+[data-style="cursor"] {
+  --font-title: 'SF Mono', 'Monaco', 'Consolas', monospace;
+  --accent:     #58A6FF;
+  --radius:     6px;
+  --max-w:      1200px;
+  --shadow:     0 4px 12px rgba(0,0,0,0.15);
+}
+
+[data-style="figma"] {
+  --font-title: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --accent:     #0D99FF;
+  --radius:     8px;
+  --max-w:      1100px;
+  --shadow:     0 8px 24px rgba(0,0,0,0.12);
+}
+
+[data-style="github"] {
+  --font-title: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --accent:     #0969DA;
+  --radius:     6px;
+  --max-w:      1012px;
+  --shadow:     0 1px 3px rgba(0,0,0,0.12);
+}
+
+[data-style="miro"] {
+  --font-title: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --accent:     #4262FF;
+  --radius:     16px;
+  --max-w:      1300px;
+  --shadow:     0 12px 32px rgba(0,0,0,0.1);
+}
+
+/* ── Shared tokens ── */
+:root {
+  --font-title: 'Georgia', 'Noto Serif SC', 'Source Han Serif CN',
+                'Songti SC', serif;
+  --font-body:  -apple-system, 'SF Pro Text', 'Segoe UI', 'PingFang SC',
+                'Microsoft YaHei', sans-serif;
+  --font-mono:  'SFMono-Regular', 'Cascadia Code', 'Consolas', monospace;
+  --radius:     4px;
+  --radius-lg:  8px;
+  --ease:       200ms ease;
+  --max-w:      780px;
+}
+
+/* ── Reset ── */
+*,*::before,*::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; -webkit-font-smoothing:antialiased; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+/* ── Page wrapper ── */
+.page {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 48px;
+}
+@media (max-width: 840px) {
+  .page { padding: 0 20px; }
+}
+
+/* ── Header ── */
+.hdr {
+  padding: 56px 0 24px;
+}
+.hdr h1 {
+  font-family: var(--font-title);
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--text);
+}
+.hdr .sub {
+  margin-top: 6px;
+  font-size: 0.88rem;
+  color: var(--text-light);
+}
+.hdr .sub span {
+  color: var(--text-sec);
+  font-weight: 500;
+}
+
+/* ── Date Nav ── */
+.date-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+.date-nav-btn {
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-sec);
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+.date-nav-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+  transform: scale(1.05);
+}
+.date-nav-btn:active {
+  transform: scale(0.95);
+}
+.date-nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.date-nav-current {
+  font-size: 0.88rem;
+  color: var(--text-sec);
+  font-weight: 500;
+}
+
+/* ── Divider ── */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0;
+}
+
+/* ── Nav pills ── */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--bg-nav);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  margin: 0 -48px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+@media (max-width: 840px) {
+  .nav { margin: 0 -20px; padding-left: 20px; padding-right: 20px; }
+}
+.nav-scroll {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pill {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 4px 10px;
+  border-radius: var(--radius);
+  background: transparent;
+  border: none;
+  color: var(--text-sec);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all var(--ease);
+}
+.pill:hover {
+  background: var(--bg-gray);
+  color: var(--text);
+}
+.pill .cnt {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-light);
+  margin-left: 2px;
+}
+
+/* ── Content ── */
+.content { padding: 32px 0 64px; }
+
+section { margin-bottom: 40px; }
+.sec-head {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 4px;
+  padding: 6px 0;
+}
+.sec-icon {
+  width: 24px; height: 24px;
+  display: grid; place-items: center;
+  font-size: 0.95rem;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--ic, #787774) 12%, transparent);
+  flex-shrink: 0;
+}
+.sec-head h2 {
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  font-weight: 600;
+  flex: 1;
+  letter-spacing: -0.01em;
+}
+.sec-count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-light);
+}
+
+/* ── Rows ── */
+.rows { display: flex; flex-direction: column; }
+.row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 12px 8px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--ease);
+}
+.row:hover {
+  background: var(--bg-hover);
+}
+.row-num {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-light);
+  min-width: 22px;
+  text-align: center;
+  flex-shrink: 0;
+  line-height: 1;
+  padding-top: 3px;
+}
+.row:hover .row-num { color: var(--accent); }
+.trend {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: #e67e22;
+  background: rgba(230, 126, 34, 0.1);
+  padding: 1px 6px;
+  border-radius: var(--radius);
+  margin-right: 6px;
+  vertical-align: middle;
+  letter-spacing: -0.02em;
+}
+[data-theme="dark"] .trend {
+  color: #f39c12;
+  background: rgba(243, 156, 18, 0.15);
+}
+.score-badge {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--text-light);
+  background: var(--bg-gray);
+  padding: 1px 5px;
+  border-radius: var(--radius);
+  margin-right: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.row:hover .score-badge { color: var(--accent); }
+.source-list {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  right: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  color: var(--text);
+  white-space: nowrap;
+  z-index: 10;
+  font-family: var(--font-body);
+}
+.score-badge.expanded .source-list {
+  display: block;
+}
+.show-more-btn {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  margin: 4px 0 0;
+  background: var(--bg-gray);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--text-sec);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.show-more-btn:hover {
+  background: var(--bg-hover);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.more-rows {
+  animation: fadeIn 0.2s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.sub-num {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--text-light);
+  min-width: 28px;
+  text-align: right;
+  flex-shrink: 0;
+  padding-right: 2px;
+}
+.related-row:hover .sub-num { color: var(--accent); }
+.row-main { flex: 1; min-width: 0; }
+.row-title {
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text);
+  transition: color var(--ease);
+}
+.row:hover .row-title { color: var(--accent); }
+.row-desc {
+  font-size: 0.82rem;
+  color: var(--text-sec);
+  line-height: 1.55;
+  margin-top: 3px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.row-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+.tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--tc, var(--text-light));
+  white-space: nowrap;
+}
+.heat {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--text-light);
+  background: var(--bg-gray);
+  padding: 1px 6px;
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+
+/* ── Related (clustered) rows ── */
+.related {
+  margin-left: 20px;
+  padding-left: 12px;
+  border-left: 2px solid var(--border);
+  margin-bottom: 4px;
+}
+.related-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 8px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--ease);
+}
+.related-row:hover {
+  background: var(--bg-hover);
+}
+.related-title {
+  font-size: 0.82rem;
+  color: var(--text-sec);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.related-row:hover .related-title {
+  color: var(--accent);
+}
+.related-more {
+  animation: fadeIn 0.2s ease;
+}
+.show-related-btn {
+  margin-left: 20px;
+  margin-bottom: 8px;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  color: var(--text-sec);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all var(--ease);
+}
+.show-related-btn:hover {
+  background: var(--bg-hover);
+  color: var(--accent);
+}
+
+/* ── Footer ── */
+.ftr {
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.75rem;
+}
+
+/* ── Update Info ── */
+.update-info {
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+#updateTime {
+  opacity: 0.8;
+}
+
+/* ── Theme toggle ── */
+.theme-btn {
+  position: fixed;
+  bottom: 24px; right: 24px;
+  z-index: 100;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  display: grid; place-items: center;
+  font-size: 1rem;
+  transition: all var(--ease);
+  color: var(--text-sec);
+}
+.theme-btn:hover {
+  border-color: var(--accent);
+  transform: scale(1.06);
+}
+.style-btn {
+  position: fixed;
+  bottom: 24px; right: 72px;
+  z-index: 100;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  display: grid; place-items: center;
+  font-size: 1rem;
+  transition: all var(--ease);
+  color: var(--text-sec);
+}
+.style-btn:hover {
+  border-color: var(--accent);
+  transform: scale(1.06);
+}
+
+/* ── Style-specific overrides ── */
+[data-style="apple"] .hdr h1 {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+[data-style="apple"] .nav {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+[data-style="apple"] .row {
+  padding: 16px 12px;
+}
+[data-style="apple"] .pill {
+  border-radius: 20px;
+}
+
+[data-style="cursor"] .hdr h1 {
+  font-family: 'SF Mono', monospace;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+[data-style="cursor"] .row {
+  border: 1px solid var(--border);
+  margin: 8px 0;
+  background: rgba(255,255,255,0.02);
+}
+[data-style="cursor"] .pill {
+  background: rgba(88, 166, 255, 0.1);
+  border: 1px solid rgba(88, 166, 255, 0.2);
+}
+
+[data-style="figma"] .hdr h1 {
+  font-weight: 700;
+  background: linear-gradient(135deg, #0D99FF, #A259FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+[data-style="figma"] .row {
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(13, 153, 255, 0.05), rgba(162, 89, 255, 0.05));
+}
+[data-style="figma"] .pill {
+  background: rgba(13, 153, 255, 0.1);
+  font-weight: 600;
+}
+
+[data-style="github"] .hdr h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+[data-style="github"] .nav {
+  background: var(--bg-gray);
+  border-bottom: 1px solid var(--border-heavy);
+}
+[data-style="github"] .row {
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  padding: 12px 0;
+}
+[data-style="github"] .pill {
+  background: var(--bg-gray);
+  border: 1px solid var(--border);
+}
+
+[data-style="miro"] .hdr h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+[data-style="miro"] .row {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 8px 0;
+  padding: 20px 16px;
+}
+[data-style="miro"] .pill {
+  background: linear-gradient(135deg, #4262FF, #A259FF);
+  color: white;
+  border-radius: 20px;
+}
+[data-style="miro"] .sec-icon {
+  background: linear-gradient(135deg, #4262FF, #A259FF);
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hdr">
+    <h1>Daily Digest</h1>
+    <p class="sub"><span>470</span> stories &middot; 2026-05-23</p>
+    <div class="date-nav">
+      <button class="date-nav-btn" id="prevDay" title="前一天">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </button>
+      <span class="date-nav-current" id="dateDisplay">2026-05-23</span>
+      <button class="date-nav-btn" id="nextDay" title="后一天">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </button>
+    </div>
+    <div class="update-info">
+      <span id="updateTime">更新中...</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <nav class="nav"><div class="nav-scroll">
+  <a href="#AI-人工智能" class="pill" style="--c:#448aff">🤖 AI / 人工智能<span class="cnt">180</span></a>
+<a href="#学术-AI研究" class="pill" style="--c:#9065e0">🔬 学术/AI 研究<span class="cnt">84</span></a>
+<a href="#科技产品" class="pill" style="--c:#337ea9">📱 科技产品<span class="cnt">67</span></a>
+<a href="#互联网-商业" class="pill" style="--c:#d9730d">🏢 互联网 / 商业<span class="cnt">17</span></a>
+<a href="#社会-文化" class="pill" style="--c:#cb3837">🎭 社会 / 文化<span class="cnt">13</span></a>
+<a href="#财经-宏观" class="pill" style="--c:#0f7b6c">📈 财经 / 宏观<span class="cnt">13</span></a>
+<a href="#国际-地缘" class="pill" style="--c:#d44c47">🌍 国际 / 地缘<span class="cnt">12</span></a>
+<a href="#新能源-汽车" class="pill" style="--c:#0f7b6c">🔋 新能源 / 汽车<span class="cnt">3</span></a>
+<a href="#游戏-娱乐" class="pill" style="--c:#9065e0">🎮 游戏 / 娱乐<span class="cnt">3</span></a>
+<a href="#体育" class="pill" style="--c:#337ea9">⚽ 体育<span class="cnt">2</span></a>
+<a href="#生活-健康" class="pill" style="--c:#448aff">💊 生活 / 健康<span class="cnt">1</span></a>
+<a href="#其他" class="pill" style="--c:#787774">📌 其他<span class="cnt">74</span></a>
+
+  </div></nav>
+
+  <div class="content">
+  <section id="AI-人工智能">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#448aff">🤖</span>
+    <h2>AI / 人工智能</h2>
+    <span class="sec-count">7 groups · 29 articles</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/post/109869" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">当 AI 成为角色：漫谈我的 SillyTavern 使用经验</h3>
+    <p class="row-desc">ST 以及它背后的这套工作流起初只是我的无心的收获，但网上关于这方面的讨论并不多，实在可惜，故有此文。</p>
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="Solidot、The Coder Cafe、V2EX、云风、少数派、掘金、构建我的被动收入、钛媒体">8源<span class="source-list">Solidot、The Coder Cafe、V2EX、云风、少数派、掘金、构建我的被动收入、钛媒体</span></span>
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><div class="related"><a href="https://www.tmtpost.com/7999581.html" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">1.1</span>
+  <span class="tag" style="--tc:#d44c47">钛媒体</span>
+  <span class="related-title">AI融资潮中的三种故事</span>
+</a>
+<a href="https://juejin.cn/post/7641133523776749608" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">1.2</span>
+  <span class="tag" style="--tc:#1e80ff">掘金</span>
+  <span class="related-title">如何从0到1开发一个AI Agent</span>
+</a>
+<a href="https://www.v2ex.com/t/1214884#reply5" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">1.3</span>
+  <span class="tag" style="--tc:#778087">V2EX</span>
+  <span class="related-title">[奇思妙想] 后 AI 时代，我们会怎么活着</span>
+</a>
+<a href="https://www.v2ex.com/t/1214883#reply6" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">1.4</span>
+  <span class="tag" style="--tc:#778087">V2EX</span>
+  <span class="related-title">[程序员] 这一瞬间感觉被 AI 击中了</span>
+</a>
+<a href="https://www.solidot.org/story?sid=84376" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">1.5</span>
+  <span class="tag" style="--tc:#009688">Solidot</span>
+  <span class="related-title">Linus Torvalds 谈 AI</span>
+</a>
+<a href="https://read.thecoder.cafe/p/ai-for-production" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">1.6</span>
+  <span class="tag" style="--tc:#e67e22">The Coder Cafe</span>
+  <span class="related-title">AI for Production</span>
+</a>
+<a href="https://blog.codingnow.com/2026/02/ai_reading.html" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">1.7</span>
+  <span class="tag" style="--tc:#16a085">云风</span>
+  <span class="related-title">用 AI 辅助读书</span>
+</a><div class="related-more" id="related-1" style="display:none"><a href="https://www.bmpi.dev/dev/ai-native-investment-system/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">1.8</span>
+  <span class="tag" style="--tc:#27ae60">构建我的被动收入</span>
+  <span class="related-title">我是如何构建一个 AI 原生量化系统的</span>
+</a></div>
+<button class="show-related-btn" onclick="var el=document.getElementById('related-1');if(el.style.display==='none'){el.style.display='block';this.textContent='收起';}else{el.style.display='none';this.textContent='展开 1 条关联 ↓';}" >展开 1 条关联 ↓</button></div>
+<a href="https://36kr.com/p/3820318177841541?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">2</span>
+  <div class="row-main">
+    <h3 class="row-title">AI时代核心终端生态定位与用户需求洞察| 2026AI Partner·北京亦庄AI+产业大会</h3>
+    <p class="row-desc">AI不是某一个超级单品的故事，而是一个多端协同的生态故事，消费者的期待与顾虑，正在定义这个生态的进化方向。 AI与硬件的融合分为四个阶段，当前正处于从深度融合走向生态化的关键节点。AI渗透率在手机端已从15%涨到40%，但仍是“加分项”而非“决策项”。未来，AI硬件生态的四个步骤——感知、记忆、决策、行动，或将分别由眼</p>
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="36氪、Epoch AI、掘金">3源<span class="source-list">36氪、Epoch AI、掘金</span></span>
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><div class="related"><a href="https://36kr.com/p/3820298219425924?f=rss" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">2.1</span>
+  <span class="tag" style="--tc:#337ea9">36氪</span>
+  <span class="related-title">江行智能：从感知环境到改变世界：物理AI的机遇、路径与实践| 2026AI Partner·北京亦庄AI+产业大会</span>
+</a>
+<a href="https://36kr.com/p/3820220616495492?f=rss" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">2.2</span>
+  <span class="tag" style="--tc:#337ea9">36氪</span>
+  <span class="related-title">让智能体看见世界：CV × AI Agent 的行业场景新实践| 2026AI Partner·北京亦庄AI+产业大会</span>
+</a>
+<a href="https://juejin.cn/post/7641912628643528738" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">2.3</span>
+  <span class="tag" style="--tc:#1e80ff">掘金</span>
+  <span class="related-title">AI Harness 企业级落地实践（一）</span>
+</a>
+<a href="https://epoch.ai/trends" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">2.4</span>
+  <span class="tag" style="--tc:#2eaadc">Epoch AI</span>
+  <span class="related-title">See all AI trends &amp;amp; statistics</span>
+</a>
+<a href="https://epoch.ai/trends" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">2.5</span>
+  <span class="tag" style="--tc:#2eaadc">Epoch AI</span>
+  <span class="related-title">AI Trends &amp; Statistics</span>
+</a></div>
+<a href="https://www.tmtpost.com/7996131.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">3</span>
+  <div class="row-main">
+    <h3 class="row-title">日产上千部短剧！AI 狂飙背后，行业早已两极分化</h3>
+    <p class="row-desc">成本暴跌九成、从业者冰火两重天。</p>
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="虎嗅、财富中文、钛媒体">3源<span class="source-list">虎嗅、财富中文、钛媒体</span></span>
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><div class="related"><a href="https://www.huxiu.com/article/4860800.html?f=rss" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">3.1</span>
+  <span class="tag" style="--tc:#d44c47">虎嗅</span>
+  <span class="related-title"> “AI焦虑”这个超级大生意，现在终于彻底跑通了 </span>
+</a>
+<a href="https://www.fortunechina.com/shangye/c/2026-05/22/content_474116.htm" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">3.2</span>
+  <span class="tag" style="--tc:#d9730d">财富中文</span>
+  <span class="related-title">英伟达向持怀疑态度的投资者喊话：AI即将全面普及</span>
+</a></div>
+<a href="https://www.producthunt.com/products/nota-ai-notes-voice" target="_blank" rel="noopener" class="row">
+  <span class="row-num">4</span>
+  <div class="row-main">
+    <h3 class="row-title">Nota: AI Notes &amp;amp; Voice</h3>
+    <p class="row-desc">&amp;lt;p&amp;gt; Turn voice, scans, sketches, and text into notes with AI &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;a href=&quot;https://www.producthunt.com/products/nota-ai-notes-voice</p>
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="Product Hunt、TechCrunch、美团技术">3源<span class="source-list">Product Hunt、TechCrunch、美团技术</span></span>
+    <span class="tag" style="--tc:#da552f">Product Hunt</span>
+    
+  </div>
+</a><div class="related"><a href="https://tech.meituan.com/2026/04/02/longcat-next.html" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">4.1</span>
+  <span class="tag" style="--tc:#ffc107">美团技术</span>
+  <span class="related-title">美团发布原生多模态 LongCat-Next：当视觉和语音成为AI的母语</span>
+</a>
+<a href="https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">4.2</span>
+  <span class="tag" style="--tc:#00aaff">TechCrunch</span>
+  <span class="related-title">AI is being used to resurrect the voices of dead pilots</span>
+</a></div>
+<a href="https://juejin.cn/post/7641484939951407155" target="_blank" rel="noopener" class="row">
+  <span class="row-num">5</span>
+  <div class="row-main">
+    <h3 class="row-title">AI 为什么总喜欢写防御性代码？</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="Yousa DD、掘金、美团技术">3源<span class="source-list">Yousa DD、掘金、美团技术</span></span>
+    <span class="tag" style="--tc:#1e80ff">掘金</span>
+    
+  </div>
+</a><div class="related"><a href="https://tech.meituan.com/2026/05/07/agent-ai-coding.html" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">5.1</span>
+  <span class="tag" style="--tc:#ffc107">美团技术</span>
+  <span class="related-title">用Agent评测思路管理AI Coding —— 31万行代码AI重构的实践</span>
+</a>
+<a href="https://yousali.com/posts/20260303-ai-coding-efficiency-to-evolution/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">5.2</span>
+  <span class="tag" style="--tc:#6c5ce7">Yousa DD</span>
+  <span class="related-title">为什么 AI 写代码更快但交付没变，以及我怎么把它扳回来的</span>
+</a>
+<a href="https://yousali.com/posts/20260228-ai-coding-sdlc-status-discussion/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">5.3</span>
+  <span class="tag" style="--tc:#6c5ce7">Yousa DD</span>
+  <span class="related-title">AI Coding 融入后台研发全链路：现状、边界与讨论框架</span>
+</a></div>
+<a href="https://www.ithome.com/0/954/277.htm" target="_blank" rel="noopener" class="row">
+  <span class="row-num">6</span>
+  <div class="row-main">
+    <h3 class="row-title">年薪 32~40 万美元：Anthropic 推出高薪写作岗，打响 AI 传播战</h3>
+    <p class="row-desc">IT之家 5 月 23 日消息，科技媒体 Business Insider 昨日（5 月 22 日）发布博文，报道称 Anthropic 正在扩招高薪写作岗位，从而强化品牌叙事和市场沟通，尤其重视把复杂产品能力转化为清晰、具体且有吸引力的表达。根据官方招聘信息显示，Anthropic 正在招募一名文案负责人，主要面向企</p>
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="IT之家、阮一峰">2源<span class="source-list">IT之家、阮一峰</span></span>
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><div class="related"><a href="http://www.ruanyifeng.com/blog/2026/05/weekly-issue-397.html" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">6.1</span>
+  <span class="tag" style="--tc:#337ea9">阮一峰</span>
+  <span class="related-title">科技爱好者周刊（第 397 期）：财富正在向 AI 集中</span>
+</a></div>
+<a href="https://juejin.cn/post/7641417840354099240" target="_blank" rel="noopener" class="row">
+  <span class="row-num">7</span>
+  <div class="row-main">
+    <h3 class="row-title">Claude Code 在大型项目中的最佳实践指南</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="OneV&#x27;s Den、掘金">2源<span class="source-list">OneV&#x27;s Den、掘金</span></span>
+    <span class="tag" style="--tc:#1e80ff">掘金</span>
+    
+  </div>
+</a><div class="related"><a href="https://onevcat.com/2025/08/claude-code/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">7.1</span>
+  <span class="tag" style="--tc:#e74c3c">OneV&#x27;s Den</span>
+  <span class="related-title">一个半月高强度 Claude Code 使用后感受</span>
+</a></div>
+</div>
+  <div class="more-rows" id="more-AI-人工智能" style="display:none"><a href="http://www.ruanyifeng.com/blog/2026/05/weekly-issue-396.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">8</span>
+  <div class="row-main">
+    <h3 class="row-title">科技爱好者周刊（第 396 期）：互联网通信的替代方案</h3>
+    <p class="row-desc">这里记录每周值得分享的科技内容，周五发布。 本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。 封面图 浙江新昌县的&quot;新昌小球中心&quot;，将酒店、商场、体育馆、体育场、户外健身步道都融合在一个建筑里面。（via） 互联网通信的替代方案 某天清晨，你</p>
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="Stratechery、阮一峰">2源<span class="source-list">Stratechery、阮一峰</span></span>
+    <span class="tag" style="--tc:#337ea9">阮一峰</span>
+    
+  </div>
+</a><div class="related"><a href="https://stratechery.com/2026/an-interview-with-ben-thompson-at-the-moffettnathanson-media-internet-communications-conference/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">8.1</span>
+  <span class="tag" style="--tc:#34495e">Stratechery</span>
+  <span class="related-title">An Interview with Ben Thompson at the MoffettNathanson Media, Internet &amp; Communications Conference</span>
+</a></div>
+<a href="http://www.ruanyifeng.com/blog/2026/05/weekly-issue-395.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">9</span>
+  <div class="row-main">
+    <h3 class="row-title">科技爱好者周刊（第 395 期）：软件开发的第三种方式</h3>
+    <p class="row-desc">这里记录每周值得分享的科技内容，周五发布。 本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。 封面图 即将在今年完工的深圳自然博物馆，它的形状模拟了一条弯曲的河流。（via） 软件开发的第三种方式 有一本很著名的软件开发著作，叫做《大教堂与集</p>
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="潮流周刊、阮一峰">2源<span class="source-list">潮流周刊、阮一峰</span></span>
+    <span class="tag" style="--tc:#337ea9">阮一峰</span>
+    
+  </div>
+</a><div class="related"><a href="http://www.ruanyifeng.com/blog/2026/04/weekly-issue-394.html" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">9.1</span>
+  <span class="tag" style="--tc:#337ea9">阮一峰</span>
+  <span class="related-title">科技爱好者周刊（第 394 期）：第二次 API 开放浪潮</span>
+</a>
+<a href="http://www.ruanyifeng.com/blog/2026/04/weekly-issue-393.html" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">9.2</span>
+  <span class="tag" style="--tc:#337ea9">阮一峰</span>
+  <span class="related-title">科技爱好者周刊（第 393 期）：脑腐状态</span>
+</a>
+<a href="https://weekly.tw93.fun/posts/263/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">9.3</span>
+  <span class="tag" style="--tc:#9b59b6">潮流周刊</span>
+  <span class="related-title">第263期 - 硬件之美</span>
+</a></div>
+<a href="https://imjuya.github.io/juya-ai-daily/issue-99/" target="_blank" rel="noopener" class="row">
+  <span class="row-num">10</span>
+  <div class="row-main">
+    <h3 class="row-title">2026-05-23</h3>
+    <p class="row-desc">AI 早报 2026-05-23 视频版：哔哩哔哩 ｜ YouTube 概览 要闻 DeepSeek 宣布将 DeepSeek-V4-Pro API 2.5 折优惠转为永久定价 ↗ #1 模型发布 智谱发布 GLM-5.1-HighSpeed，官方称速度达 400 tokens/s ↗ #2 Qwen3.7-Max 上</p>
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="Stratechery、橘鸦AI早报">2源<span class="source-list">Stratechery、橘鸦AI早报</span></span>
+    <span class="tag" style="--tc:#9b59b6">橘鸦AI早报</span>
+    
+  </div>
+</a><div class="related"><a href="https://imjuya.github.io/juya-ai-daily/issue-98/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">10.1</span>
+  <span class="tag" style="--tc:#9b59b6">橘鸦AI早报</span>
+  <span class="related-title">2026-05-22</span>
+</a>
+<a href="https://imjuya.github.io/juya-ai-daily/issue-97/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">10.2</span>
+  <span class="tag" style="--tc:#9b59b6">橘鸦AI早报</span>
+  <span class="related-title">2026-05-21</span>
+</a>
+<a href="https://imjuya.github.io/juya-ai-daily/issue-96/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">10.3</span>
+  <span class="tag" style="--tc:#9b59b6">橘鸦AI早报</span>
+  <span class="related-title">2026-05-20</span>
+</a>
+<a href="https://imjuya.github.io/juya-ai-daily/issue-95/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">10.4</span>
+  <span class="tag" style="--tc:#9b59b6">橘鸦AI早报</span>
+  <span class="related-title">2026-05-19</span>
+</a>
+<a href="https://imjuya.github.io/juya-ai-daily/issue-94/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">10.5</span>
+  <span class="tag" style="--tc:#9b59b6">橘鸦AI早报</span>
+  <span class="related-title">2026-05-18</span>
+</a>
+<a href="https://imjuya.github.io/juya-ai-daily/issue-93/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">10.6</span>
+  <span class="tag" style="--tc:#9b59b6">橘鸦AI早报</span>
+  <span class="related-title">2026-05-17</span>
+</a>
+<a href="https://imjuya.github.io/juya-ai-daily/issue-92/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">10.7</span>
+  <span class="tag" style="--tc:#9b59b6">橘鸦AI早报</span>
+  <span class="related-title">2026-05-16</span>
+</a><div class="related-more" id="related-10" style="display:none"><a href="https://imjuya.github.io/juya-ai-daily/issue-90/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">10.8</span>
+  <span class="tag" style="--tc:#9b59b6">橘鸦AI早报</span>
+  <span class="related-title">2026-05-15</span>
+</a>
+<a href="https://imjuya.github.io/juya-ai-daily/issue-89/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">10.9</span>
+  <span class="tag" style="--tc:#9b59b6">橘鸦AI早报</span>
+  <span class="related-title">2026-05-14</span>
+</a>
+<a href="https://stratechery.com/2026/the-data-center-veto/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">10.10</span>
+  <span class="tag" style="--tc:#34495e">Stratechery</span>
+  <span class="related-title">2026.21: The Data Center Veto</span>
+</a></div>
+<button class="show-related-btn" onclick="var el=document.getElementById('related-10');if(el.style.display==='none'){el.style.display='block';this.textContent='收起';}else{el.style.display='none';this.textContent='展开 3 条关联 ↓';}" >展开 3 条关联 ↓</button></div>
+<a href="https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard" target="_blank" rel="noopener" class="row">
+  <span class="row-num">11</span>
+  <div class="row-main">
+    <h3 class="row-title">Google&amp;#8217;s AI search is so broken it can &amp;#8216;disregard&amp;#8217; what you&amp;#8217;re looking for</h3>
+    <p class="row-desc">Google&#x27;s AI Overviews are running into an interesting problem right now. Earlier on Friday, if you searched for the term &quot;disregard,&quot; the AI Overview section wo</p>
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="The Verge、Wired">2源<span class="source-list">The Verge、Wired</span></span>
+    <span class="tag" style="--tc:#0099f5">The Verge</span>
+    
+  </div>
+</a><div class="related"><a href="https://www.wired.com/story/even-if-you-hate-ai-you-will-use-google-ai-search/" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">11.1</span>
+  <span class="tag" style="--tc:#e74c3c">Wired</span>
+  <span class="related-title">Even If You Hate AI, You Will Use Google AI Search</span>
+</a></div>
+<a href="https://sspai.com/post/110020" target="_blank" rel="noopener" class="row">
+  <span class="row-num">12</span>
+  <div class="row-main">
+    <h3 class="row-title">派早报：小米召开新品发布会、Photoshop 移除工具支持端侧 AI 模型等</h3>
+    <p class="row-desc">绿联推出 NAS 新品 DXP4800 GT、哈博森黑鹰 4 号无人机发布等。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3821371042877575?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">13</span>
+  <div class="row-main">
+    <h3 class="row-title">36氪首发 | 北大项目孵化，国内首家原生机器人“大脑芯片”企业获数亿元融资</h3>
+    <p class="row-desc">作者&amp;amp;nbsp;|&amp;amp;nbsp;乔钰杰 编辑&amp;amp;nbsp;|&amp;amp;nbsp;袁斯来 硬氪获悉，北京维泛智能科技有限公司（以下简称“维泛智能”）近日完成数亿元种子轮融资，由中关村资本及旗下启航投资联合领投，上海未来产业基金、石溪资本、佰维存储、燕创集团、海益投资、探元创投共同投资。 维泛智能成立于</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3819979202253189?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">14</span>
+  <div class="row-main">
+    <h3 class="row-title">用AI来管公司，Moka推出三款AI HR工具｜涌现新栏目</h3>
+    <p class="row-desc">作者｜梁键强 编辑｜王毓婵 一句话介绍 Moka为AI人力资源软件服务商，早期从智能化招聘管理系统起步，后逐步扩展至更完整的HR管理系统。5月，Moka上线了招聘Eva、人事Eva和BPEva三款AI HR产品。 招聘Eva覆盖招聘全流程，辅助企业完成识人、筛选和面试；人事Eva聚焦报表处理、流程流转和员工咨询等重复事</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a></div>
+<button class="show-more-btn" onclick="var el=document.getElementById('more-AI-人工智能');if(el.style.display==='none'){el.style.display='block';this.textContent='收起';}else{el.style.display='none';this.textContent='展开 7 条 ↓';}" >展开 7 条 ↓</button>
+</section>
+<section id="学术-AI研究">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#9065e0">🔬</span>
+    <h2>学术/AI 研究</h2>
+    <span class="sec-count">7 groups · 9 articles</span>
+  </div>
+  <div class="rows"><a href="https://arxiv.org/abs/2605.22207" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">Kernel-Based Safe Exploration in Deep Reinforcement Learning</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="🔬 arXiv-MA、🔬 arXiv-SY">2源<span class="source-list">🔬 arXiv-MA、🔬 arXiv-SY</span></span>
+    <span class="tag" style="--tc:#9065e0">🔬 arXiv-SY</span>
+    
+  </div>
+</a><div class="related"><a href="https://arxiv.org/abs/2605.22306" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">1.1</span>
+  <span class="tag" style="--tc:#9065e0">🔬 arXiv-MA</span>
+  <span class="related-title">ACCoRD: Actor-Critic Conflict Resolution with Deep learning for O-RAN xApps</span>
+</a></div>
+<a href="https://arxiv.org/abs/2605.21676" target="_blank" rel="noopener" class="row">
+  <span class="row-num">2</span>
+  <div class="row-main">
+    <h3 class="row-title">SENTIL: A Runtime Verification Tool for Probabilistic Temporal Logic</h3>
+    
+  </div>
+  <div class="row-meta">
+    <span class="score-badge" onclick="event.preventDefault();event.stopPropagation();this.classList.toggle('expanded')" title="🔬 arXiv-LO、🔬 arXiv-PL">2源<span class="source-list">🔬 arXiv-LO、🔬 arXiv-PL</span></span>
+    <span class="tag" style="--tc:#9065e0">🔬 arXiv-LO</span>
+    
+  </div>
+</a><div class="related"><a href="https://arxiv.org/abs/2605.20923" target="_blank" rel="noopener" class="related-row">
+  <span class="sub-num">2.1</span>
+  <span class="tag" style="--tc:#9065e0">🔬 arXiv-PL</span>
+  <span class="related-title">Causal Past Logic for Runtime Verification of Distributed LLM Agent Workflows</span>
+</a></div>
+<a href="https://huggingface.co/papers/2605.22355" target="_blank" rel="noopener" class="row">
+  <span class="row-num">3</span>
+  <div class="row-main">
+    <h3 class="row-title">TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a><a href="https://huggingface.co/papers/2605.22109" target="_blank" rel="noopener" class="row">
+  <span class="row-num">4</span>
+  <div class="row-main">
+    <h3 class="row-title">Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a><a href="https://huggingface.co/papers/2605.21467" target="_blank" rel="noopener" class="row">
+  <span class="row-num">5</span>
+  <div class="row-main">
+    <h3 class="row-title">DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a><a href="https://huggingface.co/papers/2605.14678" target="_blank" rel="noopener" class="row">
+  <span class="row-num">6</span>
+  <div class="row-main">
+    <h3 class="row-title">π-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a><a href="https://huggingface.co/papers/2605.16928" target="_blank" rel="noopener" class="row">
+  <span class="row-num">7</span>
+  <div class="row-main">
+    <h3 class="row-title">Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a></div>
+  <div class="more-rows" id="more-学术-AI研究" style="display:none"><a href="https://huggingface.co/papers/2605.21850" target="_blank" rel="noopener" class="row">
+  <span class="row-num">8</span>
+  <div class="row-main">
+    <h3 class="row-title">ACC: Compiling Agent Trajectories for Long-Context Training</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a><a href="https://huggingface.co/papers/2605.21572" target="_blank" rel="noopener" class="row">
+  <span class="row-num">9</span>
+  <div class="row-main">
+    <h3 class="row-title">PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a><a href="https://huggingface.co/papers/2605.22012" target="_blank" rel="noopener" class="row">
+  <span class="row-num">10</span>
+  <div class="row-main">
+    <h3 class="row-title">LatentOmni: Rethinking Omni-Modal Understanding via Unified Audio-Visual Latent Reasoning</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a><a href="https://huggingface.co/papers/2605.22642" target="_blank" rel="noopener" class="row">
+  <span class="row-num">11</span>
+  <div class="row-main">
+    <h3 class="row-title">Spreadsheet-RL: Advancing Large Language Model Agents on Realistic Spreadsheet Tasks via Reinforcement Learning</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a><a href="https://huggingface.co/papers/2605.22681" target="_blank" rel="noopener" class="row">
+  <span class="row-num">12</span>
+  <div class="row-main">
+    <h3 class="row-title">Forecasting Scientific Progress with Artificial Intelligence</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a><a href="https://huggingface.co/papers/2605.22718" target="_blank" rel="noopener" class="row">
+  <span class="row-num">13</span>
+  <div class="row-main">
+    <h3 class="row-title">WorldKV: Efficient World Memory with World Retrieval and Compression</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a><a href="https://huggingface.co/papers/2605.22668" target="_blank" rel="noopener" class="row">
+  <span class="row-num">14</span>
+  <div class="row-main">
+    <h3 class="row-title">SEGA: Spectral-Energy Guided Attention for Resolution Extrapolation in Diffusion Transformers</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffbd3d">🔬 HF Papers</span>
+    
+  </div>
+</a></div>
+<button class="show-more-btn" onclick="var el=document.getElementById('more-学术-AI研究');if(el.style.display==='none'){el.style.display='block';this.textContent='收起';}else{el.style.display='none';this.textContent='展开 7 条 ↓';}" >展开 7 条 ↓</button>
+</section>
+<section id="科技产品">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#337ea9">📱</span>
+    <h2>科技产品</h2>
+    <span class="sec-count">7</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/post/104073" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">iOS 里的这些实用辅助功能，每个人都可能用得上</h3>
+    <p class="row-desc">说到辅助功能，或许很多人对它的回忆还停留在「小白点」。但随着 iPhone 彻底进入全面屏时代，辅助功能也慢慢变得陌生起来。实际上，Apple 每年都会给它添加不少功能，来方便更多身体有障人士来使用 iPhone。 不过，尽管它是为了各种有障人群而开发，其中不少功能却能惠及所有 iPhone 用户。而随着 iOS 26</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3821177784881541?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">2</span>
+  <div class="row-main">
+    <h3 class="row-title">9点1氪丨永辉超市向王健林等追债超36亿元；《柳叶刀》：全球近12亿人有精神障碍；微信回应“只能撤回2分钟内消息”</h3>
+    <p class="row-desc">今日热点导览 曝泡泡玛特8.8亿买楼：不予置评 雷军透露小米YU7临时降价 教育部拟同意设置34所新大学 腾讯承诺不再与相关版权方达成或变相达成版权独家授权合同 特朗普凯旋门方案获批 TOP 3大新闻 永辉超市向王健林等追债超36亿元 5月21日，永辉超市发布公告称，公司于近日收到法院出具的《受理案件通知书》。永辉超市</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://techjournal.org/google-aluminium-os-replacing-chromeos" target="_blank" rel="noopener" class="row">
+  <span class="row-num">3</span>
+  <div class="row-main">
+    <h3 class="row-title">Google Is Killing ChromeOS: Aluminium OS, Its Android-Based Replacement</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">15 pts</span>
+  </div>
+</a><a href="https://temertymedicine.utoronto.ca/news/how-decades-sleep-research-led-new-sleep-apnea-drug" target="_blank" rel="noopener" class="row">
+  <span class="row-num">4</span>
+  <div class="row-main">
+    <h3 class="row-title">Sleep research led to a new sleep apnea drug</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">101 pts</span>
+  </div>
+</a><a href="https://bumbershootsoft.wordpress.com/2026/05/09/comparing-an-lz4-decompressor-on-four-legacy-cpus/" target="_blank" rel="noopener" class="row">
+  <span class="row-num">5</span>
+  <div class="row-main">
+    <h3 class="row-title">Comparing an LZ4 Decompressor on Four Legacy CPUs</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">43 pts</span>
+  </div>
+</a><a href="https://spader.zone/sp/" target="_blank" rel="noopener" class="row">
+  <span class="row-num">6</span>
+  <div class="row-main">
+    <h3 class="row-title">Sp.h is the standard library that C deserves</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">15 pts</span>
+  </div>
+</a><a href="https://www.washingtonpost.com/immigration/2026/05/22/new-rule-requires-most-green-card-applicants-apply-outside-us/" target="_blank" rel="noopener" class="row">
+  <span class="row-num">7</span>
+  <div class="row-main">
+    <h3 class="row-title">New rule requires most green-card applicants to apply from outside U.S.</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">31 pts</span>
+  </div>
+</a></div>
+  <div class="more-rows" id="more-科技产品" style="display:none"><a href="https://www.ithome.com/0/954/285.htm" target="_blank" rel="noopener" class="row">
+  <span class="row-num">8</span>
+  <div class="row-main">
+    <h3 class="row-title">小米米家冰箱 Pro 508L 自动制冰新品今日开售：十字门 / 法式门 4199/4399 元</h3>
+    <p class="row-desc">IT之家 5 月 23 日消息，小米官方宣布米家冰箱 Pro 508L 自动制冰两款新品今日开售，十字门 4199 元（叠加国补后 3569.15 元），法式门 4399 元（国补后 3739.15 元），现在购买还送 2 年延保。京东米家冰箱 新一代 Pro 十字 508L 自动制冰 BCD-508WSSMPDIN4</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/954/284.htm" target="_blank" rel="noopener" class="row">
+  <span class="row-num">9</span>
+  <div class="row-main">
+    <h3 class="row-title">飞傲雪漫天 OAK NANO 耳机发售：13.8mm 大尺寸动圈单元，2999 元</h3>
+    <p class="row-desc">IT之家 5 月 23 日消息，飞傲雪漫天 OAK NANO 耳机现已发售，新品主打铍合金球顶振膜、纯钛 CNC 金属腔体，配备 13.8mm 大尺寸动圈单元，售价 2999 元。据介绍，这款耳机延续了 FD7 的声学优势，同样以铍金属作为振膜材料，具备低阻尼、高声速特性，不易产生音染，显著提升高频延伸、瞬态响应和失真</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/954/275.htm" target="_blank" rel="noopener" class="row">
+  <span class="row-num">10</span>
+  <div class="row-main">
+    <h3 class="row-title">消息称 OPPO Reno 新机搭载 2 亿像素超清云台主摄，同档唯一天玑 9 系 + 顶配镜头联调</h3>
+    <p class="row-desc">IT之家 5 月 23 日消息，博主 @数码闲聊站 今天在微博透露，某 Reno 新机将搭载 2 亿像素超清云台主摄。博主表示，该机将是同档位唯一天玑 9 系 + 顶配镜头联调，软硬件都有加料；同时该机还是中端价位第一个上云台的，逆势升配。后续有用户在评论区表示：“Reno 之前都在被喷低配高价，结果现在成了线下机的前</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/954/273.htm" target="_blank" rel="noopener" class="row">
+  <span class="row-num">11</span>
+  <div class="row-main">
+    <h3 class="row-title">联想推出 LOQ 15AHP11 游戏本：AMD 锐龙 7 250 CPU、RTX 5050/5060/5070 显卡</h3>
+    <p class="row-desc">IT之家 5 月 23 日消息，联想现已在海外市场推出 LOQ 15（15AHP11）游戏本，新品定位入门，主打疾风绿配色，搭载英伟达 RTX 50 系显卡。据介绍，这款笔记本的机身采用绿色配色方案，搭配黑色键盘、屏幕边框，视觉对比感较为强烈。，而机身后方的接口区域也加入了黑色装饰边框，凸显年轻化风格。官方选配的 2.</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1666783?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <span class="row-num">12</span>
+  <div class="row-main">
+    <h3 class="row-title">安克重塑安克｜安克消噪耳机体验</h3>
+    <p class="row-desc">2026 年的旗舰耳机，不能只是耳机#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1666662?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <span class="row-num">13</span>
+  <div class="row-main">
+    <h3 class="row-title">小米17Max评测:苹果都放弃的大屏手机，小米为什么还要做?</h3>
+    <p class="row-desc">一台「平平无奇」的好手机#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1666613?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <span class="row-num">14</span>
+  <div class="row-main">
+    <h3 class="row-title">38.99 万起！小米 YU7 GT 发布，纽北最速 SUV 值不值？</h3>
+    <p class="row-desc">跑车级 SUV，首先得是一台好用的 SUV。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a></div>
+<button class="show-more-btn" onclick="var el=document.getElementById('more-科技产品');if(el.style.display==='none'){el.style.display='block';this.textContent='收起';}else{el.style.display='none';this.textContent='展开 7 条 ↓';}" >展开 7 条 ↓</button>
+</section>
+<section id="互联网-商业">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#d9730d">🏢</span>
+    <h2>互联网 / 商业</h2>
+    <span class="sec-count">7</span>
+  </div>
+  <div class="rows"><a href="https://www.tmtpost.com/7999666.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">拉勾网倒了，互联网时代终结了</h3>
+    <p class="row-desc">真正的变革，从来不是依赖某家公司的倒闭或上市。而是当人们习以为常地使用某种体验时，回头一看才发现：旧世界已经没有任何声响。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7999535.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">2</span>
+  <div class="row-main">
+    <h3 class="row-title">2万亿美元的火星船票，SpaceX开启人类史上最大IPO</h3>
+    <p class="row-desc">是星辰大海，还是资本幻梦</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7999189.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">3</span>
+  <div class="row-main">
+    <h3 class="row-title">宝尊Q1净收入增长15%至24亿元；亚玛芬体育Q1营收大中华区涨44.5%；珀莱雅拟持股51%花知晓；雅诗兰黛公司与Puig集团终止谈判｜消研所周报</h3>
+    <p class="row-desc">Shein 计划收购美国时尚品牌「Everlane」；耐克中国华北物流中心正式启用。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1666802?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <span class="row-num">4</span>
+  <div class="row-main">
+    <h3 class="row-title">10 万元级双电机四驱！吉利银河星耀 7 MAX 要给友商上一课</h3>
+    <p class="row-desc">多给一点冗余，说不定真能让通勤路变得有些不一样。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1666785?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <span class="row-num">5</span>
+  <div class="row-main">
+    <h3 class="row-title">岚图泰山 X8 上市：28.29 万元起，大五座 SUV 开始从「够坐」进入「够住」！</h3>
+    <p class="row-desc">它还说「何以览胜，唯有泰山」。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.ifanr.com/1666705?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener" class="row">
+  <span class="row-num">6</span>
+  <div class="row-main">
+    <h3 class="row-title">第三代元 PLUS 上市：12 万级纯电 SUV，想成为世界级「六边形战士」</h3>
+    <p class="row-desc">卖到莱茵河流域去。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">爱范儿</span>
+    
+  </div>
+</a><a href="https://www.v2ex.com/t/1214896#reply4" target="_blank" rel="noopener" class="row">
+  <span class="row-num">7</span>
+  <div class="row-main">
+    <h3 class="row-title">[macOS] Mac 版微信劫持了 Ctrl+E，又没地方关，这设计是怎么过评审的</h3>
+    <p class="row-desc">mac 版微信不知道哪个版本开始，把 Ctrl+E 绑成了&quot;展开输入框&quot;的快捷键。问题不在它绑了什么，问题在：1. macOS 上 Ctrl+E 是 Cocoa 文本系统的 emacs binding ，所有文本框默认是&quot;移到行尾&quot;2. 微信自己 setting 里没有快捷键面板，没地方 unset3. 系统设置 → </p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#778087">V2EX</span>
+    
+  </div>
+</a></div>
+  <div class="more-rows" id="more-互联网-商业" style="display:none"><a href="https://www.solidot.org/story?sid=84375" target="_blank" rel="noopener" class="row">
+  <span class="row-num">8</span>
+  <div class="row-main">
+    <h3 class="row-title">GitHub 面临生存之战</h3>
+    <p class="row-desc">在被微软收购八年之后，最大的代码托管平台 GitHub 正面临生存之战，它的宕机和安全问题频发，而竞争对手的压力也越来越大。过去几周，GitHub 发生了多起严重的宕机事故，因员工的 VS Code 安装了一个恶意库扩展导致 3800 个内部代码库被窃取。GitHub 现员工和前员工在接受采访时描述了公司在领导层缺乏和</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#009688">Solidot</span>
+    
+  </div>
+</a><a href="https://tech.meituan.com/2026/03/20/busniness-intelligence-practice-in-meituan.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">9</span>
+  <div class="row-main">
+    <h3 class="row-title">美团 BI 在指标平台和分析引擎上的探索和实践</h3>
+    <p class="row-desc">美团数据平台构建了以指标平台为核心的新一代 BI 架构，通过自动语义和增强计算两种核心能力的建设，部分解决了传统 BI 平台在个性化数据集驱动下产生的数据口径混乱、查询性能差等问题。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ffc107">美团技术</span>
+    
+  </div>
+</a><a href="https://www.huxiu.com/article/4860814.html?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">10</span>
+  <div class="row-main">
+    <h3 class="row-title"> 无印良品葡萄酒业务遇冷 </h3>
+    <p class="row-desc">本文来自微信公众号： 葡萄酒商业观察 ，作者：WBOWBO近期注意到，无印良品成都太古里店设有专门的展柜进行葡萄酒销售，其中包括无印良品自营产品，同时还有来自宁夏、云南等多个产区的葡萄酒。不过有熟悉无印良品的消费者透露：“我2023年就在网上买过他们自营的红和白，现在他们线上已经停售了，线下店卖的仍然是同一批库存，年份</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">虎嗅</span>
+    
+  </div>
+</a><a href="https://www.huxiu.com/article/4860811.html?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">11</span>
+  <div class="row-main">
+    <h3 class="row-title"> 1000元难配齐一套基础穿搭，太平鸟被吐槽烧钱鸟，太平鸟再次创业不太平 </h3>
+    <p class="row-desc">本文来自微信公众号： 深氪新消费 ，作者：周行之一边是1000元难配齐一套基础穿搭，太平鸟被吐槽烧钱鸟，冲上热搜。一边是年报营收四连降，营收规模持续萎缩。曾经的太平鸟，在一次次危机中，均能成功转型，站上时代风口。97年亚洲金融危机，太平鸟轻资产转型成功，开启快速扩张。08年全球金融危机，太平鸟线上转型，站上电商风口。…</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">虎嗅</span>
+    
+  </div>
+</a><a href="https://www.huxiu.com/article/4860810.html?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">12</span>
+  <div class="row-main">
+    <h3 class="row-title"> “国民补剂”塌房，几十亿鱼油保健品市场，全是营销骗局？ </h3>
+    <p class="row-desc">本文来自微信公众号： 深氪新消费 ，作者：视频组鱼油，这个全国人民都熟悉的“国民级保健品”，为了掰扯它到底是不是智商税，全网已经吵翻天了。先是百万粉丝医学博主直言&quot;市面上90%的保健品鱼油都是智商税&quot;，随即便遭到多位食品科普博主的集体反击，双方你来我往互撕数轮，最终以互相道歉的世纪大和解收了场。只剩下消费者还没搞明白，</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">虎嗅</span>
+    
+  </div>
+</a><a href="https://www.huxiu.com/article/4860789.html?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">13</span>
+  <div class="row-main">
+    <h3 class="row-title"> 蔚来盈利，薄如蝉翼 </h3>
+    <p class="row-desc">出品｜虎嗅汽车组作者｜杨杰题图｜视觉中国10家车企，几百万辆车，利润加在一起，不如一家电池厂。&amp;nbsp;这不是搞笑的段子，这是2026年中国车市的真实账本。中汽协数据显示：第一季度汽车产销同比分别下降6.9%和5.6%，国内乘用车销量同比下滑23.4%，新能源汽车国内销量同比下降23.8%。全行业利润率跌至3.2%，</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">虎嗅</span>
+    
+  </div>
+</a><a href="https://www.huxiu.com/article/4860795.html?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">14</span>
+  <div class="row-main">
+    <h3 class="row-title"> 改编一部成一部，紫金陈现象不是玄学 </h3>
+    <p class="row-desc">本文来自微信公众号： 影视独舌 ，作者：安吉玛《低智商犯罪》在爱奇艺站内热度破万，B站网友玩梗成风，CP粉左拥右抱、大快朵颐……紫金陈小说改编剧集又多了一个成功案例。在豆瓣浏览紫金陈的作品列表，会发现一个颇为独特的现象：他那几部备受好评的悬疑小说，在改编成影视剧后，评分往往比原著更高。这种“影视剧评分高于原著”的现象，</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">虎嗅</span>
+    
+  </div>
+</a></div>
+<button class="show-more-btn" onclick="var el=document.getElementById('more-互联网-商业');if(el.style.display==='none'){el.style.display='block';this.textContent='收起';}else{el.style.display='none';this.textContent='展开 7 条 ↓';}" >展开 7 条 ↓</button>
+</section>
+<section id="社会-文化">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#cb3837">🎭</span>
+    <h2>社会 / 文化</h2>
+    <span class="sec-count">7</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/post/110052" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">这个周末，来深圳文博会和少数派打个卡吧</h3>
+    <p class="row-desc">熟悉少数派的朋友都知道，我们一直在研究怎么让数字生活变得更好玩、更高效。今天（5月22日），这件事有了新的进展。第二十二届中国（深圳）国际文化产业博览交易会之元匠坊分会场正式开幕。这一次，少数派不仅参 ...</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://sspai.com/post/109287" target="_blank" rel="noopener" class="row">
+  <span class="row-num">2</span>
+  <div class="row-main">
+    <h3 class="row-title">Maptoposter Online：把你爱的城市画成艺术海报</h3>
+    <p class="row-desc">如果你喜欢城市地图、旅行纪念、桌面壁纸、打印海报，或者只是想看看一座城市的路网长什么样，可以试试这个工具。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://sspai.com/post/109418" target="_blank" rel="noopener" class="row">
+  <span class="row-num">3</span>
+  <div class="row-main">
+    <h3 class="row-title">4 月音乐精选：听这 8 张美妙的专辑迎接夏天</h3>
+    <p class="row-desc">编者注：2026年我们将重启少数派音乐推荐栏目FM3.14，特邀资深音乐从业者及爱好者为大家推荐优质的华语独立、流行音乐，今年我们也很荣幸邀请到老朋友飞傲，为本栏目冠名。飞傲目前拥有品牌以音乐发烧友为 ...</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://36kr.com/p/3821213026570627?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">4</span>
+  <div class="row-main">
+    <h3 class="row-title">千禧年流行的老式漂亮饭，居然翻红了</h3>
+    <p class="row-desc">过去这几年，餐饮行业的新店越开越多，淘汰速度也越来越快。精致餐饮仍在发展，但人们愿意为摆盘和氛围买单的冲动在减弱，转而开始寻求一种体面而高性价比的社交空间。 在这样的节奏中，上岛咖啡、米萝咖啡、老树咖啡、良木缘、绿茵阁、豪享来等颇具年代感的老式咖啡餐吧，又开始悄悄爬上了年轻人的打卡清单。 二三十年前，它们是城市里最洋气</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://www.solidot.org/story?sid=84369" target="_blank" rel="noopener" class="row">
+  <span class="row-num">5</span>
+  <div class="row-main">
+    <h3 class="row-title">欧洲巨石文化社会存在遗传亲缘关系</h3>
+    <p class="row-desc">新石器时代晚期（约公元前 4500 至公元前 2800 年），巨石遗迹（即大型石质建筑结构）在欧洲各地出现。这些建筑作品既反映了当地的传统，同时也暗示了相隔遥远的人群之间存在着影响深远的社会、文化或祖源联系。根据发表在《科学》期刊上的一项研究，研究人员分析了中欧多个相距遥远的巨石文化遗址个体的基因组数据，发现他们之间存</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#009688">Solidot</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/china/story20260523-9094813" target="_blank" rel="noopener" class="row">
+  <span class="row-num">6</span>
+  <div class="row-main">
+    <h3 class="row-title">山西煤矿事故企业负责人被控制</h3>
+    <p class="row-desc">中国山西省沁源县一家煤矿发生瓦斯爆炸造成重大人员伤亡，涉事企业负责人已被控制。沁源县通洲集团留神峪煤矿星期五（5月22日）晚7时29分发生瓦斯爆炸，井下作业人员247人，后201人平安升井，八人死亡，井下仍有38人。据央视新闻报道，从山西通洲集团留神峪煤矿瓦斯爆炸事故救援指挥部了解到，涉事企业负责人已被依法采取控制措施</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/china/story20260523-9094389" target="_blank" rel="noopener" class="row">
+  <span class="row-num">7</span>
+  <div class="row-main">
+    <h3 class="row-title">神二十三瞄准明晚发射 中国空间站将迎来首位香港航天员</h3>
+    <p class="row-desc">中国宣布，神舟二十三号瞄准星期天（5月24日）晚上11时08分发射。香港警务处警司黎家盈是三名航天员之一，中国空间站“天宫”将迎来首位来自香港的航天员。综合央视新闻和新华社报道，神舟二十三号航天员乘组由航天飞行工程师朱杨柱、航天驾驶员张志远、载荷专家黎家盈三名航天员组成，朱杨柱任指令长。黎家盈为中国首位执行飞行任务的第</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报</span>
+    
+  </div>
+</a></div>
+  <div class="more-rows" id="more-社会-文化" style="display:none"><a href="https://www.zaobao.com/news/china/story20260523-9094325" target="_blank" rel="noopener" class="row">
+  <span class="row-num">8</span>
+  <div class="row-main">
+    <h3 class="row-title">中国提出促进未落户常住人口与户籍人口同等享有基本公共服务</h3>
+    <p class="row-desc">中国官方印发实施意见，提出促进未落户常住人口与户籍人口同等享有基本公共服务，全面取消在就业地参加职工社会保险的户籍限制。据新华社报道，中国国务院印发的《关于推行常住地提供基本公共服务的实施意见》强调，由常住地提供基本公共服务，促进未落户常住人口与户籍人口同等享有基本公共服务，有利于满足人民日益增长的美好生活需要，对提升</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/world/story20260523-9094140" target="_blank" rel="noopener" class="row">
+  <span class="row-num">9</span>
+  <div class="row-main">
+    <h3 class="row-title">联合国拨款加速应对刚果（金）等地伊波拉疫情</h3>
+    <p class="row-desc">联合国拨款6000万美元（约7700万新元），以加速应对刚果（金）及更广泛地区的伊波拉疫情。新华社报道，联合国分管人道主义事务的副秘书长兼紧急救援协调员弗莱彻星期五（5月22日）发表声明说，国际社会必须抢在伊波拉疫情蔓延之前采取行动。世界卫生组织正在发挥引领作用。不过，当前的流行病学形势充满挑战，对引发本轮疫情的本迪布</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报(国际)</span>
+    
+  </div>
+</a><a href="http://weixin.sogou.com/weixin?type=2&amp;query=%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A+%E8%B1%86%E7%93%A38.9%EF%BC%8C%E8%BF%99%E4%B8%AA%E9%A1%B6%E6%B5%81%E7%94%B7%E7%A5%9E%E7%9A%84%E5%AE%9D%E8%97%8F%E7%BB%BC%E8%89%BA%E4%BD%95%E4%BB%A5%E6%B2%BB%E6%84%88%E6%97%A0%E6%95%B0%E4%BA%BA%EF%BC%9F" target="_blank" rel="noopener" class="row">
+  <span class="row-num">10</span>
+  <div class="row-main">
+    <h3 class="row-title">豆瓣8.9，这个顶流男神的宝藏综艺何以治愈无数人？</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#337ea9">三联生活</span>
+    
+  </div>
+</a><a href="http://weixin.sogou.com/weixin?type=2&amp;query=%E8%AF%BB%E5%BA%93%E5%B0%8F%E6%8A%A5+5%E6%9C%888%E6%97%A5%E6%99%9A%EF%BC%8C%E8%8B%8F%E5%B7%9E%E5%9D%90%E5%BF%98%E4%B9%A6%E6%88%BF%E8%A7%81" target="_blank" rel="noopener" class="row">
+  <span class="row-num">11</span>
+  <div class="row-main">
+    <h3 class="row-title">5月8日晚，苏州坐忘书房见</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">读库</span>
+    
+  </div>
+</a><a href="https://yousali.com/posts/20260307-closed-loop-thinking/" target="_blank" rel="noopener" class="row">
+  <span class="row-num">12</span>
+  <div class="row-main">
+    <h3 class="row-title">为什么你读了100本书，生活却没什么变化？</h3>
+    <p class="row-desc">大多数人的努力只有输入没有输出，缺少反馈闭环。闭环不是把事做完，是让判断变准。先执行，再观测，用结果校准下一次判断。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#6c5ce7">Yousa DD</span>
+    
+  </div>
+</a><a href="https://program-think.blogspot.com/feeds/329569519001390000/comments/default" target="_blank" rel="noopener" class="row">
+  <span class="row-num">13</span>
+  <div class="row-main">
+    <h3 class="row-title">分享各类电子书（政治、IT、科普、历史、等，97本）</h3>
+    <p class="row-desc">插播一条消息： 4月22日，俺在前一篇博文回复读者评论。当时有人建议俺：把博客的评论都导入 Github。然后俺回了一条留言（链接）告诉对方：已经有热心网友干了这事儿。并且俺还贴出 Github 已有的某个仓库的网址（该仓库的作者会把博客新增的留言【实时同步】到 Github，已经运作了好几年） 大伙儿猜猜看，出了啥事</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#c0392b">编程随想</span>
+    
+  </div>
+</a></div>
+<button class="show-more-btn" onclick="var el=document.getElementById('more-社会-文化');if(el.style.display==='none'){el.style.display='block';this.textContent='收起';}else{el.style.display='none';this.textContent='展开 6 条 ↓';}" >展开 6 条 ↓</button>
+</section>
+<section id="财经-宏观">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#0f7b6c">📈</span>
+    <h2>财经 / 宏观</h2>
+    <span class="sec-count">7</span>
+  </div>
+  <div class="rows"><a href="https://36kr.com/newsflashes/3821372698661251?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">富途：已回购约1.6亿美元美国存托股份</h3>
+    <p class="row-desc">36氪获悉，富途控股宣布，截至2026年5月23日，公司已回购价值约1.6亿美元的美国存托股份，此次回购系根据公司此前于2025年11月18日公布的股份回购计划进行的。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7999661.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">2</span>
+  <div class="row-main">
+    <h3 class="row-title">18亿处罚落地前，富途控股被“精准”做空</h3>
+    <p class="row-desc">提前埋伏</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.ithome.com/0/954/280.htm" target="_blank" rel="noopener" class="row">
+  <span class="row-num">3</span>
+  <div class="row-main">
+    <h3 class="row-title">因劳动力短缺，丰田将把中国台湾地区产乘用车出口到日本</h3>
+    <p class="row-desc">IT之家 5 月 23 日消息，据日经亚洲前天报道，丰田汽车日前宣布将在中国台湾地区设立供应日本市场需求的乘用车生产线，自 10 月起将把两款主力小型厢型车反向进口回日本销售。据报道，丰田汽车做出此番决定的原因是日本本土劳动力短缺，导致工厂增产余裕有限、新车交付周期严重拖延。为了缩短消费者等待时间，并活用海外供应链分散</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a><a href="https://www.v2ex.com/t/1214886#reply6" target="_blank" rel="noopener" class="row">
+  <span class="row-num">4</span>
+  <div class="row-main">
+    <h3 class="row-title">[问与答] 男方染上赌博，夫妻双双负债，女方选择以何种方式离场？</h3>
+    <p class="row-desc">男方婚后染上赌博（炒币/合约）亏了几百个，并且持续一年骗女方贷款也背负了几十万债务，同时女方的婚前工资大概有几十万以前也大部分交予了男方保管，不过目前推测在婚前就被男方在疫情期间炒股挥霍的差不多了。目前女方知情婚前财务已被男方挥霍光，并且婚后被男方骗着背负了几十万的债务，因此提出离婚，但男方不愿意承认债务是自己一个人造</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#778087">V2EX</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/china/story20260523-9094742" target="_blank" rel="noopener" class="row">
+  <span class="row-num">5</span>
+  <div class="row-main">
+    <h3 class="row-title">闻泰科技起诉安世等六被告提出索赔80亿人民币</h3>
+    <p class="row-desc">中资企业闻泰科技公告，起诉安世等六个被告获法院受理，要求归还安世半导体控制权，索赔80亿（人民币，15亿新元）。据中国澎湃新闻报道，闻泰科技星期五（5月22日）晚间公告，闻泰科技及子公司裕成控股起诉安世控股有限公司、安世控股有限公司在内的六个被告，公司已收到广东省东莞市中级人民法院《受理案件通知书》。闻泰科技说，安世有</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/china/story20260523-9094596" target="_blank" rel="noopener" class="row">
+  <span class="row-num">6</span>
+  <div class="row-main">
+    <h3 class="row-title">中国证监会拟对富途罚款18.5亿人民币 老虎证券罚没4.1亿</h3>
+    <p class="row-desc">被中国官方指非法跨境展业的两家券商富途和老虎证券公告，中国证监会拟对富途罚款18.5亿（人民币，下同，3.49亿新元），老虎证券罚没4.112亿。据澎湃新闻报道，富途控股星期五（5月22日）晚间发布公告称，公司收到了中国证券管理委员会及其深圳分局的调查通知及行政罚款预通知函，拟对公司罚款18.5亿元人民币。对富途创始人</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/world/story20260523-9094303" target="_blank" rel="noopener" class="row">
+  <span class="row-num">7</span>
+  <div class="row-main">
+    <h3 class="row-title">美贸易代表预计不会很快征收晶片关税</h3>
+    <p class="row-desc">美国贸易代表格里尔说，预计美国政府不会很快对进口半导体征收新的关税，但他强调，通过关税保护美国这一行业，促使晶片生产回流非常重要。路透社报道，格里尔星期五（5月22日）出席美光科技（Micron Technology）存储晶片工厂在华盛顿特区郊区的扩建项目活动时说，任何旨在保护美国半导体行业的关税措施，都需要根据美国贸</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报(国际)</span>
+    
+  </div>
+</a></div>
+  <div class="more-rows" id="more-财经-宏观" style="display:none"><a href="https://www.mittrchina.com/news/detail/16379" target="_blank" rel="noopener" class="row">
+  <span class="row-num">8</span>
+  <div class="row-main">
+    <h3 class="row-title">当世界重新争夺“确定性”：生物解决方案，也许可以成为中国经济韧性的下一张底牌</h3>
+    <p class="row-desc">受中东局势影响，霍尔木兹海峡的潜在关闭风险引起了全球范围的关注。这条承担着全球约 20% 石油贸易运输的海上通道，影响着全球能源市场的价格。今年 4 月，世界银行在《大宗商品市场展望》中预测，受伊朗冲突影响，2026 年全球能源价格预计将上涨 24%。但能源价格的变化，不仅是油价上变化的数字。能源危机带来的连锁反应会迅</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#9065e0">MIT科技评论</span>
+    
+  </div>
+</a><a href="https://cn.wsj.com/amp/articles/%E6%96%B0%E4%B8%9C%E6%96%B9%E5%85%AC%E5%B8%83%E7%96%B2%E5%BC%B1%E8%B4%A2%E6%8A%A5%E5%90%8E%E8%82%A1%E4%BB%B7%E5%A4%A7%E8%B7%8C-561840f2" target="_blank" rel="noopener" class="row">
+  <span class="row-num">9</span>
+  <div class="row-main">
+    <h3 class="row-title">新东方公布疲弱财报后股价大跌</h3>
+    <p class="row-desc">Tracy Qu 2024年8月1日15:31 CST 获取更多RSS：https://feedx.net https://feedx.run</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#333333">华尔街日报</span>
+    
+  </div>
+</a><a href="https://cn.wsj.com/amp/articles/9%E6%9C%88%E9%99%8D%E6%81%AF%E5%AF%B9%E7%BE%8E%E8%81%94%E5%82%A8%E6%9D%A5%E8%AF%B4%E6%98%AF%E6%94%BF%E6%B2%BB%E4%B8%8A%E7%9A%84-%E4%B8%A4%E9%9A%BE-d44c9e50" target="_blank" rel="noopener" class="row">
+  <span class="row-num">10</span>
+  <div class="row-main">
+    <h3 class="row-title">9月降息对美联储来说是政治上的“两难”</h3>
+    <p class="row-desc">Nick Timiraos 2024年8月1日12:08 CST 美联储主席鲍威尔在美联储议息会议后召开的新闻发布会上说，利率目前将保持稳定，但降息“最快可能在9月份的下次会议上提出”。封面图片来源：Al Drago/Bloomberg</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#333333">华尔街日报</span>
+    
+  </div>
+</a><a href="https://www.bmpi.dev/money/myinvestpilot/emotional_to_system/" target="_blank" rel="noopener" class="row">
+  <span class="row-num">11</span>
+  <div class="row-main">
+    <h3 class="row-title">从情绪化交易到系统化投资</h3>
+    <p class="row-desc">一套关于投资执行落地的文档库导读：17篇投资心法 + 8篇原语高级案例，强调趋势确认、动态仓位与严格止损，用系统替代意志力。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#27ae60">构建我的被动收入</span>
+    
+  </div>
+</a><a href="https://www.bmpi.dev/self/systemic-thinking/" target="_blank" rel="noopener" class="row">
+  <span class="row-num">12</span>
+  <div class="row-main">
+    <h3 class="row-title">系统化思维</h3>
+    <p class="row-desc">本文来自一次与朋友的深度对话，关于学习、技术、产品、投资甚至游戏，贯穿背后的是一种系统化思维的学习应用方式</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#27ae60">构建我的被动收入</span>
+    
+  </div>
+</a><a href="https://www.bmpi.dev/money/myinvestpilot/2025_review/" target="_blank" rel="noopener" class="row">
+  <span class="row-num">13</span>
+  <div class="row-main">
+    <h3 class="row-title">策引2025 实盘大考：当算法跑赢人性</h3>
+    <p class="row-desc">2025 年，面对 A 股硬科技爆发与加密币机构消化期的冰火两重天，策引（myInvestPilot）的 24 个官方策略交出了怎样的答卷？本文深度复盘了双均线策略如何捕捉 +38.75% 的 A 股主升浪，动量策略为何提前满仓黄金，以及我们在加密币寒冬中的诚实反思。拒绝黑盒，不预测市场，只应对波动——这是一份关于算法</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#27ae60">构建我的被动收入</span>
+    
+  </div>
+</a></div>
+<button class="show-more-btn" onclick="var el=document.getElementById('more-财经-宏观');if(el.style.display==='none'){el.style.display='block';this.textContent='收起';}else{el.style.display='none';this.textContent='展开 6 条 ↓';}" >展开 6 条 ↓</button>
+</section>
+<section id="国际-地缘">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#d44c47">🌍</span>
+    <h2>国际 / 地缘</h2>
+    <span class="sec-count">7</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/post/110046" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">本周看什么 | 最近值得一看的 7 部作品</h3>
+    <p class="row-desc">📅本周新预告《死神千年血战篇-祸进谭-》正式预告5月19日，TV动画《死神千年血战篇-祸进谭-》发布了正式预告，第1-3集将于6月21日在日本影院先行上映，7月开始播出。田口智久担任总导演，村田光执导 ...</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://www.solidot.org/story?sid=84367" target="_blank" rel="noopener" class="row">
+  <span class="row-num">2</span>
+  <div class="row-main">
+    <h3 class="row-title">国际空间站俄罗斯舱段再次发生漏气事故</h3>
+    <p class="row-desc">NASA 证实国际空间站的俄罗斯舱段再次发生漏气事故。过去五年俄罗斯航天局和 NASA 一直在追踪俄罗斯舱段的空气泄漏，漏气的舱段位于 Progress（进步号）气闸舱和 Zvezda（星辰号）服务舱之间的 PrK 模块，漏气原因是微小的结构裂缝。今年 1 月 NASA 宣布在多次检查和密封处理后 PrK 舱段的内部压</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#009688">Solidot</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/china/story20260523-9094887" target="_blank" rel="noopener" class="row">
+  <span class="row-num">3</span>
+  <div class="row-main">
+    <h3 class="row-title">美国为伊朗战争暂缓对台军售案？消息人士：与中东无关</h3>
+    <p class="row-desc">美国海军代理部长曹洪称，为因应美伊军事行动弹药需求，美国暂缓一项价值140亿美元（约180亿新元）对台军售案，但消息人士否认这与中东战争有关。曹洪星期四（5月21日）在美国国会听证会上说，美国正暂缓上述军售案。台湾总统府对此回应，并未接获美国将调整相关军售案的信息。中国大陆外交部星期五（22日）强调，大陆坚决反对美国向</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/china/story20260523-9094275" target="_blank" rel="noopener" class="row">
+  <span class="row-num">4</span>
+  <div class="row-main">
+    <h3 class="row-title">知情人士：美台尚未就特赖会谈制定具体计划</h3>
+    <p class="row-desc">知情人士称，美国和台湾尚未就特赖会谈制定具体计划。路透社引述四位未具名的知情人士报道这则消息。美国总统特朗普上周访问中国大陆后称，他将先与管理台湾的人士交谈，才决定是否再批准军售案。特朗普之后再宣称，将就对台军售问题与台湾总统赖清德通话。两名知情人士称，特朗普最初提及特赖通话，让美台官员感到惊讶。自1979年美国与台湾</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/world/story20260523-9094481" target="_blank" rel="noopener" class="row">
+  <span class="row-num">5</span>
+  <div class="row-main">
+    <h3 class="row-title">特朗普周末“坐镇白宫” 开会商讨是否对伊朗发动新打击</h3>
+    <p class="row-desc">美国总统特朗普星期五（5月22日）召集国家安全团队开会商讨对伊朗战事相关事宜。白宫宣布特朗普周末调整行程，将留在白宫。美国阿克西奥斯新闻网站（Axios）引述美国官员的话报道，特朗普当天上午与国家安全团队开会，听取了关于美伊谈判现状的简报，并了解若谈判破裂可能出现的各种预案。美国副总统万斯、战争部长赫格塞斯、中央情报局</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报(国际)</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/world/story20260523-9094382" target="_blank" rel="noopener" class="row">
+  <span class="row-num">6</span>
+  <div class="row-main">
+    <h3 class="row-title">美国纽约干船坞爆炸致一死36伤</h3>
+    <p class="row-desc">美国纽约市一干船坞星期五（5月22日）发生爆炸，造成一人死亡、36人受伤。路透社报道，纽约官员说，爆炸发生在斯塔滕岛（Staten Island）的一个干船坞，消防员正在现场应对一起火灾，并试图营救两名被困人员。36名伤者中包括两名消防员。纽约官员说，两名消防员已送院救治，包括一名消防队长，他的颞骨骨折且脑出血，已被插</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报(国际)</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/world/story20260523-9094332" target="_blank" rel="noopener" class="row">
+  <span class="row-num">7</span>
+  <div class="row-main">
+    <h3 class="row-title">沙特电视台：美伊协议草案或将在数小时内公布</h3>
+    <p class="row-desc">新华社引述沙特阿拉伯阿拉比亚电视台报道，消息人士星期五（5月22日）透露，美国和伊朗“接近达成”的协议草案，预计将在数小时内公布。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报(国际)</span>
+    
+  </div>
+</a></div>
+  <div class="more-rows" id="more-国际-地缘" style="display:none"><a href="https://www.zaobao.com/news/world/story20260523-9094215" target="_blank" rel="noopener" class="row">
+  <span class="row-num">8</span>
+  <div class="row-main">
+    <h3 class="row-title">美加州南部一化学品储罐泄漏 疏散约4万居民</h3>
+    <p class="row-desc">美国加利福尼亚州南部发生有毒化学品泄露，疏散约4万居民。新华社报道，美国加州奥兰治县（Orange County）一个有毒化学品大型储罐星期四（5月21日）发生泄漏，存在爆炸风险。附近多个城镇约4万名居民22日接到疏散命令。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报(国际)</span>
+    
+  </div>
+</a><a href="https://www.zaobao.com/news/world/story20260523-9094156" target="_blank" rel="noopener" class="row">
+  <span class="row-num">9</span>
+  <div class="row-main">
+    <h3 class="row-title">美新规：绿卡申请者回原籍国提申请</h3>
+    <p class="row-desc">寻求获得美国永久居留权的外国人，现在须在美国境外提出申请。路透社报道，美国公民及移民服务局（USCIS）星期五（5月22日）发表声明说：“从现在起，除特殊情况外，在美国临时居留并希望获得绿卡的外国人，必须返回原籍国提出申请。”负责监管这个机构的美国国土安全部说：“这项政策能够确保我们的移民系统按法律预期运行，而不是鼓励</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">联合早报(国际)</span>
+    
+  </div>
+</a><a href="https://www.mittrchina.com/news/detail/16376" target="_blank" rel="noopener" class="row">
+  <span class="row-num">10</span>
+  <div class="row-main">
+    <h3 class="row-title">人类终于能批量操控原子，40分钟刻入4万个原子缺陷，常温稳定可用</h3>
+    <p class="row-desc">1989 年的秋天，美国国际商用机器公司（IBM）阿尔马登研究中心的两位科学家用扫描隧道显微镜，将 35 个氙原子在一块冷却到接近绝对零度的镍晶体表面上一颗颗推动，耗费数日，拼出了“IBM”三个字母，这是人类第一次精准操控单个原子。37 年后，美国麻省理工学院（MIT）与橡树岭国家实验室（ORNL）的研究团队开展合作，</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#9065e0">MIT科技评论</span>
+    
+  </div>
+</a><a href="https://www.economist.com/asia/2026/05/21/why-japan-and-china-will-struggle-to-end-their-feud" target="_blank" rel="noopener" class="row">
+  <span class="row-num">11</span>
+  <div class="row-main">
+    <h3 class="row-title">为什么中日两国难以化解矛盾</h3>
+    <p class="row-desc">Why Japan and China will struggle to end their feud</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#c0392b">经济学人</span>
+    
+  </div>
+</a><a href="https://stratechery.com/2026/shifting-alliances-in-a-changing-world/" target="_blank" rel="noopener" class="row">
+  <span class="row-num">12</span>
+  <div class="row-main">
+    <h3 class="row-title">2026.20: Shifting Alliances in a Changing World</h3>
+    <p class="row-desc">The best Stratechery content from the week of May 11, 2026, including a new kind of computing, Elon Musk, and 360 degrees of US-China relations.</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#34495e">Stratechery</span>
+    
+  </div>
+</a></div>
+<button class="show-more-btn" onclick="var el=document.getElementById('more-国际-地缘');if(el.style.display==='none'){el.style.display='block';this.textContent='收起';}else{el.style.display='none';this.textContent='展开 5 条 ↓';}" >展开 5 条 ↓</button>
+</section>
+<section id="新能源-汽车">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#0f7b6c">🔋</span>
+    <h2>新能源 / 汽车</h2>
+    <span class="sec-count">3</span>
+  </div>
+  <div class="rows"><a href="https://36kr.com/newsflashes/3821223420580228?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">供需格局持续重构，铝价后市上行可期</h3>
+    <p class="row-desc">今年以来，内外盘铝市走出显著的分化行情，伦铝、沪铝期货价格同步上行但涨幅差距显著，呈现出外强内弱的特征。近一个月以来，两者价格均在高位区间维持震荡。业内人士表示，中东地缘冲突引发的海外市场供给收缩是本轮铝价上涨的核心驱动力，但海内外库存水平迥异，造成了内外盘价格走势分化。目前来看，全球铝市供给偏紧格局已定，随着国内铝材</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a><a href="https://cn.wsj.com/amp/articles/tesla-autopilot-crash-investigation-cdb0173c" target="_blank" rel="noopener" class="row">
+  <span class="row-num">2</span>
+  <div class="row-main">
+    <h3 class="row-title">《华尔街日报》对特斯拉涉Autopilot事故风险的调查发现了什么？</h3>
+    <p class="row-desc">特斯拉的Autopilot自动辅助驾驶技术主要基于摄像头进行感知，在业内可谓独树一帜，不少人长期担心其可靠性。《华尔街日报》搜集了200多起涉特斯拉Autopilot撞车事故的信息，相关视频和数据显示，上述担忧正在道路上显现，技术缺陷正给公众带来风险。封面图片制作：Ryan Trefes The Wall Street</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#333333">华尔街日报</span>
+    
+  </div>
+</a><a href="https://www.fortunechina.com/shangye/c/2026-05/22/content_474122.htm" target="_blank" rel="noopener" class="row">
+  <span class="row-num">3</span>
+  <div class="row-main">
+    <h3 class="row-title">特斯拉FSD尚未入华，却从未缺席</h3>
+    <p class="row-desc">马斯克随特朗普访华的一周后，有消息称，特斯拉监督版FSD官宣登陆中国，这源于该公司发布在X上的FSD全球适用名单。但实际上，中国去年就已出现在相关名单中。，截至目前，特斯拉中国还没有对这一重大进展发声。 特斯拉高管在此前的一季度财报电话会议上说，FSD功能仍未获得中国市场“更广泛批准”，预计获批时间为2026年第三季度</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d9730d">财富中文</span>
+    
+  </div>
+</a></div>
+  
+</section>
+<section id="游戏-娱乐">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#9065e0">🎮</span>
+    <h2>游戏 / 娱乐</h2>
+    <span class="sec-count">3</span>
+  </div>
+  <div class="rows"><a href="https://blog.codingnow.com/2026/05/oni_geotherm.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">一个简单的缺氧地热模块</h3>
+    <p class="row-desc">又玩了半个月的缺氧，目前累积游戏时间已达 645 小时，感觉对这个游戏有了更多理解。 我重新开了一盘，尝试用纯仿生人开局，依旧是保持 3 个初始小人开荒。仿生人不用吃食物，三个周期集中做一次呼吸，只要解决了能源问题，玩起来还是很舒服的。但仿生人需要定期上油，基本的方案是用排泄的残渣油做成润滑膏自循环。但我在查配方表的时</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#16a085">云风</span>
+    
+  </div>
+</a><a href="https://blog.codingnow.com/2026/04/oxygen_not_included.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">2</span>
+  <div class="row-main">
+    <h3 class="row-title">我对《缺氧》的游戏理解</h3>
+    <p class="row-desc">最近一个月，我一直在玩《缺氧》(Oxygen Not Included) 。前几年玩过 100 多小时，算是比较熟悉了。但这个月又高强度的玩了 300 多小时，目前总游戏时长为 485 小时，感觉对这款游戏有了一些新的理解。 最初喜欢上这个游戏，是想找一个类似《异星工厂》的以自动化为核心玩法的基地建设类游戏。Facto</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#16a085">云风</span>
+    
+  </div>
+</a><a href="https://blog.codingnow.com/2026/01/solo_boardgame.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">3</span>
+  <div class="row-main">
+    <h3 class="row-title">介绍几款单人桌游</h3>
+    <p class="row-desc">上个月我花了不少时间在 dotAge 这个游戏中。我很喜欢这种通过精算规划应对确定风险的感觉。由于 dotAge 有很强的欧式桌游的设计感，所以我在桌游中尝试了一些有类似设计元素的单人游戏。 我感觉体验比较接近的有 Voidfall (2023) 和 Spirit Island (2017) 。因为灵魂岛（spirit</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#16a085">云风</span>
+    
+  </div>
+</a></div>
+  
+</section>
+<section id="体育">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#337ea9">⚽</span>
+    <h2>体育</h2>
+    <span class="sec-count">2</span>
+  </div>
+  <div class="rows"><a href="https://www.economist.com/britain/2026/05/21/the-legal-case-hanging-over-man-city-and-the-premier-league" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">悬在曼城和英超联赛头上的法律诉讼</h3>
+    <p class="row-desc">The legal case hanging over Man City and the Premier League</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#c0392b">经济学人</span>
+    
+  </div>
+</a><a href="https://www.economist.com/britain/2026/05/21/why-football-attendance-is-booming-outside-the-premier-league" target="_blank" rel="noopener" class="row">
+  <span class="row-num">2</span>
+  <div class="row-main">
+    <h3 class="row-title">为何英超联赛以外的足球上座率正呈现爆发式增长</h3>
+    <p class="row-desc">Why football attendance is booming outside the Premier League</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#c0392b">经济学人</span>
+    
+  </div>
+</a></div>
+  
+</section>
+<section id="生活-健康">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#448aff">💊</span>
+    <h2>生活 / 健康</h2>
+    <span class="sec-count">1</span>
+  </div>
+  <div class="rows"><a href="https://36kr.com/p/3808777731464966?f=rss" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">新鲜零食品牌「金粒门」加速全国化：粤鄂6店同装｜最前线</h3>
+    <p class="row-desc">新鲜零食品牌争相竞逐新市场。 36氪获悉，新鲜零食品牌「金粒门」近期密集落地全国布局，正式开启跨区域快速发展阶段。近日，金粒门华南首店、湖北首批合计6家门店已经进场装修。与此同时，金粒门华东首店将于5月29日正式入驻南京新街口IFCX，持续布局长三角核心市场。 金粒门相关负责人表示，金粒门将持续加码门店布局，年内将全力</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#337ea9">36氪</span>
+    
+  </div>
+</a></div>
+  
+</section>
+<section id="其他">
+  <div class="sec-head">
+    <span class="sec-icon" style="--ic:#787774">📌</span>
+    <h2>其他</h2>
+    <span class="sec-count">7</span>
+  </div>
+  <div class="rows"><a href="https://sspai.com/post/110044" target="_blank" rel="noopener" class="row">
+  <span class="row-num">1</span>
+  <div class="row-main">
+    <h3 class="row-title">浏览器扩展合集：我们为你找到了这 6 款实用、有趣的「新玩意」</h3>
+    <p class="row-desc">在浏览器扩展这边，近期又有哪些好用、有趣的「新玩意」呢？</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://sspai.com/post/110009" target="_blank" rel="noopener" class="row">
+  <span class="row-num">2</span>
+  <div class="row-main">
+    <h3 class="row-title">新玩意 242｜少数派的编辑们最近买了啥？</h3>
+    <p class="row-desc">编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ...</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://sspai.com/post/109957" target="_blank" rel="noopener" class="row">
+  <span class="row-num">3</span>
+  <div class="row-main">
+    <h3 class="row-title">少数派 × 飞傲 多功能便携 CD 音箱一体机 BEATBOX 预售开启</h3>
+    <p class="row-desc">前段时间，少数派联合飞傲一起做了点有意思的事情：开启「BEATBOXCD机盖板设计大赛」。我们不想它只是一个标准化的CD机，而是希望它带着用户自己的审美和表达，一起参与这台BEATBOXCD机的共创。 ...</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#0f7b6c">少数派</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7999690.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">4</span>
+  <div class="row-main">
+    <h3 class="row-title">3小时/5分钟：迪士尼在&quot;最快乐的地方&quot;卖痛苦</h3>
+    <p class="row-desc">因为在迪士尼眼里，游客的痛苦和焦虑，才是现在最赚钱的商品。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7999673.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">5</span>
+  <div class="row-main">
+    <h3 class="row-title">146亿元用于理财，阳光电源手握300亿元仍要赴港募资扩产</h3>
+    <p class="row-desc">实控人身价超千亿元。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7999676.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">6</span>
+  <div class="row-main">
+    <h3 class="row-title">2026头部车企大转向：从价格混战、爆款竞速，到比拼技术、矩阵作战</h3>
+    <p class="row-desc">竞争依然激烈，各家的打法也更清晰了。</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a><a href="https://www.tmtpost.com/7999394.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">7</span>
+  <div class="row-main">
+    <h3 class="row-title">沃尔玛：高油价来袭！“零售一哥” 还扛得住？</h3>
+    <p class="row-desc">虽然收入端超预期，但燃油成本的大幅上涨影响了公司利润的释放，并且公司给出的指引低于部分乐观买方资金的预期导致了盘中的下跌</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">钛媒体</span>
+    
+  </div>
+</a></div>
+  <div class="more-rows" id="more-其他" style="display:none"><a href="https://notesbylex.com/shipping-a-laptop-to-a-refugee-camp-in-uganda" target="_blank" rel="noopener" class="row">
+  <span class="row-num">8</span>
+  <div class="row-main">
+    <h3 class="row-title">Shipping a laptop to a refugee camp in Uganda</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">275 pts</span>
+  </div>
+</a><a href="https://davidoks.blog/p/why-japanese-companies-do-so-many" target="_blank" rel="noopener" class="row">
+  <span class="row-num">9</span>
+  <div class="row-main">
+    <h3 class="row-title">Why Japanese companies do so many different things</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">562 pts</span>
+  </div>
+</a><a href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank" rel="noopener" class="row">
+  <span class="row-num">10</span>
+  <div class="row-main">
+    <h3 class="row-title">Project Glasswing: An Initial Update</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">359 pts</span>
+  </div>
+</a><a href="https://horses.extension.org/blood-pumping-mechanism-of-the-hoof/" target="_blank" rel="noopener" class="row">
+  <span class="row-num">11</span>
+  <div class="row-main">
+    <h3 class="row-title">Blood Pumping Mechanism of the Hoof</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">52 pts</span>
+  </div>
+</a><a href="https://cosmiciron.github.io/layoutmaster/exclusion-assembly.html" target="_blank" rel="noopener" class="row">
+  <span class="row-num">12</span>
+  <div class="row-main">
+    <h3 class="row-title">&quot;Stick&quot; – A primitive/fun interactive demo of a tiny rig to animate layout</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">17 pts</span>
+  </div>
+</a><a href="https://deno.com/blog/v2.8" target="_blank" rel="noopener" class="row">
+  <span class="row-num">13</span>
+  <div class="row-main">
+    <h3 class="row-title">Deno 2.8</h3>
+    
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#ff6600">Hacker News</span>
+    <span class="heat">330 pts</span>
+  </div>
+</a><a href="https://www.ithome.com/0/954/278.htm" target="_blank" rel="noopener" class="row">
+  <span class="row-num">14</span>
+  <div class="row-main">
+    <h3 class="row-title">《黑袍纠察队》衍生剧《沃特公司的崛起》先导预告片公开，2027 年上线</h3>
+    <p class="row-desc">IT之家 5 月 23 日消息，据外媒 Polygon 昨天报道，《黑袍纠察队》衍生剧集《沃特公司的崛起》先导预告片现已公开，2027 年上线亚马逊 Prime Video 平台。IT之家附先导预告片如下：据报道，《沃特公司的崛起》背景设定在 20 世纪 50 年代的纽约，展示士兵男孩年轻时期渴望成为英雄、为国家而战的</p>
+  </div>
+  <div class="row-meta">
+    
+    <span class="tag" style="--tc:#d44c47">IT之家</span>
+    
+  </div>
+</a></div>
+<button class="show-more-btn" onclick="var el=document.getElementById('more-其他');if(el.style.display==='none'){el.style.display='block';this.textContent='收起';}else{el.style.display='none';this.textContent='展开 7 条 ↓';}" >展开 7 条 ↓</button>
+</section>
+
+  </div>
+
+  <div class="ftr">Generated by news_digest.py</div>
+
+</div>
+
+<button class="theme-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+<button class="style-btn" id="styleToggle" aria-label="Toggle style">🎨</button>
+
+<script>
+(function() {
+  const themeBtn = document.getElementById('themeToggle');
+  const styleBtn = document.getElementById('styleToggle');
+  const html = document.documentElement;
+  const themeIcons = { dark: '🌙', light: '☀️' };
+  const styles = ['notion', 'apple', 'cursor', 'figma', 'github', 'miro'];
+  const styleNames = { notion: 'Notion', apple: 'Apple', cursor: 'Cursor', figma: 'Figma', github: 'GitHub', miro: 'Miro' };
+  const styleIcons = { notion: '📝', apple: '🍎', cursor: '🎯', figma: '🎨', github: '🐙', miro: '🔄' };
+
+  function sysTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function autoTheme() {
+    const hour = new Date().getHours();
+    // 18:00-06:00 为暗夜模式
+    return (hour >= 18 || hour < 6) ? 'dark' : 'light';
+  }
+
+  function applyTheme(t) {
+    html.setAttribute('data-theme', t);
+    themeBtn.textContent = themeIcons[t];
+    themeBtn.title = t === 'dark' ? '切换到亮色模式' : '切换到暗夜模式';
+    localStorage.setItem('digest-theme', t);
+  }
+
+  function applyStyle(s) {
+    html.setAttribute('data-style', s);
+    styleBtn.textContent = styleIcons[s];
+    styleBtn.title = '当前主题: ' + styleNames[s];
+    localStorage.setItem('digest-style', s);
+  }
+
+  // 初始化: 优先使用用户手动选择，否则根据时间自动切换
+  const userTheme = localStorage.getItem('digest-theme');
+  if (userTheme) {
+    applyTheme(userTheme);
+  } else {
+    applyTheme(autoTheme());
+  }
+  applyStyle(localStorage.getItem('digest-style') || 'notion');
+
+  // 每分钟检查一次是否需要自动切换（仅当用户未手动设置时）
+  setInterval(function() {
+    if (!localStorage.getItem('digest-theme')) {
+      const currentTheme = html.getAttribute('data-theme');
+      const shouldTheme = autoTheme();
+      if (currentTheme !== shouldTheme) {
+        applyTheme(shouldTheme);
+      }
+    }
+  }, 60000);
+
+  themeBtn.addEventListener('click', function() {
+    const newTheme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    applyTheme(newTheme);
+    // 用户手动切换后，保存偏好，不再自动切换
+    localStorage.setItem('digest-theme', newTheme);
+  });
+
+  styleBtn.addEventListener('click', function() {
+    const currentStyle = html.getAttribute('data-style');
+    const currentIndex = styles.indexOf(currentStyle);
+    const nextIndex = (currentIndex + 1) % styles.length;
+    applyStyle(styles[nextIndex]);
+  });
+
+  // 日期导航
+  const prevBtn = document.getElementById('prevDay');
+  const nextBtn = document.getElementById('nextDay');
+  const dateDisplay = document.getElementById('dateDisplay');
+  const currentDateStr = '2026-05-23';
+
+  function parseDate(str) {
+    const [y, m, d] = str.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+
+  function formatDate(date) {
+    return date.getFullYear() + '-' +
+      String(date.getMonth() + 1).padStart(2, '0') + '-' +
+      String(date.getDate()).padStart(2, '0');
+  }
+
+  function checkDateExists(dateStr) {
+    return fetch('news-digest-' + dateStr + '.html', {method: 'HEAD'})
+      .then(r => r.status === 200)
+      .catch(() => false);
+  }
+
+  function navigateDate(deltaDays) {
+    const current = parseDate(currentDateStr);
+    const target = new Date(current);
+    target.setDate(target.getDate() + deltaDays);
+    const targetStr = formatDate(target);
+    window.location.href = 'news-digest-' + targetStr + '.html';
+  }
+
+  // 检查并禁用不可用的日期按钮
+  const current = parseDate(currentDateStr);
+  const prevDate = new Date(current);
+  prevDate.setDate(prevDate.getDate() - 1);
+  const nextDate = new Date(current);
+  nextDate.setDate(nextDate.getDate() + 1);
+
+  checkDateExists(formatDate(prevDate)).then(exists => {
+    if (!exists) {
+      prevBtn.disabled = true;
+      prevBtn.title = '已是最早日期';
+    }
+  });
+
+  checkDateExists(formatDate(nextDate)).then(exists => {
+    if (!exists) {
+      nextBtn.disabled = true;
+      nextBtn.title = '已是最新日期';
+    }
+  });
+
+  prevBtn.addEventListener('click', function() {
+    navigateDate(-1);
+  });
+
+  nextBtn.addEventListener('click', function() {
+    navigateDate(1);
+  });
+
+  // 显示更新时间
+  function showUpdateTime() {
+    const updateTimeEl = document.getElementById('updateTime');
+    // 从页面加载时间估算（静态 HTML 无法获取文件修改时间）
+    const now = new Date();
+    const timeStr = now.toLocaleString('zh-CN', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+    updateTimeEl.textContent = '更新于 ' + timeStr;
+  }
+  showUpdateTime();
+})()
+</script>
+</body>
+</html>
